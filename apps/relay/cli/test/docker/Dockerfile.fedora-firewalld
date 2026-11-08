@@ -1,0 +1,27 @@
+FROM fedora:41
+
+RUN dnf install -y \
+    firewalld \
+    iptables \
+    nftables \
+    sudo \
+    which \
+    dbus-daemon \
+    curl \
+    unzip \
+    ca-certificates \
+    && dnf clean all
+
+# Install Bun
+RUN curl -fsSL https://bun.sh/install | bash
+ENV PATH="/root/.bun/bin:${PATH}"
+
+# Set up test user with sudo
+RUN useradd -m -s /bin/bash relayuser && \
+    echo "relayuser ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+
+WORKDIR /app
+
+COPY . /app
+
+CMD ["bash", "-c", "mkdir -p /run/dbus && dbus-uuidgen --ensure && /usr/bin/dbus-daemon --system --fork && /usr/sbin/firewalld --nofork & sleep 3 && bun test/docker/test-firewalld.ts"]

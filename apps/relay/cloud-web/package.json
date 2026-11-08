@@ -1,0 +1,51 @@
+{
+  "name": "@paddy-systems/relay-cloud-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port ${RELAY_PORT:-9481}",
+    "build": "next build",
+    "start": "next start",
+    "lint": "biome check",
+    "format": "biome format --write",
+    "check-types": "next typegen && tsc --noEmit",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@paddy-systems/auth": "*",
+    "@paddy-systems/feature-flags": "*",
+    "@paddy-systems/lib": "*",
+    "@paddy-systems/relay-protocol": "*",
+    "@paddy-systems/relay-recording": "*",
+    "@paddy-systems/relay-replay": "*",
+    "@paddy-systems/shared-primitives": "*",
+    "@tanstack/react-query": "^5.102.8",
+    "clsx": "^2.1.1",
+    "next": "16.3.5",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "schema-dts": "^2.0.0",
+    "tailwind-merge": "^3.6.0",
+    "tw-animate-css": "^1.4.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.13",
+    "@paddy-systems/typescript-config": "*",
+    "@paddy-systems/env": "*",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "^20",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "tailwindcss": "4.3.3",
+    "typescript": "7.0.2"
+  },
+  "packageManager": "bun@1.4.0",
+  "ignoreScripts": [
+    "sharp",
+    "unrs-resolver"
+  ],
+  "trustedDependencies": [
+    "sharp",
+    "unrs-resolver"
+  ]
+}

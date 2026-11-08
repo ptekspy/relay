@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "relay-sdk"
+version = "0.1.0"
+description = "Official Python & Django SDK for Relay developer pairing and live telemetry"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Paddy Systems", email = "engineering@paddy.systems" }
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Django",
+    "Framework :: FastAPI",
+    "Framework :: Flask",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Testing",
+]
+dependencies = [
+    "httpx>=0.25.0",
+    "typing-extensions>=4.8.0",
+]
+
+[project.optional-dependencies]
+django = ["django>=4.2"]
+fastapi = ["fastapi>=0.100.0", "starlette>=0.27.0"]
+flask = ["flask>=2.3.0"]
+celery = ["celery>=5.3.0"]
+sqlalchemy = ["sqlalchemy>=2.0.0"]
+test = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+]

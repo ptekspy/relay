@@ -1,0 +1,10 @@
+{
+  "extends": "@paddy-systems/typescript-config/react-library.json",
+  "compilerOptions": {
+    "types": ["node"],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}

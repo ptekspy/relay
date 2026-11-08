@@ -1,0 +1,16 @@
+{
+  "name": "@paddy-systems/example-docker-service",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "bun run src/server.ts",
+    "test:e2e": "bun test test/e2e.test.ts"
+  },
+  "devDependencies": {
+    "@paddy-systems/relay-integrations": "workspace:*",
+    "@paddy-systems/relay-testing": "workspace:*",
+    "@types/bun": "^1.2.0",
+    "@types/node": "^22.0.0",
+    "typescript": "7.0.2"
+  }
+}

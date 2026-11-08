@@ -1,0 +1,26 @@
+{
+  "name": "@paddy-systems/example-astro",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "test:e2e": "bun test test/e2e.test.ts",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^7.3.2"
+  },
+  "devDependencies": {
+    "@paddy-systems/relay-integrations": "workspace:*",
+    "@paddy-systems/relay-testing": "workspace:*"
+  },
+  "allowScripts": {
+    "esbuild": true
+  }
+}

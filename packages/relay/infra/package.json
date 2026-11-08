@@ -1,0 +1,32 @@
+{
+  "name": "@paddy-systems/relay-infra",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./anycast": "./src/anycast-cluster.ts",
+    "./valkey": "./src/valkey-cluster.ts",
+    "./pg-pooler": "./src/pg-pooler.ts",
+    "./retention": "./src/retention-purge.ts",
+    "./chaos": "./src/chaos-drills.ts",
+    "./soc2": "./src/soc2-anonymizer.ts",
+    "./slo": "./src/slo-pagerduty.ts",
+    "./signoff": "./src/v1-signoff.ts"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@paddy-systems/relay-protocol": "*"
+  },
+  "devDependencies": {
+    "@paddy-systems/typescript-config": "*",
+    "@types/bun": "latest",
+    "@types/node": "^20",
+    "typescript": "7.0.2"
+  }
+}

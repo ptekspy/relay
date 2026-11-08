@@ -1,0 +1,46 @@
+{
+  "name": "@paddy-systems/shared-primitives",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "exports": {
+    "./ArrowLink": "./src/ArrowLink/ArrowLink.tsx",
+    "./Button": "./src/Button/Button.tsx",
+    "./Code": "./src/Code/Code.tsx",
+    "./Container": "./src/Container/Container.tsx",
+    "./CopyButton": "./src/CopyButton/CopyButton.tsx",
+    "./FactRow": "./src/FactRow/FactRow.tsx",
+    "./Label": "./src/Label/Label.tsx",
+    "./Link": "./src/Link/Link.tsx",
+    "./Prose": "./src/Prose/Prose.tsx",
+    "./Section": "./src/Section/Section.tsx",
+    "./Status": "./src/Status/Status.tsx",
+    "./theme.css": "./theme.css",
+    "./Typography": "./src/Typography/Typography.tsx"
+  },
+  "dependencies": {
+    "@paddy-systems/lib": "*",
+    "class-variance-authority": "^0.7.1"
+  },
+  "peerDependencies": {
+    "next": "^16.0.0",
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@paddy-systems/typescript-config": "*",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "jsdom": "^30.0.1",
+    "next": "16.3.5",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "typescript": "7.0.2",
+    "vitest": "^4"
+  }
+}

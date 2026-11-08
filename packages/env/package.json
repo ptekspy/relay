@@ -1,0 +1,17 @@
+{
+  "name": "@paddy-systems/env",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check-types": "tsc --noEmit"
+  },
+  "exports": {
+    "./load-app-env": "./src/load-app-env.ts"
+  },
+  "devDependencies": {
+    "@paddy-systems/typescript-config": "*",
+    "@types/node": "26.4.1",
+    "typescript": "7.0.2"
+  }
+}

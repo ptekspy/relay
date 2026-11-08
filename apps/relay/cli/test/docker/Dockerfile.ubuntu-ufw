@@ -1,0 +1,27 @@
+FROM ubuntu:24.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install -y \
+    ufw \
+    iptables \
+    sudo \
+    curl \
+    unzip \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Bun
+RUN curl -fsSL https://bun.sh/install | bash
+ENV PATH="/root/.bun/bin:${PATH}"
+
+# Set up test user with passwordless sudo
+RUN useradd -m -s /bin/bash relayuser && \
+    echo "relayuser ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+
+WORKDIR /app
+
+COPY . /app
+
+# The entrypoint enables UFW at container run time (when --cap-add=NET_ADMIN is present)
+CMD ["bash", "-c", "ufw --force enable && ufw default deny incoming && bun test/docker/test-ufw.ts"]

@@ -1,0 +1,22 @@
+{
+  "extends": "@paddy-systems/typescript-config/nitro.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@paddy-systems/relay-protocol": [
+        "../../packages/relay/protocol/src/index.ts"
+      ],
+      "@paddy-systems/relay-transport": [
+        "../../packages/relay/transport/src/index.ts"
+      ]
+    }
+  },
+  "include": [
+    "routes/**/*.ts",
+    "server/**/*.ts",
+    "src/**/*.ts",
+    "nitro.config.ts",
+    "test/**/*.ts"
+  ]
+}

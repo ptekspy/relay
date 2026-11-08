@@ -1,0 +1,19 @@
+{
+  "name": "@paddy-systems/example-hono-api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "bun run src/server.ts",
+    "test:e2e": "bun test test/e2e.test.ts"
+  },
+  "dependencies": {
+    "hono": "^4.7.2",
+    "@hono/node-server": "^1.13.8"
+  },
+  "devDependencies": {
+    "@paddy-systems/relay-integrations": "workspace:*",
+    "@paddy-systems/relay-testing": "workspace:*",
+    "@types/node": "^22.0.0",
+    "typescript": "7.0.2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Relay Companion & DevTools",
+  "version": "0.1.0",
+  "description": "Instant mobile pairing and live inspection for web developers.",
+  "permissions": ["activeTab", "storage", "cookies", "declarativeNetRequest"],
+  "host_permissions": [
+    "http://localhost/*",
+    "http://127.0.0.1/*",
+    "http://*.local/*"
+  ],
+  "background": {
+    "service_worker": "dist/background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Relay Companion"
+  },
+  "devtools_page": "devtools.html"
+}

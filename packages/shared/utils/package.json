@@ -1,0 +1,19 @@
+{
+  "name": "@paddy-systems/utils",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./toTitleCase": "./src/toTitleCase.ts",
+    "./rate-limiter": "./src/rate-limiter.ts"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@paddy-systems/typescript-config": "*",
+    "typescript": "7.0.2",
+    "vitest": "^4"
+  }
+}

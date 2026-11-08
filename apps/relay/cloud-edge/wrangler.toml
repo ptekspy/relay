@@ -1,0 +1,13 @@
+name = "relay-cloud-edge"
+main = "./.output/server/index.mjs"
+compatibility_date = "2026-09-12"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "./.output/public"
+
+# Production custom domain routes on Cloudflare:
+# routes = [
+#   { pattern = "edge.relay.paddy.systems/*", zone_name = "paddy.systems" },
+#   { pattern = "*.relay.paddy.systems/*", zone_name = "paddy.systems" }
+# ]

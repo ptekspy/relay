@@ -1,0 +1,24 @@
+{
+  "name": "@paddy-systems/relay-billing",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@paddy-systems/typescript-config": "*",
+    "@types/bun": "latest",
+    "@types/node": "^20",
+    "typescript": "7.0.2"
+  }
+}

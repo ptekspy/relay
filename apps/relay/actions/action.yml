@@ -1,0 +1,24 @@
+name: "Relay Ephemeral Preview Tunnel"
+description: "Starts an ephemeral Relay tunnel for CI PRs and posts an interactive mobile QR code comment"
+author: "Paddy Systems"
+inputs:
+  port:
+    description: "Local dev server port to expose"
+    required: true
+    default: "3000"
+  github-token:
+    description: "GITHUB_TOKEN with pull-requests: write permission"
+    required: false
+    default: ${{ github.token }}
+  comment-on-pr:
+    description: "Whether to post QR code comment on PR"
+    required: false
+    default: "true"
+outputs:
+  tunnel-url:
+    description: "Public HTTPS URL for the ephemeral Relay tunnel"
+  session-id:
+    description: "Unique ephemeral session identifier"
+runs:
+  using: "node20"
+  main: "dist/index.js"

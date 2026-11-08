@@ -1,0 +1,9 @@
+{
+  "extends": "@paddy-systems/typescript-config/base.json",
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "types": ["node", "bun"]
+  },
+  "include": ["src/**/*", "test/**/*"]
+}

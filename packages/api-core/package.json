@@ -1,0 +1,21 @@
+{
+  "name": "@paddy-systems/api-core",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "h3": "latest"
+  },
+  "devDependencies": {
+    "@paddy-systems/typescript-config": "*",
+    "typescript": "7.0.2",
+    "vitest": "^4"
+  }
+}

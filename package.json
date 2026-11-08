@@ -1,0 +1,41 @@
+{
+  "name": "relay",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "biome lint .",
+    "format": "biome format --write .",
+    "check": "biome check .",
+    "check-types": "turbo run check-types",
+    "test": "turbo run test",
+    "sync-css-token-overrides": "bun run scripts/sync-css-token-overrides.ts",
+    "relay": "bun apps/relay/cli/src/main.tsx",
+    "dev:site": "bun run --cwd sites/public dev",
+    "test:gateway": "bun test apps/relay/cli/test/gateway.test.ts apps/relay/cli/test/gateway-hardening.test.ts test/e2e/user-journeys/journey-01-happy-path.test.ts"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.13",
+    "@vitest/coverage-v8": "4.1.11",
+    "turbo": "^2.10.12",
+    "typescript": "7.0.2",
+    "vitest": "^4"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "bun@1.4.0",
+  "devEngines": {
+    "packageManager": {
+      "name": "bun",
+      "version": "1.4.0"
+    }
+  },
+  "workspaces": [
+    "apps/*",
+    "apps/*/*",
+    "packages/*",
+    "packages/*/*",
+    "sites/*"
+  ]
+}

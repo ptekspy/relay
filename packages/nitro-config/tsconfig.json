@@ -1,0 +1,7 @@
+{
+  "extends": "@paddy-systems/typescript-config/nitro.json",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "include": ["src/**/*.ts"]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@paddy-systems/example-nuxt",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "test:e2e": "bun test test/e2e.test.ts",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "nuxt": "^4.5.2",
+    "vue": "^3.5.42",
+    "vue-router": "^5.3.1"
+  },
+  "devDependencies": {
+    "@paddy-systems/relay-integrations": "workspace:*",
+    "@paddy-systems/relay-testing": "workspace:*"
+  }
+}

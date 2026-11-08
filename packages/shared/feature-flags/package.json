@@ -1,0 +1,25 @@
+{
+  "name": "@paddy-systems/feature-flags",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./global": "./src/global.ts",
+    "./paddy-systems": "./src/paddy-systems.ts",
+    "./relay": "./src/relay.ts",
+    "./mirror": "./src/mirror.ts",
+    "./stride": "./src/stride.ts",
+    "./wearfolio": "./src/wearfolio.ts",
+    "./types": "./src/types.ts"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@paddy-systems/typescript-config": "*",
+    "@types/node": "26.4.1",
+    "typescript": "7.0.2",
+    "vitest": "^4"
+  }
+}

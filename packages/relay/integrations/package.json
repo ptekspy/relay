@@ -1,0 +1,38 @@
+{
+  "name": "@paddy-systems/relay-integrations",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./nuxt": "./src/nuxt.ts",
+    "./sveltekit": "./src/sveltekit.ts",
+    "./nextjs": "./src/nextjs.ts",
+    "./astro": "./src/astro.ts",
+    "./remix": "./src/remix.ts",
+    "./webpack": "./src/webpack.ts",
+    "./docker": "./src/docker.ts",
+    "./mkcert": "./src/mkcert.ts",
+    "./supervisor": "./src/supervisor.ts",
+    "./matrix": "./src/matrix.ts",
+    "./linear": "./src/linear.ts",
+    "./github": "./src/github.ts",
+    "./jira": "./src/jira.ts",
+    "./bug-packager": "./src/bug-packager.ts",
+    "./chat-webhooks": "./src/chat-webhooks.ts",
+    "./resilience": "./src/resilience.ts"
+  },
+  "scripts": {
+    "test": "bun test",
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@paddy-systems/relay-protocol": "workspace:*"
+  },
+  "devDependencies": {
+    "@paddy-systems/typescript-config": "workspace:*",
+    "@types/bun": "^1.2.4",
+    "@types/node": "^22.13.8",
+    "typescript": "^5.7.3"
+  }
+}

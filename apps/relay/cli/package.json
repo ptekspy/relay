@@ -1,0 +1,42 @@
+{
+  "name": "@paddy-systems/relay-cli",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "relay": "./src/main.tsx"
+  },
+  "scripts": {
+    "dev": "bun run --watch src/main.tsx",
+    "start": "bun run src/main.tsx",
+    "lint": "biome check",
+    "format": "biome format --write",
+    "check-types": "tsc --noEmit",
+    "test": "bun test test/",
+    "test:docker": "bash test/docker/run-all.sh"
+  },
+  "dependencies": {
+    "@paddy-systems/feature-flags": "*",
+    "@paddy-systems/lib": "*",
+    "@paddy-systems/relay-protocol": "*",
+    "@paddy-systems/relay-recording": "*",
+    "@paddy-systems/relay-replay": "*",
+    "@paddy-systems/relay-security": "*",
+    "@paddy-systems/shared-primitives": "*",
+    "ink": "7.1.1",
+    "is-online": "^12.0.2",
+    "open": "^11.0.3",
+    "qrcode": "^1.5.4",
+    "react": "19.3.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.13",
+    "@paddy-systems/env": "*",
+    "@paddy-systems/typescript-config": "*",
+    "@types/node": "^20",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "19.3.0",
+    "typescript": "7.0.2"
+  },
+  "packageManager": "bun@1.4.0"
+}

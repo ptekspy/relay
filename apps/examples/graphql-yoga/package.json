@@ -1,0 +1,19 @@
+{
+  "name": "@paddy-systems/example-graphql-yoga",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "bun run src/server.ts",
+    "test:e2e": "bun test test/e2e.test.ts"
+  },
+  "dependencies": {
+    "graphql": "^16.10.0",
+    "graphql-yoga": "^5.13.1"
+  },
+  "devDependencies": {
+    "@paddy-systems/relay-integrations": "workspace:*",
+    "@paddy-systems/relay-testing": "workspace:*",
+    "@types/node": "^22.0.0",
+    "typescript": "7.0.2"
+  }
+}

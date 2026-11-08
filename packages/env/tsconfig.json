@@ -1,0 +1,7 @@
+{
+  "extends": "@paddy-systems/typescript-config/base.json",
+  "compilerOptions": {
+    "types": ["node"]
+  },
+  "include": ["src/**/*.ts"]
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relay Telemetry Stress Test App</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 20px; line-height: 1.5; }
+    button { padding: 10px 16px; margin: 6px 4px; font-size: 14px; cursor: pointer; }
+    .status { padding: 12px; background: #f0f0f0; border-radius: 6px; margin-top: 16px; font-family: monospace; }
+    canvas { border: 1px solid #ccc; width: 200px; height: 120px; margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <h1>Relay Telemetry Stress Harness</h1>
+  <p>Synthetic generator for high-throughput browser events, memory pressure, and network delay.</p>
+
+  <div>
+    <button type="button" id="btn-burst-logs">Burst 1,000 Console Logs</button>
+    <button type="button" id="btn-heavy-dom">Create 5,000 DOM Nodes</button>
+    <button type="button" id="btn-slow-fetch">Trigger 2,000ms Slow Fetch</button>
+    <button type="button" id="btn-throw-error">Throw Unhandled Exception</button>
+    <button type="button" id="btn-unhandled-rejection">Trigger Promise Rejection</button>
+  </div>
+
+  <canvas id="webgl-canvas"></canvas>
+  <div class="status" id="status-box">Status: Idle</div>
+
+  <script>
+    const statusBox = document.getElementById("status-box");
+
+    document.getElementById("btn-burst-logs").addEventListener("click", () => {
+      const start = performance.now();
+      for (let i = 0; i < 1000; i++) {
+        console.log(`[StressLog #${i}] High frequency telemetry test payload with metadata:`, { idx: i, timestamp: Date.now() });
+      }
+      statusBox.innerText = `Dispatched 1,000 logs in ${(performance.now() - start).toFixed(2)}ms`;
+    });
+
+    document.getElementById("btn-heavy-dom").addEventListener("click", () => {
+      const start = performance.now();
+      const container = document.createElement("div");
+      container.id = "stress-container";
+      for (let i = 0; i < 5000; i++) {
+        const el = document.createElement("span");
+        el.innerText = ` Node ${i} `;
+        container.appendChild(el);
+      }
+      document.body.appendChild(container);
+      statusBox.innerText = `Appended 5,000 DOM nodes in ${(performance.now() - start).toFixed(2)}ms`;
+    });
+
+    document.getElementById("btn-slow-fetch").addEventListener("click", async () => {
+      statusBox.innerText = "Dispatching 2,000ms fetch request...";
+      try {
+        const res = await fetch("/api/slow?delay=2000");
+        const json = await res.json();
+        statusBox.innerText = `Fetch resolved: ${JSON.stringify(json)}`;
+      } catch (err) {
+        statusBox.innerText = `Fetch failed: ${err.message}`;
+      }
+    });
+
+    document.getElementById("btn-throw-error").addEventListener("click", () => {
+      setTimeout(() => {
+        throw new Error("Synthetic unhandled exception from Relay stress harness");
+      }, 50);
+    });
+
+    document.getElementById("btn-unhandled-rejection").addEventListener("click", () => {
+      Promise.reject(new Error("Synthetic unhandled promise rejection"));
+    });
+
+    // WebGL Canvas rotation
+    const canvas = document.getElementById("webgl-canvas");
+    const gl = canvas.getContext("webgl");
+    if (gl) {
+      gl.clearColor(0.2, 0.4, 0.8, 1.0);
+      gl.clear(gl.COLOR_BUFFER_BIT);
+    }
+  </script>
+</body>
+</html>

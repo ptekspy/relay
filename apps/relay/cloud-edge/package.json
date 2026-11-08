@@ -1,0 +1,29 @@
+{
+  "name": "@paddy-systems/relay-cloud-edge",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nitro dev --port 8080",
+    "build": "nitro build",
+    "build:cloudflare": "NITRO_PRESET=cloudflare-module nitro build",
+    "deploy": "bun run build:cloudflare && bunx wrangler deploy",
+    "start": "node .output/server/index.mjs",
+    "check-types": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@paddy-systems/api-core": "*",
+    "@paddy-systems/relay-protocol": "*",
+    "@paddy-systems/relay-transport": "*",
+    "h3": "^1.15.1",
+    "nitropack": "latest"
+  },
+  "devDependencies": {
+    "@paddy-systems/nitro-config": "*",
+    "@paddy-systems/typescript-config": "*",
+    "@types/bun": "latest",
+    "@types/node": "^20",
+    "typescript": "7.0.2"
+  }
+}
