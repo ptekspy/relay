@@ -42,3 +42,9 @@ These tests start a local HTTP server and a Relay gateway. They exercise unauthe
 | Product specification and user journeys | [Specification](docs/PRODUCT_SPECIFICATION.md) · [User journeys](docs/USER_JOURNEYS.md) |
 
 Run `bun run dev:site` to work on the public website. See the [source revisions](docs/SOURCE_REVISIONS.md) for the original commits and the scope of this extraction.
+
+## License
+
+Relay is licensed under the [Apache License, Version 2.0](LICENSE).
+
+Copyright 2026 Paddy Systems LTD. See [NOTICE](NOTICE) for attribution.
