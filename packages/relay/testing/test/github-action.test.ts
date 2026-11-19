@@ -4,7 +4,7 @@ import { RelayActionCommentBuilder } from "../src/github-action.js";
 describe("TASK-187: GitHub Action for Relay Ephemeral Preview Tunnels (relay-action)", () => {
   it("formats scan-ready PR comment markdown with QR code and mobile link", () => {
     const comment = RelayActionCommentBuilder.formatPrComment({
-      tunnelUrl: "https://pr-42.relay.paddy.systems",
+      tunnelUrl: "https://pr-42.relay.acme.example",
       lanUrl: "http://127.0.0.1:7331",
       qrCodeDataUrl: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA...",
       branch: "feat/checkout-flow",
@@ -18,7 +18,7 @@ describe("TASK-187: GitHub Action for Relay Ephemeral Preview Tunnels (relay-act
       "[![Scan QR Code](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA...)]",
     );
     expect(comment).toContain(
-      "👉 **[Open Mobile Preview (https://pr-42.relay.paddy.systems)]",
+      "👉 **[Open Mobile Preview (https://pr-42.relay.acme.example)]",
     );
     expect(comment).toContain("`sess_ci_pr_42`");
     expect(comment).toContain("`a1b2c3d`");
@@ -40,7 +40,7 @@ describe("TASK-187: GitHub Action for Relay Ephemeral Preview Tunnels (relay-act
         json: async () => ({
           id: 987654321,
           html_url:
-            "https://github.com/Paddy-Systems/p-s-core/pull/42#issuecomment-987654321",
+            "https://github.com/Acme-Systems/p-s-core/pull/42#issuecomment-987654321",
         }),
       } as Response;
     }) as unknown as typeof fetch;
@@ -48,7 +48,7 @@ describe("TASK-187: GitHub Action for Relay Ephemeral Preview Tunnels (relay-act
     const res = await RelayActionCommentBuilder.postPrComment(
       {
         githubToken: "ghp_fake_pr_comment_token",
-        repo: "Paddy-Systems/p-s-core",
+        repo: "Acme-Systems/p-s-core",
         issueNumber: 42,
         body: "Mock QR code comment content",
       },
@@ -56,7 +56,7 @@ describe("TASK-187: GitHub Action for Relay Ephemeral Preview Tunnels (relay-act
     );
 
     expect(capturedUrl).toBe(
-      "https://api.github.com/repos/Paddy-Systems/p-s-core/issues/42/comments",
+      "https://api.github.com/repos/Acme-Systems/p-s-core/issues/42/comments",
     );
     expect(capturedHeaders.Authorization).toBe(
       "Bearer ghp_fake_pr_comment_token",

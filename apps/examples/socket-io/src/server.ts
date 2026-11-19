@@ -1,5 +1,5 @@
 import { createServer } from "node:http";
-import { SocketIoRelayAdapter } from "@paddy-systems/relay-integrations";
+import { SocketIoRelayAdapter } from "@acme-systems/relay-integrations";
 import { Server as SocketIOServer } from "socket.io";
 
 export function buildSocketIoServer() {

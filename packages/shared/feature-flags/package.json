@@ -1,11 +1,11 @@
 {
-  "name": "@paddy-systems/feature-flags",
+  "name": "@acme-systems/feature-flags",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "exports": {
     "./global": "./src/global.ts",
-    "./paddy-systems": "./src/paddy-systems.ts",
+    "./acme-systems": "./src/acme-systems.ts",
     "./relay": "./src/relay.ts",
     "./mirror": "./src/mirror.ts",
     "./stride": "./src/stride.ts",
@@ -17,9 +17,10 @@
     "test": "vitest run"
   },
   "devDependencies": {
-    "@paddy-systems/typescript-config": "*",
+    "@acme-systems/typescript-config": "*",
     "@types/node": "26.4.1",
     "typescript": "7.0.2",
     "vitest": "^4"
-  }
+  },
+  "license": "Apache-2.0"
 }

@@ -95,7 +95,7 @@ For every proposed dependency:
 
 # 2. Relay protocol
 
-This is one of the **core Paddy Systems-owned pieces**.
+This is one of the **core Acme Systems-owned pieces**.
 
 ### Protocol foundation
 

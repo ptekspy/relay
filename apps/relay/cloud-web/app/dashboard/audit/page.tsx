@@ -15,7 +15,7 @@ const INITIAL_AUDIT_LOGS: AuditEntry[] = [
   {
     id: "aud_01",
     action: "SESSION_CREATED",
-    actor: "paddy@paddy-systems.com",
+    actor: "acme@example.com",
     ip: "192.168.1.100",
     sessionId: "ses_live_alpha9",
     timestamp: "10m ago",
@@ -39,7 +39,7 @@ const INITIAL_AUDIT_LOGS: AuditEntry[] = [
   {
     id: "aud_04",
     action: "PAT_REVOKED",
-    actor: "paddy@paddy-systems.com",
+    actor: "acme@example.com",
     ip: "192.168.1.100",
     sessionId: "system",
     timestamp: "2m ago",

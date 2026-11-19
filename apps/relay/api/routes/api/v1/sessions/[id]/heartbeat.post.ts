@@ -1,4 +1,4 @@
-import { toSessionId } from "@paddy-systems/relay-protocol";
+import { toSessionId } from "@acme-systems/relay-protocol";
 import { defaultSessionRegistry } from "@src/storage/session-store.js";
 import { eventHandler, getRouterParam, readBody, setResponseStatus } from "h3";
 

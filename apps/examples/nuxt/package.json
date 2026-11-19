@@ -1,5 +1,5 @@
 {
-  "name": "@paddy-systems/example-nuxt",
+  "name": "@acme-systems/example-nuxt",
   "type": "module",
   "private": true,
   "scripts": {
@@ -16,7 +16,8 @@
     "vue-router": "^5.3.1"
   },
   "devDependencies": {
-    "@paddy-systems/relay-integrations": "workspace:*",
-    "@paddy-systems/relay-testing": "workspace:*"
-  }
+    "@acme-systems/relay-integrations": "workspace:*",
+    "@acme-systems/relay-testing": "workspace:*"
+  },
+  "license": "Apache-2.0"
 }

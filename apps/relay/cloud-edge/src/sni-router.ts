@@ -1,7 +1,7 @@
 /**
  * SNI Dynamic Subdomain Routing Engine
  *
- * Resolves incoming HTTP/TLS Host headers matching `*.relay.paddy.systems`
+ * Resolves incoming HTTP/TLS Host headers matching `*.relay.acme.example`
  * to the appropriate persistent tunnel endpoint, or produces structured
  * error responses for unknown/expired sessions.
  *
@@ -40,7 +40,7 @@ export class SniDynamicRouter {
   private readonly baseDomains: string[];
   private readonly routes = new Map<string, TunnelEndpoint>();
 
-  constructor(baseDomains: string[] = ["relay.paddy.systems", "relay.zone"]) {
+  constructor(baseDomains: string[] = ["relay.acme.example", "relay.zone"]) {
     this.baseDomains = baseDomains.map((d) => d.toLowerCase());
   }
 

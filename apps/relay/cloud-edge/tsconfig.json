@@ -1,13 +1,13 @@
 {
-  "extends": "@paddy-systems/typescript-config/nitro.json",
+  "extends": "@acme-systems/typescript-config/nitro.json",
   "compilerOptions": {
     "noEmit": true,
     "paths": {
       "@src/*": ["./src/*"],
-      "@paddy-systems/relay-protocol": [
+      "@acme-systems/relay-protocol": [
         "../../packages/relay/protocol/src/index.ts"
       ],
-      "@paddy-systems/relay-transport": [
+      "@acme-systems/relay-transport": [
         "../../packages/relay/transport/src/index.ts"
       ]
     }

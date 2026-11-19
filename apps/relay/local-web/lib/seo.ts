@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import type { Thing, WithContext } from "schema-dts";
 
-export const SITE_URL = "https://paddy.systems";
-export const SITE_NAME = "Paddy Systems";
+export const SITE_URL = "https://acme.example";
+export const SITE_NAME = "Acme Systems";
 
 export type JsonLd = WithContext<Thing>;
 

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "bun:test";
-import type { ConsoleEvent } from "@paddy-systems/relay-protocol";
+import type { ConsoleEvent } from "@acme-systems/relay-protocol";
 
 describe("Local Web Receiver Logic & Utilities", () => {
   it("filters ambiguous characters (0, O, 1, I) from short codes", () => {

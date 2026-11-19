@@ -5,7 +5,7 @@ describe("TASK-173: Jira Cloud Integration with Automated Issue Linking", () => 
   it("generates valid Atlassian Document Format (ADF) description tree", () => {
     const client = new JiraCloudClient(
       "acme.atlassian.net",
-      "dev@acme.com",
+      "dev@example.com",
       "api_token_abc",
     );
 
@@ -13,7 +13,7 @@ describe("TASK-173: Jira Cloud Integration with Automated Issue Linking", () => 
       projectKey: "PROJ",
       summary: "White screen on payment modal",
       descriptionText: "App crashed unexpectedly during stripe tokenization.",
-      replayUrl: "https://relay.paddy.systems/replay/rep_stripe_01",
+      replayUrl: "https://relay.acme.example/replay/rep_stripe_01",
       deviceInfo: {
         model: "Pixel 7a",
         os: "Android 13",
@@ -34,8 +34,8 @@ describe("TASK-173: Jira Cloud Integration with Automated Issue Linking", () => 
 
   it("creates issue via Jira REST API v3 with project key and priority", async () => {
     const client = new JiraCloudClient(
-      "paddy.atlassian.net",
-      "sally@paddy.systems",
+      "acme.example",
+      "sally@example.com",
       "token_xyz",
     );
 
@@ -68,6 +68,6 @@ describe("TASK-173: Jira Cloud Integration with Automated Issue Linking", () => 
       "Dropdown z-index collision on mobile safari",
     );
     expect(result.key).toBe("RELAY-204");
-    expect(result.webUrl).toBe("https://paddy.atlassian.net/browse/RELAY-204");
+    expect(result.webUrl).toBe("https://acme.example/browse/RELAY-204");
   });
 });

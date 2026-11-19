@@ -1,5 +1,5 @@
 {
-  "name": "@paddy-systems/database",
+  "name": "@acme-systems/database",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -19,10 +19,11 @@
     "@prisma/client": "^6.4.1"
   },
   "devDependencies": {
-    "@paddy-systems/typescript-config": "*",
+    "@acme-systems/typescript-config": "*",
     "@types/node": "^20.17.24",
     "prisma": "^6.4.1",
     "typescript": "7.0.2"
   },
-  "packageManager": "bun@1.4.0"
+  "packageManager": "bun@1.4.0",
+  "license": "Apache-2.0"
 }

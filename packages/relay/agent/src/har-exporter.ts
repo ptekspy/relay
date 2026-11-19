@@ -7,7 +7,7 @@
  * Note for Octavia: Used by the "Export HAR" button in the Network panel.
  */
 
-import type { NetworkTelemetryEvent } from "@paddy-systems/relay-protocol";
+import type { NetworkTelemetryEvent } from "@acme-systems/relay-protocol";
 
 export interface HarHeader {
   name: string;
@@ -76,7 +76,7 @@ export interface HarRoot {
 export class HarExporter {
   public static exportHar(
     events: NetworkTelemetryEvent[],
-    creator = { name: "Paddy Systems Relay", version: "1.0.0" },
+    creator = { name: "Acme Systems Relay", version: "1.0.0" },
   ): HarRoot {
     const entries: HarEntry[] = events.map((event) => {
       const startedDateTime = new Date(

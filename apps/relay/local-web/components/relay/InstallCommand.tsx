@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@paddy-systems/lib/cn";
+import { cn } from "@acme-systems/lib/cn";
 import { useId, useState } from "react";
 import { CopyButton } from "./Code";
 
@@ -8,22 +8,22 @@ const MANAGERS = [
   {
     id: "npm",
     label: "npm",
-    command: "npx --package @paddy-systems/relay-cli relay 3000",
+    command: "npx --package @acme-systems/relay-cli relay 3000",
   },
   {
     id: "pnpm",
     label: "pnpm",
-    command: "pnpm dlx @paddy-systems/relay-cli relay 3000",
+    command: "pnpm dlx @acme-systems/relay-cli relay 3000",
   },
   {
     id: "bun",
     label: "bun",
-    command: "bunx @paddy-systems/relay-cli relay 3000",
+    command: "bunx @acme-systems/relay-cli relay 3000",
   },
   {
     id: "global",
     label: "global",
-    command: "npm i -g @paddy-systems/relay-cli && relay 3000",
+    command: "npm i -g @acme-systems/relay-cli && relay 3000",
   },
 ] as const;
 

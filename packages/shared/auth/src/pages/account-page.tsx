@@ -61,7 +61,7 @@ export function AccountPage({
           Authentication Required
         </div>
         <p className="text-xs text-neutral-600 max-w-sm text-center">
-          You must be signed in to manage your Paddy Systems account and
+          You must be signed in to manage your Acme Systems account and
           subscriptions.
         </p>
         <a
@@ -90,7 +90,7 @@ export function AccountPage({
       description: "Low-latency WebRTC peer streaming & remote device control.",
       localFeature: "Full features, local network only",
       cloudFeature: "Global cloud signaling & live relay",
-      upgradeUrl: "https://relay.paddy.systems/pricing",
+      upgradeUrl: "https://relay.acme.example/pricing",
     },
     {
       id: "MIRROR",
@@ -99,7 +99,7 @@ export function AccountPage({
         "Distributed system sync, state mirroring & telemetry pipelines.",
       localFeature: "Full features, local storage only",
       cloudFeature: "Multi-cluster synchronization & cloud storage",
-      upgradeUrl: "https://mirror.paddy.systems/pricing",
+      upgradeUrl: "https://mirror.acme.example/pricing",
     },
     {
       id: "WEARFOLIO",
@@ -107,7 +107,7 @@ export function AccountPage({
       description: "AI-powered wardrobe organization & outfit intelligence.",
       localFeature: "Full features, local catalog & on-device analysis",
       cloudFeature: "Cross-device sync & cloud intelligence",
-      upgradeUrl: "https://wearfolio.paddy.systems",
+      upgradeUrl: "https://wearfolio.acme.example",
     },
   ];
 
@@ -126,7 +126,7 @@ export function AccountPage({
             className="flex items-center gap-2 font-mono text-sm tracking-widest uppercase font-bold text-white hover:opacity-80 transition-opacity"
           >
             <span className="inline-block w-2.5 h-2.5 bg-white" />
-            <span>PADDY.SYSTEMS</span>
+            <span>ACME.EXAMPLE</span>
           </a>
           <span className="text-white/30 font-mono">/</span>
           <span className="font-mono text-xs uppercase tracking-wider text-white/70">
@@ -169,7 +169,7 @@ export function AccountPage({
               </div>
               <div>
                 <h1 className="text-lg font-bold uppercase tracking-tight font-mono">
-                  {user.name || "Paddy Systems User"}
+                  {user.name || "Acme Systems User"}
                 </h1>
                 <p className="text-xs font-mono text-neutral-400 mt-0.5">
                   {user.email}
@@ -320,14 +320,14 @@ export function AccountPage({
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-mono">
             <div className="border border-white/10 p-4 space-y-2 bg-black">
               <span className="text-neutral-400 uppercase text-[10px] tracking-wider block">
-                Relay / Paddy CLI
+                Relay / Acme CLI
               </span>
               <p className="text-neutral-300 text-[11px]">
                 Run the command below in your terminal to authenticate your
                 local machine:
               </p>
               <div className="bg-neutral-900 border border-white/10 p-2.5 text-neutral-200 select-all">
-                <code>paddy login</code>
+                <code>acme login</code>
               </div>
             </div>
 
@@ -336,7 +336,7 @@ export function AccountPage({
                 Android App Pairing
               </span>
               <p className="text-neutral-300 text-[11px]">
-                Open the Paddy Systems or Relay Android app and tap &quot;Sign
+                Open the Acme Systems or Relay Android app and tap &quot;Sign
                 in with Browser&quot; to authorize via your unified account.
               </p>
               <div className="text-[11px] text-emerald-400">
@@ -349,16 +349,16 @@ export function AccountPage({
 
       {/* Footer */}
       <footer className="border-t border-white/10 px-6 py-6 mt-12 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono text-neutral-500">
-        <div>&copy; {new Date().getFullYear()} Paddy Systems Inc.</div>
+        <div>&copy; {new Date().getFullYear()} Acme Systems Inc.</div>
         <div className="flex gap-4">
           <a
-            href="https://paddy.systems"
+            href="https://acme.example"
             className="hover:text-white transition-colors"
           >
             Platform
           </a>
           <a
-            href="https://auth.paddy.systems"
+            href="https://auth.acme.example"
             className="hover:text-white transition-colors"
           >
             Auth Status

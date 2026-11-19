@@ -20,11 +20,11 @@ describe("TASK-125: Remix / React Router v7 Dev Adapter", () => {
 
   it("normalizes CORS headers and exposes Remix redirect headers", () => {
     const adapter = new RemixReactRouterAdapter({
-      relayOrigin: "https://session-1.relay.paddy.systems",
+      relayOrigin: "https://session-1.relay.acme.example",
     });
 
     const headers = adapter.normalizeCorsHeaders(
-      "https://session-1.relay.paddy.systems",
+      "https://session-1.relay.acme.example",
       {
         "content-type": "application/json",
         "x-remix-redirect": "http://localhost:5173/profile",
@@ -32,14 +32,14 @@ describe("TASK-125: Remix / React Router v7 Dev Adapter", () => {
     );
 
     expect(headers["access-control-allow-origin"]).toBe(
-      "https://session-1.relay.paddy.systems",
+      "https://session-1.relay.acme.example",
     );
     expect(headers["access-control-allow-credentials"]).toBe("true");
     expect(headers["access-control-expose-headers"]).toContain(
       "X-Remix-Redirect",
     );
     expect(headers["x-remix-redirect"]).toBe(
-      "https://session-1.relay.paddy.systems/profile",
+      "https://session-1.relay.acme.example/profile",
     );
   });
 

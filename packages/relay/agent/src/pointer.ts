@@ -1,7 +1,7 @@
 import type {
   TouchEventCoordinate,
   TouchTelemetryEvent,
-} from "@paddy-systems/relay-protocol";
+} from "@acme-systems/relay-protocol";
 
 export type TouchCallback = (event: TouchTelemetryEvent) => void;
 

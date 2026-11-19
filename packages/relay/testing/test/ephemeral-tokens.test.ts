@@ -11,13 +11,13 @@ describe("TASK-188: CI Tunnel Ephemeral Token Provisioning & Cleanup", () => {
     // Attempt requesting 10-hour TTL
     const token = manager.mintToken({
       ciRunnerId: "runner-gh-actions-101",
-      repository: "Paddy-Systems/p-s-core",
+      repository: "Acme-Systems/p-s-core",
       prNumber: 42,
       ttlSeconds: 36000,
     });
 
     expect(token.tokenId).toStartWith("ci_tok_");
-    expect(token.repository).toBe("Paddy-Systems/p-s-core");
+    expect(token.repository).toBe("Acme-Systems/p-s-core");
     expect(token.prNumber).toBe(42);
     expect(token.isRevoked).toBe(false);
 
@@ -29,7 +29,7 @@ describe("TASK-188: CI Tunnel Ephemeral Token Provisioning & Cleanup", () => {
   it("registers active tunnel sessions and cleans them up on token revocation", async () => {
     const token = manager.mintToken({
       ciRunnerId: "runner-cleanup-test",
-      repository: "Paddy-Systems/p-s-core",
+      repository: "Acme-Systems/p-s-core",
       ttlSeconds: 600,
     });
 
@@ -68,7 +68,7 @@ describe("TASK-188: CI Tunnel Ephemeral Token Provisioning & Cleanup", () => {
     // Create token with negative/zero TTL to simulate immediate expiration
     const expiredToken = manager.mintToken({
       ciRunnerId: "runner-orphan-sweep",
-      repository: "Paddy-Systems/p-s-core",
+      repository: "Acme-Systems/p-s-core",
       ttlSeconds: 0,
     });
 

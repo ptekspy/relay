@@ -37,7 +37,7 @@ describe("TASK-179: Export Recording to Standalone Self-Contained HTML File", ()
       event: {
         kind: "network",
         method: "POST",
-        url: "https://api.paddy.systems/checkout",
+        url: "https://api.acme.example/checkout",
         status: 502,
         durationMs: 200,
         timestamp: 1720000004000,

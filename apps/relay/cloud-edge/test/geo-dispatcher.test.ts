@@ -7,13 +7,13 @@ describe("TASK-107: Regional Edge Geo-DNS & Low-Latency Dispatcher", () => {
 
     const planGB = dispatcher.dispatchByCountry("GB");
     expect(planGB.targetRegion).toBe("eu-west");
-    expect(planGB.popDomain).toBe("eu-west.relay.paddy.systems");
+    expect(planGB.popDomain).toBe("eu-west.relay.acme.example");
     expect(planGB.estimatedLatencyMs).toBeLessThanOrEqual(50);
     expect(planGB.failoverUsed).toBe(false);
 
     const planJP = dispatcher.dispatchByCountry("JP");
     expect(planJP.targetRegion).toBe("ap-east");
-    expect(planJP.popDomain).toBe("ap-east.relay.paddy.systems");
+    expect(planJP.popDomain).toBe("ap-east.relay.acme.example");
     expect(planJP.failoverUsed).toBe(false);
 
     const planUS = dispatcher.dispatchByCountry("US");

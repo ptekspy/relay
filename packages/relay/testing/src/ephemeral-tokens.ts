@@ -4,7 +4,7 @@
  * Mints short-lived scoped JWT/tokens for CI workflows with strict 2-hour TTL caps
  * and manages automated garbage collection of tunnels and cloud resources on CI completion.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-testing/ephemeral-tokens.
+ * Note for Octavia: Exported from @acme-systems/relay-testing/ephemeral-tokens.
  */
 
 export const MAX_CI_TTL_SECONDS = 7200; // 2 hours hard maximum

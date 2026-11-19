@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Date:** 2026-09-13  
-**Deciders:** Paddy Systems Engineering  
+**Deciders:** Acme Systems Engineering  
 **Technical Area:** Architecture, Security, Business Model
 
 ---

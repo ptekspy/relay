@@ -10,7 +10,7 @@ describe("TASK-103: Automated Let's Encrypt / ACME Dynamic TLS Provisioning", ()
     ).toISOString();
 
     manager.registerCertificate({
-      domain: "*.relay.paddy.systems",
+      domain: "*.relay.acme.example",
       isWildcard: true,
       certPem: "---CERT---",
       keyPem: "---KEY---",
@@ -22,10 +22,10 @@ describe("TASK-103: Automated Let's Encrypt / ACME Dynamic TLS Provisioning", ()
 
     // Subdomain should match wildcard
     const wildcardMatch = manager.getCertificate(
-      "session-999.relay.paddy.systems",
+      "session-999.relay.acme.example",
     );
     expect(wildcardMatch).not.toBeNull();
-    expect(wildcardMatch?.domain).toBe("*.relay.paddy.systems");
+    expect(wildcardMatch?.domain).toBe("*.relay.acme.example");
 
     // Unrelated domain should return null
     expect(manager.getCertificate("custom.example.com")).toBeNull();

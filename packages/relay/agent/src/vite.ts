@@ -13,7 +13,7 @@ export function relayPlugin(options: RelayVitePluginOptions = {}) {
 
       // Inject the relay agent bootstrap script at the top of the body
       const scriptTag = `<script type="module">
-        import { initRelayAgent } from '@paddy-systems/relay-agent';
+        import { initRelayAgent } from '@acme-systems/relay-agent';
         initRelayAgent();
       </script>`;
 

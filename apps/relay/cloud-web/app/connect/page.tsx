@@ -40,7 +40,7 @@ export function ConnectFlow({ isCloudAvailable = true }: ConnectFlowProps) {
   // Connection URL
   const connectionUrl =
     selectedMode === "remote"
-      ? `https://${sessionId}.relay.paddy.systems/?relay_token=${token}`
+      ? `https://${sessionId}.relay.acme.example/?relay_token=${token}`
       : `http://${host}:${gatewayPort}/?relay_token=${token}`;
 
   const handleSelectMode = (mode: "local" | "remote") => {
@@ -146,7 +146,7 @@ export function ConnectFlow({ isCloudAvailable = true }: ConnectFlowProps) {
                 <p className="text-xs text-zinc-400 leading-relaxed">
                   Generate a public or team-locked URL on{" "}
                   <span className="font-mono text-zinc-300">
-                    *.relay.paddy.systems
+                    *.relay.acme.example
                   </span>
                   . Share with external clients, mobile networks, or remote
                   teammates.
@@ -200,7 +200,7 @@ export function ConnectFlow({ isCloudAvailable = true }: ConnectFlowProps) {
                 required
                 value={authEmail}
                 onChange={(e) => setAuthEmail(e.target.value)}
-                placeholder="developer@paddy.systems"
+                placeholder="developer@example.com"
                 className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3.5 py-2.5 text-sm font-sans text-zinc-100 placeholder-zinc-600 focus:outline-hidden focus:border-blue-500"
               />
             </div>

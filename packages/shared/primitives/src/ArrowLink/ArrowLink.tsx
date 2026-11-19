@@ -1,4 +1,4 @@
-import { cn } from "@paddy-systems/lib/cn";
+import { cn } from "@acme-systems/lib/cn";
 import Link from "next/link";
 import type { ReactNode } from "react";
 

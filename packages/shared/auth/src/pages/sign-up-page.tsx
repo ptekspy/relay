@@ -13,7 +13,7 @@ export interface SignUpPageProps {
 
 export function SignUpPage({
   defaultRedirect = "/",
-  productName = "Paddy Systems",
+  productName = "Acme Systems",
   signInUrl = "/login",
 }: SignUpPageProps) {
   const [name, setName] = useState("");
@@ -61,7 +61,7 @@ export function SignUpPage({
   return (
     <AuthLayout
       title="Create Account"
-      subtitle={`Register for a unified Paddy Systems identity across all apps.`}
+      subtitle={`Register for a unified Acme Systems identity across all apps.`}
       productName={productName}
     >
       <div className="space-y-6">
@@ -96,7 +96,7 @@ export function SignUpPage({
               required
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="Patrick Kenneally"
+              placeholder="Alex Example"
               className="w-full bg-black border border-white/15 px-3 py-2 text-sm font-mono text-white placeholder-neutral-600 focus:outline-none focus:border-white transition-colors"
             />
           </div>

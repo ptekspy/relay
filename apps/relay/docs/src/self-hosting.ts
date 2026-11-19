@@ -4,7 +4,7 @@ export class RelaySelfHostingGuide {
 
 services:
   relay-edge:
-    image: ghcr.io/paddy-systems/relay-edge:latest
+    image: ghcr.io/acme-systems/relay-edge:latest
     restart: always
     ports:
       - "80:80"
@@ -49,7 +49,7 @@ spec:
     spec:
       containers:
       - name: gateway
-        image: ghcr.io/paddy-systems/relay-edge:latest
+        image: ghcr.io/acme-systems/relay-edge:latest
         ports:
         - containerPort: 7331
         resources:

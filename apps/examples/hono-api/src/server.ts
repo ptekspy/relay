@@ -1,4 +1,4 @@
-import { HonoRelayAdapter } from "@paddy-systems/relay-integrations";
+import { HonoRelayAdapter } from "@acme-systems/relay-integrations";
 import { Hono } from "hono";
 
 export function buildApp() {

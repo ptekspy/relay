@@ -1,6 +1,6 @@
 # Integrating Relay with Next.js (App & Pages Router)
 
-This guide explains how to pair your local Next.js development server with Paddy Systems Relay for zero-friction mobile testing, real-time telemetry, and viewport testing.
+This guide explains how to pair your local Next.js development server with Acme Systems Relay for zero-friction mobile testing, real-time telemetry, and viewport testing.
 
 ---
 
@@ -25,7 +25,7 @@ Relay detects the running Next.js dev server on port `3000`, generates a secure 
 To capture client-side console logs, network latency, touch coordinates, and uncaught exceptions on mobile devices directly in Relay, install the agent package:
 
 ```bash
-bun add -d @paddy-systems/relay-agent
+bun add -d @acme-systems/relay-agent
 ```
 
 ### App Router Setup (`app/layout.tsx`)
@@ -35,7 +35,7 @@ Add `<RelayAgent />` inside your root layout. It only activates in development m
 ```tsx
 // app/layout.tsx
 import type { Metadata } from "next";
-import { RelayAgent } from "@paddy-systems/relay-agent/react";
+import { RelayAgent } from "@acme-systems/relay-agent/react";
 
 export const metadata: Metadata = {
   title: "My Next.js App",
@@ -62,7 +62,7 @@ export default function RootLayout({
 ```tsx
 // pages/_app.tsx
 import type { AppProps } from "next/app";
-import { RelayAgent } from "@paddy-systems/relay-agent/react";
+import { RelayAgent } from "@acme-systems/relay-agent/react";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (

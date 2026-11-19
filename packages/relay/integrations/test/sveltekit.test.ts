@@ -1,7 +1,7 @@
 import { describe, expect, it } from "bun:test";
 import { relaySvelteKit, SvelteKitRelayBridge } from "../src/sveltekit.js";
 
-describe("TASK-122: SvelteKit Dev Middleware Plugin (@paddy-systems/relay-sveltekit)", () => {
+describe("TASK-122: SvelteKit Dev Middleware Plugin (@acme-systems/relay-sveltekit)", () => {
   it("creates a valid Vite plugin and transforms HTML", () => {
     const plugin = relaySvelteKit({ relayHost: "http://192.168.1.100:7331" });
     expect(plugin.name).toBe("relay-sveltekit");

@@ -1,7 +1,7 @@
 import { afterAll, beforeAll, describe, expect, it } from "bun:test";
 import { createServer } from "node:http";
-import { FastifyRelayAdapter } from "@paddy-systems/relay-integrations";
-import { RelayE2EContractRunner } from "@paddy-systems/relay-testing";
+import { FastifyRelayAdapter } from "@acme-systems/relay-integrations";
+import { RelayE2EContractRunner } from "@acme-systems/relay-testing";
 import type { FastifyInstance } from "fastify";
 import { buildServer } from "../src/server";
 

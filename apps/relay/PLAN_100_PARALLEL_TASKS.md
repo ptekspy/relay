@@ -1,7 +1,7 @@
 # Relay: 100 Parallel Tasks Implementation Plan (Octavia's Track)
 
 > **Roadmap Strategy**: Fully Decoupled & Parallel Ecosystem Workstreams (Engineered for Zero Interference with Sally's Active Runtime Track in [`PLAN_NEXT_100_TASKS.md`](./PLAN_NEXT_100_TASKS.md)).
-> **Assigned Agent**: Octavia Smith (`octavia@paddy.systems`)
+> **Assigned Agent**: Octavia Smith (`octavia@example.com`)
 > **Source of Truth Reference**: [`apps/relay/RELAY_DEVELOPMENT_CHECKLIST.md`](./RELAY_DEVELOPMENT_CHECKLIST.md)
 > **Architectural Standard**: `~/.config/agents/engineering.md`
 
@@ -89,7 +89,7 @@ flowchart TD
 ## Epic 21: Replay & Time-Travel Debugging Engine (`TASK-201` - `TASK-210`)
 
 **Checklist Reference**: Section 8 (*Recording*) & Section 9 (*Replay*)  
-**Target Workspace**: `packages/relay/replay` (`@paddy-systems/relay-replay`)  
+**Target Workspace**: `packages/relay/replay` (`@acme-systems/relay-replay`)  
 **Decoupling Rationale**: Standalone headless replay player and event timeline reconstruction package. Sally's Epic 15 is building interactive DevTools UI inside `cloud-web`/`agent`, but the core deterministic replay engine, event indexing, and time-travel state reducer belong in this dedicated package.
 
 - [x] **TASK-201: Package Initialization & Turbo Integration**
@@ -128,7 +128,7 @@ flowchart TD
 ## Epic 22: Desktop Native Receiver & Multi-Window Shell (`TASK-211` - `TASK-220`)
 
 **Checklist Reference**: Section 5 (*Receiver system - Desktop browser & receiver*), Section 0 (*LOCAL / REMOTE*)  
-**Target Workspace**: `apps/relay/desktop` (`@paddy-systems/relay-desktop`)  
+**Target Workspace**: `apps/relay/desktop` (`@acme-systems/relay-desktop`)  
 **Decoupling Rationale**: Native desktop receiver client. Sally is building `apps/relay/ios` (Epic 12) and `apps/relay/android` (Epic 16). `apps/relay/desktop` provides a dedicated native desktop testing environment with zero collision with mobile apps.
 
 - [x] **TASK-211: Desktop Native App Scaffold (Tauri v2 / TypeScript / Rust Core)**
@@ -167,7 +167,7 @@ flowchart TD
 ## Epic 23: Browser Extension Ecosystem & DevTools Integration (`TASK-221` - `TASK-230`)
 
 **Checklist Reference**: Section 18 (*Browser agent bootstrap - non-intrusive injection*), Section 5 (*Desktop browser*)  
-**Target Workspace**: `apps/relay/extension` (`@paddy-systems/relay-extension`)  
+**Target Workspace**: `apps/relay/extension` (`@acme-systems/relay-extension`)  
 **Decoupling Rationale**: Manifest V3 Web Extension. Runs inside browser extension sandbox, completely isolated from web apps or backend services.
 
 - [x] **TASK-221: Manifest V3 Web Extension Scaffold (Vite + CRXJS + TypeScript)**
@@ -206,7 +206,7 @@ flowchart TD
 ## Epic 24: IDE Extensions & Developer Workflow Tooling (`TASK-231` - `TASK-240`)
 
 **Checklist Reference**: Section 25 (*Developer experience*), Section 17 (*Browser experience*)  
-**Target Workspace**: `apps/relay/vscode` (`@paddy-systems/relay-vscode`)  
+**Target Workspace**: `apps/relay/vscode` (`@acme-systems/relay-vscode`)  
 **Decoupling Rationale**: Visual Studio Code & Cursor extension. Completely isolated workspace using the VS Code Extension API.
 
 **Decoupling Rationale**: VS Code & Cursor IDE extension. Provides editor status bar integration, sidebar device view, and jump-to-source debugging from mobile crash traces without touching Relay server code.
@@ -248,7 +248,7 @@ flowchart TD
 
 **Checklist Reference**: Section 18 (*Agent bootstrap - non-Node stacks*), Section 25 (*DX*)  
 **Target Workspace**: `packages/relay/python` (`relay-sdk` on PyPI)  
-**Decoupling Rationale**: Python package. Pure Python implementation with zero TypeScript or Node dependencies, leveraging Patrick's core Python/Django expertise.
+**Decoupling Rationale**: Python package. Pure Python implementation with zero TypeScript or Node dependencies, leveraging the existing Python/Django expertise.
 
 - [x] **TASK-241: Python Package Scaffold with Hatch & Type Annotations**
   - *Scope*: Initialize `packages/relay/python` with `pyproject.toml`, Hatchling build backend, Ruff linter/formatter, and `py.typed` marker.
@@ -286,7 +286,7 @@ flowchart TD
 ## Epic 26: Terminal UI Component Library (`TASK-251` - `TASK-260`)
 
 **Checklist Reference**: Section 16 (*CLI dashboard*), Section 1 (*Core packages: `relay-cli-ui`*)  
-**Target Workspace**: `packages/relay/cli-ui` (`@paddy-systems/relay-cli-ui`)  
+**Target Workspace**: `packages/relay/cli-ui` (`@acme-systems/relay-cli-ui`)  
 **Decoupling Rationale**: Dedicated reusable TUI component library (explicitly specified in `RELAY_DEVELOPMENT_CHECKLIST.md` line 79). Sally is editing `apps/relay/cli` logic, while `packages/relay/cli-ui` provides isolated presentational terminal components with zero merge conflicts.
 
 - [x] **TASK-251: Package Scaffold & Ink Terminal Component Setup**
@@ -325,7 +325,7 @@ flowchart TD
 ## Epic 27: Synthetic Device Farm Simulator & Chaos Harness (`TASK-261` - `TASK-270`)
 
 **Checklist Reference**: Section 22 (*Performance*), Section 23 (*Network failure testing*)  
-**Target Workspace**: `packages/relay/simulation` (`@paddy-systems/relay-simulation`)  
+**Target Workspace**: `packages/relay/simulation` (`@acme-systems/relay-simulation`)  
 **Decoupling Rationale**: Standalone simulation and load generator. Generates synthetic receiver traffic without modifying edge or API code.
 
 - [x] **TASK-261: Simulation Package Scaffold & CLI Runner (`relay-simulate`)**
@@ -364,7 +364,7 @@ flowchart TD
 ## Epic 28: WebAssembly High-Performance Acceleration (`TASK-271` - `TASK-280`)
 
 **Checklist Reference**: Section 2 (*Protocol reliability - Event compression & serialization*), Section 22 (*Performance*)  
-**Target Workspace**: `packages/relay/wasm` (`@paddy-systems/relay-wasm`)  
+**Target Workspace**: `packages/relay/wasm` (`@acme-systems/relay-wasm`)  
 **Decoupling Rationale**: Rust/WASM module compiled to `.wasm` and ESM wrapper. Self-contained cryptographic and compression routines.
 
 - [x] **TASK-271: Rust WASM Project Scaffold with `wasm-pack` & TypeScript Exports**
@@ -403,7 +403,7 @@ flowchart TD
 ## Epic 29: Security Governance, Attestation & Audit Vault (`TASK-281` - `TASK-290`)
 
 **Checklist Reference**: Section 11 (*Security - Session secrets, audit events*), Section 24 (*Security testing*)  
-**Target Workspace**: `packages/relay/security` (`@paddy-systems/relay-security`)  
+**Target Workspace**: `packages/relay/security` (`@acme-systems/relay-security`)  
 **Decoupling Rationale**: Pure cryptographic verification, audit trail, and zero-trust security library. Independent from database and API routes.
 
 - [x] **TASK-281: Security Package Scaffold & Cryptographic Primitive Exports**
@@ -442,10 +442,10 @@ flowchart TD
 ## Epic 30: Documentation Portal, Spec Explorer & RFC System (`TASK-291` - `TASK-300`)
 
 **Checklist Reference**: Section 26 (*Documentation*), Section 0 (*Product model*)  
-**Target Workspace**: `apps/relay/docs` (`@paddy-systems/relay-docs`)  
+**Target Workspace**: `apps/relay/docs` (`@acme-systems/relay-docs`)  
 **Decoupling Rationale**: Standalone documentation website and API/protocol specifications. Does not touch application code or dependencies.
 
-- [x] **TASK-291: Documentation Site Scaffold (Starlight / Astro with Paddy Systems Branding)**
+- [x] **TASK-291: Documentation Site Scaffold (Starlight / Astro with Acme Systems Branding)**
   - *Scope*: Initialize `apps/relay/docs` using Astro + Starlight, fast static site generation, Algolia / Pagefind search, and dark mode.
   - *Criteria*: Site builds to static HTML/CSS/JS in < 15 seconds; achieves 100/100 Lighthouse performance and accessibility scores.
 - [x] **TASK-292: Interactive Protocol Specification Explorer**

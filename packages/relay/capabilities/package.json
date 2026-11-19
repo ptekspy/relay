@@ -1,5 +1,5 @@
 {
-  "name": "@paddy-systems/relay-capabilities",
+  "name": "@acme-systems/relay-capabilities",
   "version": "0.0.1",
   "private": true,
   "type": "module",
@@ -13,13 +13,14 @@
     "test": "bun test"
   },
   "dependencies": {
-    "@paddy-systems/relay-protocol": "*",
+    "@acme-systems/relay-protocol": "*",
     "zod": "^3.24.2"
   },
   "devDependencies": {
-    "@paddy-systems/typescript-config": "*",
+    "@acme-systems/typescript-config": "*",
     "@types/bun": "latest",
     "@types/node": "^20",
     "typescript": "7.0.2"
-  }
+  },
+  "license": "Apache-2.0"
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@paddy-systems/relay-vscode",
+  "name": "@acme-systems/relay-vscode",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -13,12 +13,13 @@
     "test": "bun test"
   },
   "dependencies": {
-    "@paddy-systems/relay-protocol": "*"
+    "@acme-systems/relay-protocol": "*"
   },
   "devDependencies": {
-    "@paddy-systems/typescript-config": "*",
+    "@acme-systems/typescript-config": "*",
     "@types/bun": "latest",
     "@types/node": "^20",
     "typescript": "7.0.2"
-  }
+  },
+  "license": "Apache-2.0"
 }

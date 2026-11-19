@@ -36,7 +36,7 @@ export class DeviceFlowManager {
   public initiate(
     clientId: string,
     scope = "relay:read relay:write",
-    verificationBaseUri = "https://relay.paddy-systems.com/device",
+    verificationBaseUri = "https://relay.acme.example/device",
   ): DeviceAuthorizationResponse {
     const deviceCode = crypto.randomBytes(32).toString("hex");
     // Generate 8-character user code: XXXX-XXXX (e.g. BCD2-K7L9)

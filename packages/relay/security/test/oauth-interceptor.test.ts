@@ -42,12 +42,12 @@ describe("OAuthStateBridge", () => {
       "https://accounts.google.com/o/oauth2/v2/auth?client_id=test_client&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fapi%2Fauth%2Fcallback&response_type=code&state=client_state_123";
 
     const callbackBridgeUrl =
-      "https://192-168-1-50.lan.paddy.systems:7331/__relay/oauth/callback";
+      "https://192-168-1-50.lan.acme.example:7331/__relay/oauth/callback";
 
     const result = bridge.rewriteOAuthAuthorizationUrl(
       originalUrl,
       callbackBridgeUrl,
-      "https://192-168-1-50.lan.paddy.systems:7331",
+      "https://192-168-1-50.lan.acme.example:7331",
     );
 
     expect(result.state).toBe("client_state_123");
@@ -79,7 +79,7 @@ describe("OAuthStateBridge", () => {
 
     const result = bridge.rewriteOAuthAuthorizationUrl(
       originalUrl,
-      "https://192-168-1-50.lan.paddy.systems:7331/__relay/oauth/callback",
+      "https://192-168-1-50.lan.acme.example:7331/__relay/oauth/callback",
     );
 
     expect(result.state.length).toBeGreaterThanOrEqual(16);
@@ -98,9 +98,9 @@ describe("OAuthStateBridge", () => {
 
     const retargeted = bridge.rewriteSetCookie(
       localhostCookie,
-      "192-168-1-50.lan.paddy.systems",
+      "192-168-1-50.lan.acme.example",
     );
-    expect(retargeted).toContain("Domain=192-168-1-50.lan.paddy.systems");
+    expect(retargeted).toContain("Domain=192-168-1-50.lan.acme.example");
   });
 
   test("forwards OAuth callback to target dev server and returns normalized response", async () => {

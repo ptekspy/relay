@@ -1,7 +1,7 @@
 import { afterAll, beforeAll, describe, expect, it } from "bun:test";
 import { createServer } from "node:http";
-import { NextJsServerActionsNormalizer } from "@paddy-systems/relay-integrations";
-import { RelayE2EContractRunner } from "@paddy-systems/relay-testing";
+import { NextJsServerActionsNormalizer } from "@acme-systems/relay-integrations";
+import { RelayE2EContractRunner } from "@acme-systems/relay-testing";
 
 describe("Next.js 15 App Router & Server Actions Relay E2E Contract", () => {
   let nextServer: ReturnType<typeof createServer>;

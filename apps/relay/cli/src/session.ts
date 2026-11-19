@@ -2,7 +2,7 @@ import crypto from "node:crypto";
 import {
   generateShortCode as generateProtocolShortCode,
   generateSessionToken,
-} from "@paddy-systems/relay-protocol";
+} from "@acme-systems/relay-protocol";
 import QRCode from "qrcode";
 import { RELAY_TOKEN_QUERY } from "./gateway.js";
 

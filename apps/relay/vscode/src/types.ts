@@ -1,5 +1,5 @@
 /**
- * @paddy-systems/relay-vscode
+ * @acme-systems/relay-vscode
  * Types for VS Code & Cursor Extension.
  */
 

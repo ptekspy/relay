@@ -4,7 +4,7 @@ import crypto from "node:crypto";
  * Enterprise SAML 2.0 / OIDC SSO Integration via Logto
  *
  * Configures enterprise identity federation (Okta, Azure AD, Google Workspace)
- * mapping corporate user directories and domains to Paddy Systems team seats.
+ * mapping corporate user directories and domains to Acme Systems team seats.
  *
  * Note for Octavia: Used by the SSO authentication flow in Cloud Web and API.
  */

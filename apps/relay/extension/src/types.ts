@@ -1,5 +1,5 @@
 /**
- * @paddy-systems/relay-extension
+ * @acme-systems/relay-extension
  * Types for Browser Extension and Chrome DevTools Panel Integration.
  */
 

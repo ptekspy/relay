@@ -1,5 +1,5 @@
 {
-  "name": "@paddy-systems/relay-integrations",
+  "name": "@acme-systems/relay-integrations",
   "version": "0.1.0",
   "type": "module",
   "main": "./src/index.ts",
@@ -27,12 +27,13 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "@paddy-systems/relay-protocol": "workspace:*"
+    "@acme-systems/relay-protocol": "workspace:*"
   },
   "devDependencies": {
-    "@paddy-systems/typescript-config": "workspace:*",
+    "@acme-systems/typescript-config": "workspace:*",
     "@types/bun": "^1.2.4",
     "@types/node": "^22.13.8",
     "typescript": "^5.7.3"
-  }
+  },
+  "license": "Apache-2.0"
 }

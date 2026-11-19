@@ -9,7 +9,7 @@
  * Asserts client connections recover gracefully within 2 seconds (< 2000ms)
  * without data corruption or crash loops.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-infra/chaos.
+ * Note for Octavia: Exported from @acme-systems/relay-infra/chaos.
  */
 
 export type ChaosFaultType =

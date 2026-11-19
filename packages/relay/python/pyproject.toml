@@ -1,16 +1,16 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling>=1.27"]
 build-backend = "hatchling.build"
 
 [project]
 name = "relay-sdk"
 version = "0.1.0"
 description = "Official Python & Django SDK for Relay developer pairing and live telemetry"
-readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "MIT" }
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
 authors = [
-    { name = "Paddy Systems", email = "engineering@paddy.systems" }
+    { name = "Acme Systems" }
 ]
 classifiers = [
     "Development Status :: 4 - Beta",

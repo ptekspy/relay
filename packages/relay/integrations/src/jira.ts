@@ -4,7 +4,7 @@
  * Creates Jira Cloud issues (Bug / Task) with Atlassian Document Format (ADF) descriptions,
  * project key selection, and automated Relay replay deep-linking.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-integrations/jira.
+ * Note for Octavia: Exported from @acme-systems/relay-integrations/jira.
  */
 
 export type JiraIssueType = "Bug" | "Task" | "Story" | "Incident";

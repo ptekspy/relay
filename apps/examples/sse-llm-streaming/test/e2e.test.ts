@@ -1,6 +1,6 @@
 import { afterAll, beforeAll, describe, expect, it } from "bun:test";
 import { createServer } from "node:http";
-import { RelayE2EContractRunner } from "@paddy-systems/relay-testing";
+import { RelayE2EContractRunner } from "@acme-systems/relay-testing";
 import { buildSseServer } from "../src/server";
 
 describe("SSE LLM Token Streaming & Relay Integration E2E Contract", () => {

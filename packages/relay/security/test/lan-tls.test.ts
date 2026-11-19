@@ -8,44 +8,44 @@ import {
 } from "../src/lan-tls.js";
 
 describe("LanTls & DNS Architecture", () => {
-  test("encodes IPv4 addresses to *.lan.relay.paddy.systems subdomains", () => {
+  test("encodes IPv4 addresses to *.lan.relay.acme.example subdomains", () => {
     expect(ipToLanDomain("192.168.1.50")).toBe(
-      "192-168-1-50.lan.relay.paddy.systems",
+      "192-168-1-50.lan.relay.acme.example",
     );
     expect(ipToLanDomain("10.0.4.12")).toBe(
-      "10-0-4-12.lan.relay.paddy.systems",
+      "10-0-4-12.lan.relay.acme.example",
     );
     expect(ipToLanDomain("127.0.0.1")).toBe(
-      "127-0-0-1.lan.relay.paddy.systems",
+      "127-0-0-1.lan.relay.acme.example",
     );
   });
 
   test("decodes valid RFC 1918 subdomains to IP addresses", () => {
-    expect(lanDomainToIp("192-168-1-50.lan.relay.paddy.systems")).toBe(
+    expect(lanDomainToIp("192-168-1-50.lan.relay.acme.example")).toBe(
       "192.168.1.50",
     );
-    expect(lanDomainToIp("10-0-4-12.lan.relay.paddy.systems")).toBe(
+    expect(lanDomainToIp("10-0-4-12.lan.relay.acme.example")).toBe(
       "10.0.4.12",
     );
-    expect(lanDomainToIp("172-20-1-1.lan.relay.paddy.systems")).toBe(
+    expect(lanDomainToIp("172-20-1-1.lan.relay.acme.example")).toBe(
       "172.20.1.1",
     );
-    expect(lanDomainToIp("127-0-0-1.lan.relay.paddy.systems")).toBe(
+    expect(lanDomainToIp("127-0-0-1.lan.relay.acme.example")).toBe(
       "127.0.0.1",
     );
   });
 
   test("rejects public IPs and non-RFC 1918 addresses to prevent SSRF and rebinding abuse", () => {
     // Public IPs
-    expect(lanDomainToIp("8-8-8-8.lan.relay.paddy.systems")).toBeNull();
-    expect(lanDomainToIp("1-1-1-1.lan.relay.paddy.systems")).toBeNull();
+    expect(lanDomainToIp("8-8-8-8.lan.relay.acme.example")).toBeNull();
+    expect(lanDomainToIp("1-1-1-1.lan.relay.acme.example")).toBeNull();
 
     // AWS / Cloud Metadata IP
-    expect(lanDomainToIp("169-254-169-254.lan.relay.paddy.systems")).toBeNull();
+    expect(lanDomainToIp("169-254-169-254.lan.relay.acme.example")).toBeNull();
 
     // Non-domain or foreign apex
     expect(lanDomainToIp("192-168-1-1.evil.com")).toBeNull();
-    expect(lanDomainToIp("not-an-ip.lan.relay.paddy.systems")).toBeNull();
+    expect(lanDomainToIp("not-an-ip.lan.relay.acme.example")).toBeNull();
   });
 
   test("detects router DNS rebinding protection via DNS probe", async () => {
@@ -55,7 +55,7 @@ describe("LanTls & DNS Architecture", () => {
       family: 4,
     });
     const successResult = await probeDnsRebinding(
-      "192-168-1-50.lan.relay.paddy.systems",
+      "192-168-1-50.lan.relay.acme.example",
       "192.168.1.50",
       mockSuccessLookup,
     );
@@ -68,7 +68,7 @@ describe("LanTls & DNS Architecture", () => {
       throw err;
     };
     const blockedResult = await probeDnsRebinding(
-      "192-168-1-50.lan.relay.paddy.systems",
+      "192-168-1-50.lan.relay.acme.example",
       "192.168.1.50",
       mockBlockedLookup,
     );
@@ -78,7 +78,7 @@ describe("LanTls & DNS Architecture", () => {
 
   test("provisions high-entropy dev fallback keypair when no cached cert exists", async () => {
     const manager = new LanTlsBundleManager(
-      "lan.relay.paddy.systems",
+      "lan.relay.acme.example",
       "/tmp/non-existent-certs",
     );
     const bundle = await manager.getOrProvisionBundle("192.168.1.50");
@@ -87,7 +87,7 @@ describe("LanTls & DNS Architecture", () => {
         bundle.cert.includes("-----BEGIN PUBLIC KEY-----"),
     ).toBe(true);
     expect(bundle.key).toContain("-----BEGIN PRIVATE KEY-----");
-    expect(bundle.domain).toBe("192-168-1-50.lan.relay.paddy.systems");
+    expect(bundle.domain).toBe("192-168-1-50.lan.relay.acme.example");
     expect(bundle.isTrustedWildcard).toBe(false);
   });
 });

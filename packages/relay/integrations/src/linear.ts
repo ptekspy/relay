@@ -6,7 +6,7 @@ import crypto from "node:crypto";
  * Allows developers to create Linear issues directly from the Relay dashboard
  * or mobile HUD with prepopulated title, formatted device specs, and replay deep links.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-integrations/linear.
+ * Note for Octavia: Exported from @acme-systems/relay-integrations/linear.
  */
 
 export interface LinearDeviceSpecs {
@@ -108,7 +108,7 @@ export class LinearClient {
 
     let issueId = `lin_iss_${crypto.randomBytes(6).toString("hex")}`;
     let identifier = `REL-${Math.floor(100 + Math.random() * 900)}`;
-    let url = `https://linear.app/paddy-systems/issue/${identifier}`;
+    let url = `https://linear.app/acme-systems/issue/${identifier}`;
 
     if (mockTransport) {
       const res = await mockTransport(
@@ -126,7 +126,7 @@ export class LinearClient {
       }
       if (res.data?.identifier && typeof res.data.identifier === "string") {
         identifier = res.data.identifier;
-        url = `https://linear.app/paddy-systems/issue/${identifier}`;
+        url = `https://linear.app/acme-systems/issue/${identifier}`;
       }
     }
 

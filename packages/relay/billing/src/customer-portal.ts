@@ -4,7 +4,7 @@
  * Implements secure customer billing portal sessions via HMAC-SHA256 signed URLs,
  * allowing team owners to update payment methods, download PDF invoices, and adjust seat counts.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-billing/customer-portal.
+ * Note for Octavia: Exported from @acme-systems/relay-billing/customer-portal.
  */
 
 import { createHmac } from "node:crypto";

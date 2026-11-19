@@ -1,4 +1,4 @@
-import type { DomMutationEvent } from "@paddy-systems/relay-protocol";
+import type { DomMutationEvent } from "@acme-systems/relay-protocol";
 import { DomReconstructor } from "./dom-reconstructor.js";
 import type { DomKeyframe, ReplayDomNode } from "./types.js";
 

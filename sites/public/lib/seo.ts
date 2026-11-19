@@ -3,7 +3,7 @@ import type { Thing, WithContext } from "schema-dts";
 
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://relay.live";
-export const SITE_NAME = "Relay — Paddy Systems";
+export const SITE_NAME = "Relay — Acme Systems";
 
 export type JsonLd = WithContext<Thing>;
 
@@ -53,7 +53,7 @@ export function seo({
       card: "summary_large_image",
       title: rawTitle,
       description,
-      site: "@PaddySystems",
+      site: "@AcmeSystems",
       images: [`${SITE_URL}/og-image.png`],
     },
 

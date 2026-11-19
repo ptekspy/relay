@@ -1,7 +1,7 @@
 import { afterAll, beforeAll, describe, expect, it } from "bun:test";
 import { createServer } from "node:http";
-import { GraphQLRelayAdapter } from "@paddy-systems/relay-integrations";
-import { RelayE2EContractRunner } from "@paddy-systems/relay-testing";
+import { GraphQLRelayAdapter } from "@acme-systems/relay-integrations";
+import { RelayE2EContractRunner } from "@acme-systems/relay-testing";
 import { buildYogaServer } from "../src/server";
 
 describe("GraphQL Yoga API & Relay Integration E2E Contract", () => {

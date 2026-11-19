@@ -43,7 +43,7 @@ describe("TASK-190: CI Automation Smoke & Regression Test Suite", () => {
     const tokenManager = new EphemeralTokenManager();
     const token = tokenManager.mintToken({
       ciRunnerId: "ci-job-matrix-ubuntu-24",
-      repository: "Paddy-Systems/p-s-core",
+      repository: "Acme-Systems/p-s-core",
       prNumber: 99,
       ttlSeconds: 1800,
     });
@@ -51,7 +51,7 @@ describe("TASK-190: CI Automation Smoke & Regression Test Suite", () => {
 
     // 2. Register mock active tunnel session
     const sessionId = "ci_sess_smoke_99";
-    const tunnelUrl = `https://${sessionId}.relay.paddy.systems`;
+    const tunnelUrl = `https://${sessionId}.relay.acme.example`;
     tokenManager.registerResource(token.tokenId, sessionId);
 
     // 3. Connect Playwright Driver over data channel

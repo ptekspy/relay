@@ -1,6 +1,6 @@
 # Public website migration
 
-Source: Paddy-Systems/p-s-core
+Source: Original Relay monorepo
 
 Commit: 355dbcb98de14b76531f2a3bbe02c302a80e8340
 

@@ -8,7 +8,7 @@
  * Tracks Error Budget Burn Rates and dispatches PagerDuty incident alerts
  * with automated deduplication and escalation routing.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-infra/slo.
+ * Note for Octavia: Exported from @acme-systems/relay-infra/slo.
  */
 
 export interface ServiceLevelObjective {

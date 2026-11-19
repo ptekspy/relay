@@ -6,7 +6,7 @@ describe("TASK-172: GitHub Issues Integration with Markdown Telemetry Attachment
     const client = new GitHubClient("ghp_test_token_123");
 
     const markdown = client.formatMarkdownBody({
-      owner: "Paddy-Systems",
+      owner: "Acme-Systems",
       repo: "p-s-core",
       title: "Unhandled TypeError in checkout submit",
       body: "User encountered a crash when clicking the pay button.",
@@ -34,7 +34,7 @@ describe("TASK-172: GitHub Issues Integration with Markdown Telemetry Attachment
       ],
       stackTrace:
         "TypeError: Cannot read properties of undefined\n    at onSubmit (checkout.tsx:45)\n    at dispatch (react-dom.js:12)",
-      replayUrl: "https://relay.paddy.systems/replay/rep_test_01",
+      replayUrl: "https://relay.acme.example/replay/rep_test_01",
     });
 
     expect(markdown).toContain("### 📱 Device Telemetry");
@@ -52,7 +52,7 @@ describe("TASK-172: GitHub Issues Integration with Markdown Telemetry Attachment
     expect(markdown).toContain("<details>\n<summary>🐛 Stack Trace</summary>");
     expect(markdown).toContain("checkout.tsx:45");
     expect(markdown).toContain(
-      "https://relay.paddy.systems/replay/rep_test_01",
+      "https://relay.acme.example/replay/rep_test_01",
     );
   });
 
@@ -73,7 +73,7 @@ describe("TASK-172: GitHub Issues Integration with Markdown Telemetry Attachment
         requestedUrl = url;
         requestedBody = body;
         expect(headers.Authorization).toBe("Bearer ghp_valid_token");
-        expect(headers["User-Agent"]).toBe("Paddy-Systems-Relay");
+        expect(headers["User-Agent"]).toBe("Acme-Systems-Relay");
         return {
           status: 201,
           data: {

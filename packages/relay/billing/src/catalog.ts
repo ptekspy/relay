@@ -43,7 +43,7 @@ export const RELAY_PRODUCT_CATALOG: Record<SubscriptionTier, ProductPlan> = {
     features: [
       "Everything in Local",
       "Secure edge remote tunneling (WSS)",
-      "Persistent subdomains (*.relay.paddy.systems)",
+      "Persistent subdomains (*.relay.acme.example)",
       "Up to 2 concurrent remote sessions",
       "7-day session recording retention",
     ],

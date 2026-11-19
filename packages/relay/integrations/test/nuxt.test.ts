@@ -5,10 +5,10 @@ import {
   injectAgentIntoHtml,
 } from "../src/nuxt.js";
 
-describe("TASK-121: Nuxt 3 Relay Module (@paddy-systems/relay-nuxt)", () => {
+describe("TASK-121: Nuxt 3 Relay Module (@acme-systems/relay-nuxt)", () => {
   it("initializes module with sensible defaults and generates pairing URL", () => {
     const mod = defineRelayNuxtModule({ port: 3000 });
-    expect(mod.name).toBe("@paddy-systems/relay-nuxt");
+    expect(mod.name).toBe("@acme-systems/relay-nuxt");
 
     const result = mod.setup({}, {});
     expect(result.isDevOnly).toBe(true);

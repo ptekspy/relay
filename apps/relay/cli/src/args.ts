@@ -27,8 +27,8 @@ Arguments:
 Options:
   --host <ip>             Hosting IP address (valid IPv4 or IPv6)
   --gateway-port <port>   Port for Relay LAN gateway (default: 7331)
-  --https                 Enable trusted local wildcard HTTPS via *.lan.relay.paddy.systems
-  --lan-domain <domain>   Custom LAN wildcard apex domain (default: lan.relay.paddy.systems)
+  --https                 Enable trusted local wildcard HTTPS via *.lan.relay.acme.example
+  --lan-domain <domain>   Custom LAN wildcard apex domain (default: lan.relay.acme.example)
   --no-browser            Continue in CLI without opening browser
   --large-qr              Display high-visibility large QR code for low-grade camera sensors
   -h, --help              Show this help message

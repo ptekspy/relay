@@ -1,4 +1,4 @@
-import { createHealthHandler } from "@paddy-systems/api-core";
+import { createHealthHandler } from "@acme-systems/api-core";
 
 export default createHealthHandler({
   name: "relay-api",

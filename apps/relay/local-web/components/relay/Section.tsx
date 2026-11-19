@@ -1,8 +1,8 @@
-import { cn } from "@paddy-systems/lib/cn";
+import { cn } from "@acme-systems/lib/cn";
 import type { ReactNode } from "react";
 
 /**
- * Numbered section header, carried over from the Paddy Systems system:
+ * Numbered section header, carried over from the Acme Systems system:
  * mono index, rule, then a confident title.
  */
 export function Section({

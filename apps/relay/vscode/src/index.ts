@@ -1,5 +1,5 @@
 /**
- * @paddy-systems/relay-vscode
+ * @acme-systems/relay-vscode
  * VS Code and Cursor Extension Controller.
  */
 

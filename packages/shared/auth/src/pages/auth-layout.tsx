@@ -11,7 +11,7 @@ export function AuthLayout({
   children,
   title,
   subtitle,
-  productName = "Paddy Systems",
+  productName = "Acme Systems",
 }: AuthLayoutProps) {
   return (
     <div className="min-h-screen flex flex-col justify-between bg-black text-white selection:bg-white selection:text-black font-sans antialiased">
@@ -23,9 +23,9 @@ export function AuthLayout({
             className="flex items-center gap-2 font-mono text-sm tracking-widest uppercase font-bold text-white hover:opacity-80 transition-opacity"
           >
             <span className="inline-block w-2.5 h-2.5 bg-white" />
-            <span>PADDY.SYSTEMS</span>
+            <span>ACME.EXAMPLE</span>
           </a>
-          {productName !== "Paddy Systems" && (
+          {productName !== "Acme Systems" && (
             <>
               <span className="text-white/30 font-mono">/</span>
               <span className="font-mono text-xs uppercase tracking-wider text-white/70">
@@ -77,10 +77,10 @@ export function AuthLayout({
 
       {/* Footer */}
       <footer className="border-t border-white/10 px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] font-mono text-neutral-500">
-        <div>&copy; {new Date().getFullYear()} Paddy Systems Inc.</div>
+        <div>&copy; {new Date().getFullYear()} Acme Systems Inc.</div>
         <div className="flex gap-4">
           <a
-            href="https://paddy.systems"
+            href="https://acme.example"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors"
@@ -88,7 +88,7 @@ export function AuthLayout({
             Platform
           </a>
           <a
-            href="https://auth.paddy.systems"
+            href="https://auth.acme.example"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors"

@@ -12,7 +12,7 @@ export const FIVE_MB_LIMIT = 5 * 1024 * 1024; // 5,242,880 bytes
  * Compiles a session recording into a standalone self-contained offline HTML replay file.
  * Requires ZERO internet connectivity, containing full DOM, console, and network scrubbers.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-replay/bundle.
+ * Note for Octavia: Exported from @acme-systems/relay-replay/bundle.
  */
 export function buildStandaloneHtmlReplay(options: BundleOptions): string {
   const { title = "Relay Session Replay", sessionId, events } = options;

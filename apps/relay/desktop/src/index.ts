@@ -1,5 +1,5 @@
 /**
- * @paddy-systems/relay-desktop
+ * @acme-systems/relay-desktop
  * Native Desktop Receiver Shell & Multi-Window Matrix.
  */
 

@@ -1,7 +1,7 @@
 # Relay: Framework Examples, Adapters & E2E Verification Contract Plan
 
-> **Strategic Objective**: Build out the `apps/examples/*` suite, develop missing framework adapters, and establish a standardized, reusable E2E verification test contract (`@paddy-systems/relay-e2e-contract`) that proves Relay works seamlessly across all modern web frameworks, backend APIs, real-time streaming architectures, and non-frontend services without requiring modifications to the user's software.
-> **Assigned Agent**: Sally Smith (`sally@paddy.systems`)
+> **Strategic Objective**: Build out the `apps/examples/*` suite, develop missing framework adapters, and establish a standardized, reusable E2E verification test contract (`@acme-systems/relay-e2e-contract`) that proves Relay works seamlessly across all modern web frameworks, backend APIs, real-time streaming architectures, and non-frontend services without requiring modifications to the user's software.
+> **Assigned Agent**: Sally Smith (`sally@example.com`)
 > **Source of Truth Reference**: [`apps/relay/RELAY_DEVELOPMENT_CHECKLIST.md`](./RELAY_DEVELOPMENT_CHECKLIST.md)
 > **Engineering Philosophy**: `~/.config/agents/engineering.md`
 
@@ -23,11 +23,11 @@ Relay is designed to tunnel, inspect, and enhance **any port** without forcing t
 
 ## 2. Standardized E2E Verification Contract
 
-Instead of ad-hoc, brittle testing per framework, all examples in `apps/examples/*` are validated against a unified, reusable test runner: **`@paddy-systems/relay-e2e-contract`** (in `packages/relay/testing`).
+Instead of ad-hoc, brittle testing per framework, all examples in `apps/examples/*` are validated against a unified, reusable test runner: **`@acme-systems/relay-e2e-contract`** (in `packages/relay/testing`).
 
 ```mermaid
 flowchart TD
-    subgraph E2EHarness ["@paddy-systems/relay-e2e-contract Runner"]
+    subgraph E2EHarness ["@acme-systems/relay-e2e-contract Runner"]
         C1["Contract 1: HTTP & REST Protocol Integrity<br/>(GET/POST/PUT/DELETE, Headers, Cookies, Multiparts)"]
         C2["Contract 2: HTML Streaming & Agent Injection<br/>(Non-destructive injection, zero hydration mismatch)"]
         C3["Contract 3: Bidirectional WebSocket & HMR Tunneling<br/>(Socket upgrades, continuous messaging, auto-reconnect)"]
@@ -65,7 +65,7 @@ Target: `apps/examples/*` using official non-interactive `bunx create-*` scaffol
 | Example Path | Framework / Target | Scaffolding Command / Setup | Key Scenarios Verified |
 | :--- | :--- | :--- | :--- |
 | `apps/examples/nextjs` | **Next.js 15** (App Router, Turbopack) | `bunx create-next-app@latest ...` | Server Actions form submissions, CSRF origin pass-through, Flight RSC streaming, Turbopack HMR. |
-| `apps/examples/nuxt` | **Nuxt 3** (Nitro engine) | `bunx nuxi@latest init ...` | Nitro server proxying, SSR chunked streaming, optional `@paddy-systems/relay-nuxt` hook. |
+| `apps/examples/nuxt` | **Nuxt 3** (Nitro engine) | `bunx nuxi@latest init ...` | Nitro server proxying, SSR chunked streaming, optional `@acme-systems/relay-nuxt` hook. |
 | `apps/examples/sveltekit` | **SvelteKit 2** (Vite) | `bunx create-svelte@latest ...` | Vite dev middleware, HMR bus, SvelteKit form actions over remote tunnel. |
 | `apps/examples/astro` | **Astro 5** (Islands) | `bunx create-astro@latest ...` | Island hydration, multi-page View Transitions, static asset streaming. |
 | `apps/examples/remix` | **React Router v7 / Remix** | `bunx create-react-router@latest ...` | Single-fetch protocol, server loader data prefetching, client route navigation. |
@@ -78,10 +78,10 @@ Target: `apps/examples/*` using official non-interactive `bunx create-*` scaffol
 
 ### B1. Modern Frontend & Full-Stack Web Frameworks
 - **SolidStart** (`apps/examples/solidstart`):
-  - *New Adapter*: `@paddy-systems/relay-integrations/solidstart`
+  - *New Adapter*: `@acme-systems/relay-integrations/solidstart`
   - *Focus*: Vinxi bundler, fine-grained reactive primitives, SSR streaming.
 - **Qwik City** (`apps/examples/qwik`):
-  - *New Adapter*: `@paddy-systems/relay-integrations/qwik`
+  - *New Adapter*: `@acme-systems/relay-integrations/qwik`
   - *Focus*: Resumability, fine-grained serializable closure downloads, prefetch service worker.
 - **Angular 19** (`apps/examples/angular`):
   - *Focus*: Vite/esbuild application builder, zone-less hydration, Server-Sent Events.

@@ -1,5 +1,5 @@
 {
-  "name": "@paddy-systems/relay-api",
+  "name": "@acme-systems/relay-api",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -10,15 +10,16 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "@paddy-systems/api-core": "*",
-    "@paddy-systems/relay-protocol": "*",
+    "@acme-systems/api-core": "*",
+    "@acme-systems/relay-protocol": "*",
     "h3": "^1.15.1",
     "nitropack": "latest"
   },
   "devDependencies": {
-    "@paddy-systems/nitro-config": "*",
-    "@paddy-systems/typescript-config": "*",
+    "@acme-systems/nitro-config": "*",
+    "@acme-systems/typescript-config": "*",
     "typescript": "7.0.2"
   },
-  "packageManager": "bun@1.4.0"
+  "packageManager": "bun@1.4.0",
+  "license": "Apache-2.0"
 }

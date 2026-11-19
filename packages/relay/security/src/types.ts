@@ -1,5 +1,5 @@
 /**
- * @paddy-systems/relay-security
+ * @acme-systems/relay-security
  * Types for security governance, attestation, and cryptographic vault.
  */
 

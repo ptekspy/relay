@@ -1,5 +1,5 @@
 import crypto from "node:crypto";
-import type { SessionId } from "@paddy-systems/relay-protocol";
+import type { SessionId } from "@acme-systems/relay-protocol";
 import type { RelayAuditLogRecord } from "../db/schema.js";
 
 export class AuditLogService {

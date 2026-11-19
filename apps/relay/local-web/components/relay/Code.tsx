@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@paddy-systems/lib/cn";
+import { cn } from "@acme-systems/lib/cn";
 import { type ReactNode, useCallback, useId, useRef, useState } from "react";
 
 type Lang = "bash" | "text" | "ts";

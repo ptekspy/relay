@@ -6,7 +6,7 @@ import crypto from "node:crypto";
  * Packs device model, OS, viewport, DPR, user agent, network type, battery level,
  * recent console errors, and failed network calls into standardized `relay-bug-report.json`.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-integrations/bug-packager.
+ * Note for Octavia: Exported from @acme-systems/relay-integrations/bug-packager.
  */
 
 export interface BugReportDevice {

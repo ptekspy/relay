@@ -1,4 +1,4 @@
-import type { SessionId } from "@paddy-systems/relay-protocol";
+import type { SessionId } from "@acme-systems/relay-protocol";
 
 export type SignalingMessageType = "offer" | "answer" | "ice_candidate";
 

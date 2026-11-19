@@ -2,14 +2,14 @@
 
 **Status:** Accepted  
 **Date:** 2026-09-13  
-**Deciders:** Paddy Systems Engineering  
+**Deciders:** Acme Systems Engineering  
 **Technical Area:** Networking, Serialization, Protocol Design
 
 ---
 
 ## Context and Problem Statement
 
-Paddy Systems Relay multiplexes heterogeneous data streams across a single duplex channel (WebSocket or WebRTC DataChannel):
+Acme Systems Relay multiplexes heterogeneous data streams across a single duplex channel (WebSocket or WebRTC DataChannel):
 1. **Control and Negotiation Signals**: Session handshakes, capability exchange, pairing acknowledgments, error payloads, and viewport dimension updates.
 2. **Text Telemetry**: Console logs, network request/response headers, DOM mutation records, stack traces.
 3. **High-Frequency Binary Streams**: Screen capture frames (WebP/JPEG tiles), pointer micro-coordinates (120Hz touch streams), audio samples, and file assets.

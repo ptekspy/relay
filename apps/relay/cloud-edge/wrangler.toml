@@ -8,6 +8,6 @@ directory = "./.output/public"
 
 # Production custom domain routes on Cloudflare:
 # routes = [
-#   { pattern = "edge.relay.paddy.systems/*", zone_name = "paddy.systems" },
-#   { pattern = "*.relay.paddy.systems/*", zone_name = "paddy.systems" }
+#   { pattern = "edge.relay.acme.example/*", zone_name = "acme.example" },
+#   { pattern = "*.relay.acme.example/*", zone_name = "acme.example" }
 # ]

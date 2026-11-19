@@ -1,7 +1,7 @@
 import { describe, expect, it } from "bun:test";
 import { createServer } from "node:http";
 import type { AddressInfo } from "node:net";
-import { toReceiverId } from "@paddy-systems/relay-protocol";
+import { toReceiverId } from "@acme-systems/relay-protocol";
 import {
   RELAY_COOKIE_NAME,
   RELAY_TOKEN_QUERY,

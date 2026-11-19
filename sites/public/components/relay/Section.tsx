@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { cn } from "@/lib/cn";
 
 /**
- * Numbered section header, carried over from the Paddy Systems system:
+ * Numbered section header, carried over from the Acme Systems system:
  * mono index, rule, then a confident title.
  */
 export function Section({

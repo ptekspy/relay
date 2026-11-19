@@ -7,7 +7,7 @@ export interface UpdateCheckResult {
 
 export async function checkForCliUpdate(
   currentVersion: string,
-  packageName = "@paddy-systems/relay",
+  packageName = "@acme-systems/relay",
   timeoutMs = 1500,
 ): Promise<UpdateCheckResult> {
   const controller = new AbortController();

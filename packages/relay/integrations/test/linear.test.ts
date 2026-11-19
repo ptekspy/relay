@@ -14,14 +14,14 @@ describe("TASK-171: Linear API Integration for Bug Creation", () => {
         viewport: "412x915",
         dpr: 2.625,
       },
-      replayUrl: "https://relay.paddy.systems/replay/rep_9911",
+      replayUrl: "https://relay.acme.example/replay/rep_9911",
       sessionId: "sess_mobile_01",
     });
 
     expect(desc).toContain("Observed unexpected margin-top");
     expect(desc).toContain("Pixel 8");
     expect(desc).toContain("Android 14");
-    expect(desc).toContain("https://relay.paddy.systems/replay/rep_9911");
+    expect(desc).toContain("https://relay.acme.example/replay/rep_9911");
     expect(desc).toContain("sess_mobile_01");
   });
 
@@ -52,7 +52,7 @@ describe("TASK-171: Linear API Integration for Bug Creation", () => {
     const elapsedMs = performance.now() - startTime;
 
     expect(result.identifier).toBe("REL-555");
-    expect(result.url).toBe("https://linear.app/paddy-systems/issue/REL-555");
+    expect(result.url).toBe("https://linear.app/acme-systems/issue/REL-555");
     expect(elapsedMs).toBeLessThan(1000); // Created in < 1 second
   });
 

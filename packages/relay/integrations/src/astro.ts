@@ -37,7 +37,7 @@ export function relayAstro(options: RelayAstroOptions = {}): AstroIntegration {
   const syncVT = options.syncViewTransitions ?? true;
 
   return {
-    name: "@paddy-systems/relay-astro",
+    name: "@acme-systems/relay-astro",
     hooks: {
       "astro:config:setup": ({ injectScript }) => {
         if (!autoInject) return;

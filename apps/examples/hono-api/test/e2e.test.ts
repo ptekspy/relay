@@ -1,8 +1,8 @@
 import { afterAll, beforeAll, describe, expect, it } from "bun:test";
 import { createServer } from "node:http";
 import { serve } from "@hono/node-server";
-import { HonoRelayAdapter } from "@paddy-systems/relay-integrations";
-import { RelayE2EContractRunner } from "@paddy-systems/relay-testing";
+import { HonoRelayAdapter } from "@acme-systems/relay-integrations";
+import { RelayE2EContractRunner } from "@acme-systems/relay-testing";
 import { buildApp } from "../src/server";
 
 describe("Hono Edge & Node API & Relay Integration E2E Contract", () => {

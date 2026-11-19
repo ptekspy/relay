@@ -13,7 +13,7 @@ import { seo } from "@/lib/seo";
 export const metadata: Metadata = seo({
   title: "Relay — run your local dev server on another device",
   description:
-    "Start your app, run one Relay command, pair a device with a short access code, or QR code. Relay Local is free forever. From Paddy Systems.",
+    "Start your app, run one Relay command, pair a device with a short access code, or QR code. Relay Local is free forever. From Acme Systems.",
   path: "/",
 });
 
@@ -452,7 +452,7 @@ export default function Home() {
           </Reveal>
           <div className="mt-10 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <p className="label max-w-[40ch] text-foreground/70">
-              Relay Local — free forever · Paddy Systems
+              Relay Local — free forever · Acme Systems
             </p>
             <InstallCommand className="w-full md:max-w-xl" />
           </div>

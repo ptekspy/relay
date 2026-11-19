@@ -1,5 +1,5 @@
 /**
- * @paddy-systems/relay-extension
+ * @acme-systems/relay-extension
  * Browser Extension & DevTools Panel Controller.
  */
 

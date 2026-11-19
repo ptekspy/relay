@@ -1,7 +1,7 @@
 import { afterAll, beforeAll, describe, expect, it } from "bun:test";
 import { createServer } from "node:http";
-import { defineRelayNuxtModule } from "@paddy-systems/relay-integrations";
-import { RelayE2EContractRunner } from "@paddy-systems/relay-testing";
+import { defineRelayNuxtModule } from "@acme-systems/relay-integrations";
+import { RelayE2EContractRunner } from "@acme-systems/relay-testing";
 
 describe("Nuxt 3 Nitro & Relay Integration E2E Contract", () => {
   let nuxtServer: ReturnType<typeof createServer>;

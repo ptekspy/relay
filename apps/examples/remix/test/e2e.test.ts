@@ -1,7 +1,7 @@
 import { afterAll, beforeAll, describe, expect, it } from "bun:test";
 import { createServer } from "node:http";
-import { RemixReactRouterAdapter } from "@paddy-systems/relay-integrations";
-import { RelayE2EContractRunner } from "@paddy-systems/relay-testing";
+import { RemixReactRouterAdapter } from "@acme-systems/relay-integrations";
+import { RelayE2EContractRunner } from "@acme-systems/relay-testing";
 
 describe("Remix / React Router v7 & Relay Integration E2E Contract", () => {
   let remixServer: ReturnType<typeof createServer>;

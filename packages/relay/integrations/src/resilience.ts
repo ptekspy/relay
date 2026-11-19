@@ -5,7 +5,7 @@
  * for Linear, GitHub, and Jira API integrations when confronting HTTP 429 (rate-limit)
  * or HTTP 500/502/503/504 server errors, preventing ticket submission data loss.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-integrations/resilience.
+ * Note for Octavia: Exported from @acme-systems/relay-integrations/resilience.
  */
 
 export interface RetryPolicy {

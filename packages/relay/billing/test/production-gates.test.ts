@@ -113,14 +113,14 @@ describe("Multi-Tenancy, Observability & Production Release Gates (Epic 10)", ()
   it("redacts sensitive authentication tokens and secrets in structured JSON logs (TASK-095)", () => {
     const logger = new StructuredLogger("corr_test_99");
     const entry = logger.log("info", "User attempted login", {
-      username: "paddy",
+      username: "acme",
       password: "SuperSecretPassword!",
       bearerToken: "Bearer abc123xyz",
       cookieHeader: "session_id=foo123",
     });
 
     expect(entry.correlationId).toBe("corr_test_99");
-    expect(entry.context?.username).toBe("paddy");
+    expect(entry.context?.username).toBe("acme");
     expect(entry.context?.password).toBe("[REDACTED]");
     expect(entry.context?.bearerToken).toBe("[REDACTED]");
     expect(entry.context?.cookieHeader).toBe("[REDACTED]");

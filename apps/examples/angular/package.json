@@ -1,5 +1,5 @@
 {
-  "name": "@paddy-systems/example-angular",
+  "name": "@acme-systems/example-angular",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -7,9 +7,10 @@
     "test:e2e": "bun test test/e2e.test.ts"
   },
   "devDependencies": {
-    "@paddy-systems/relay-integrations": "workspace:*",
-    "@paddy-systems/relay-testing": "workspace:*",
+    "@acme-systems/relay-integrations": "workspace:*",
+    "@acme-systems/relay-testing": "workspace:*",
     "@types/node": "^22.0.0",
     "typescript": "7.0.2"
-  }
+  },
+  "license": "Apache-2.0"
 }

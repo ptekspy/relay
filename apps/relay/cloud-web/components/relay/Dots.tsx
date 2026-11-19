@@ -1,4 +1,4 @@
-import { cn } from "@paddy-systems/lib/cn";
+import { cn } from "@acme-systems/lib/cn";
 
 type DotsProps = {
   /** Layout of the three-dot relay mark. */

@@ -1,4 +1,4 @@
-package com.paddysystems.relay
+package com.acmesystems.relay
 
 import android.app.Notification
 import android.app.NotificationChannel

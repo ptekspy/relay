@@ -13,80 +13,80 @@
       },
     },
     "apps/examples/angular": {
-      "name": "@paddy-systems/example-angular",
+      "name": "@acme-systems/example-angular",
       "version": "1.0.0",
       "devDependencies": {
-        "@paddy-systems/relay-integrations": "workspace:*",
-        "@paddy-systems/relay-testing": "workspace:*",
+        "@acme-systems/relay-integrations": "workspace:*",
+        "@acme-systems/relay-testing": "workspace:*",
         "@types/node": "^22.0.0",
         "typescript": "7.0.2",
       },
     },
     "apps/examples/astro": {
-      "name": "@paddy-systems/example-astro",
+      "name": "@acme-systems/example-astro",
       "version": "0.0.1",
       "dependencies": {
         "astro": "^7.3.2",
       },
       "devDependencies": {
-        "@paddy-systems/relay-integrations": "workspace:*",
-        "@paddy-systems/relay-testing": "workspace:*",
+        "@acme-systems/relay-integrations": "workspace:*",
+        "@acme-systems/relay-testing": "workspace:*",
       },
     },
     "apps/examples/docker": {
-      "name": "@paddy-systems/example-docker-service",
+      "name": "@acme-systems/example-docker-service",
       "version": "1.0.0",
       "devDependencies": {
-        "@paddy-systems/relay-integrations": "workspace:*",
-        "@paddy-systems/relay-testing": "workspace:*",
+        "@acme-systems/relay-integrations": "workspace:*",
+        "@acme-systems/relay-testing": "workspace:*",
         "@types/bun": "^1.2.0",
         "@types/node": "^22.0.0",
         "typescript": "7.0.2",
       },
     },
     "apps/examples/fastify-api": {
-      "name": "@paddy-systems/example-fastify-api",
+      "name": "@acme-systems/example-fastify-api",
       "version": "1.0.0",
       "dependencies": {
         "fastify": "^5.2.1",
       },
       "devDependencies": {
-        "@paddy-systems/relay-integrations": "workspace:*",
-        "@paddy-systems/relay-testing": "workspace:*",
+        "@acme-systems/relay-integrations": "workspace:*",
+        "@acme-systems/relay-testing": "workspace:*",
         "@types/node": "^22.0.0",
         "typescript": "7.0.2",
       },
     },
     "apps/examples/graphql-yoga": {
-      "name": "@paddy-systems/example-graphql-yoga",
+      "name": "@acme-systems/example-graphql-yoga",
       "version": "1.0.0",
       "dependencies": {
         "graphql": "^16.10.0",
         "graphql-yoga": "^5.13.1",
       },
       "devDependencies": {
-        "@paddy-systems/relay-integrations": "workspace:*",
-        "@paddy-systems/relay-testing": "workspace:*",
+        "@acme-systems/relay-integrations": "workspace:*",
+        "@acme-systems/relay-testing": "workspace:*",
         "@types/node": "^22.0.0",
         "typescript": "7.0.2",
       },
     },
     "apps/examples/hono-api": {
-      "name": "@paddy-systems/example-hono-api",
+      "name": "@acme-systems/example-hono-api",
       "version": "1.0.0",
       "dependencies": {
         "@hono/node-server": "^1.13.8",
         "hono": "^4.7.2",
       },
       "devDependencies": {
-        "@paddy-systems/relay-integrations": "workspace:*",
-        "@paddy-systems/relay-testing": "workspace:*",
+        "@acme-systems/relay-integrations": "workspace:*",
+        "@acme-systems/relay-testing": "workspace:*",
         "@types/node": "^22.0.0",
         "typescript": "7.0.2",
       },
     },
     "apps/examples/nestjs-api": {
-      "name": "@paddy-systems/example-nestjs-api",
+      "name": "@acme-systems/example-nestjs-api",
       "version": "1.0.0",
       "dependencies": {
         "@nestjs/common": "^11.0.11",
@@ -96,8 +96,8 @@
         "rxjs": "^7.8.2",
       },
       "devDependencies": {
-        "@paddy-systems/relay-integrations": "workspace:*",
-        "@paddy-systems/relay-testing": "workspace:*",
+        "@acme-systems/relay-integrations": "workspace:*",
+        "@acme-systems/relay-testing": "workspace:*",
         "@types/express": "^5.0.0",
         "@types/node": "^22.0.0",
         "typescript": "7.0.2",
@@ -113,8 +113,8 @@
       },
       "devDependencies": {
         "@biomejs/biome": "2.4.2",
-        "@paddy-systems/relay-integrations": "workspace:*",
-        "@paddy-systems/relay-testing": "workspace:*",
+        "@acme-systems/relay-integrations": "workspace:*",
+        "@acme-systems/relay-testing": "workspace:*",
         "@tailwindcss/postcss": "^4",
         "@types/node": "^20",
         "@types/react": "^19",
@@ -124,42 +124,42 @@
       },
     },
     "apps/examples/nuxt": {
-      "name": "@paddy-systems/example-nuxt",
+      "name": "@acme-systems/example-nuxt",
       "dependencies": {
         "nuxt": "^4.5.2",
         "vue": "^3.5.42",
         "vue-router": "^5.3.1",
       },
       "devDependencies": {
-        "@paddy-systems/relay-integrations": "workspace:*",
-        "@paddy-systems/relay-testing": "workspace:*",
+        "@acme-systems/relay-integrations": "workspace:*",
+        "@acme-systems/relay-testing": "workspace:*",
       },
     },
     "apps/examples/python-fastapi": {
-      "name": "@paddy-systems/example-python-fastapi",
+      "name": "@acme-systems/example-python-fastapi",
       "version": "1.0.0",
       "devDependencies": {
-        "@paddy-systems/relay-integrations": "workspace:*",
-        "@paddy-systems/relay-testing": "workspace:*",
+        "@acme-systems/relay-integrations": "workspace:*",
+        "@acme-systems/relay-testing": "workspace:*",
         "@types/node": "^22.0.0",
         "typescript": "7.0.2",
       },
     },
     "apps/examples/qwik": {
-      "name": "@paddy-systems/example-qwik",
+      "name": "@acme-systems/example-qwik",
       "version": "1.0.0",
       "dependencies": {
         "@builder.io/qwik": "^1.12.0",
       },
       "devDependencies": {
-        "@paddy-systems/relay-integrations": "workspace:*",
-        "@paddy-systems/relay-testing": "workspace:*",
+        "@acme-systems/relay-integrations": "workspace:*",
+        "@acme-systems/relay-testing": "workspace:*",
         "@types/node": "^22.0.0",
         "typescript": "7.0.2",
       },
     },
     "apps/examples/remix": {
-      "name": "@paddy-systems/example-remix",
+      "name": "@acme-systems/example-remix",
       "dependencies": {
         "@react-router/node": "^8",
         "@react-router/serve": "^8",
@@ -169,8 +169,8 @@
         "react-router": "^8",
       },
       "devDependencies": {
-        "@paddy-systems/relay-integrations": "workspace:*",
-        "@paddy-systems/relay-testing": "workspace:*",
+        "@acme-systems/relay-integrations": "workspace:*",
+        "@acme-systems/relay-testing": "workspace:*",
         "@react-router/dev": "^8",
         "@tailwindcss/vite": "^4.2.2",
         "@types/node": "^22",
@@ -182,48 +182,48 @@
       },
     },
     "apps/examples/socket-io": {
-      "name": "@paddy-systems/example-socket-io",
+      "name": "@acme-systems/example-socket-io",
       "version": "1.0.0",
       "dependencies": {
         "socket.io": "^4.8.1",
         "socket.io-client": "^4.8.1",
       },
       "devDependencies": {
-        "@paddy-systems/relay-integrations": "workspace:*",
-        "@paddy-systems/relay-testing": "workspace:*",
+        "@acme-systems/relay-integrations": "workspace:*",
+        "@acme-systems/relay-testing": "workspace:*",
         "@types/node": "^22.0.0",
         "typescript": "7.0.2",
       },
     },
     "apps/examples/solidstart": {
-      "name": "@paddy-systems/example-solidstart",
+      "name": "@acme-systems/example-solidstart",
       "version": "1.0.0",
       "dependencies": {
         "solid-js": "^1.9.5",
       },
       "devDependencies": {
-        "@paddy-systems/relay-integrations": "workspace:*",
-        "@paddy-systems/relay-testing": "workspace:*",
+        "@acme-systems/relay-integrations": "workspace:*",
+        "@acme-systems/relay-testing": "workspace:*",
         "@types/node": "^22.0.0",
         "typescript": "7.0.2",
       },
     },
     "apps/examples/sse-llm-streaming": {
-      "name": "@paddy-systems/example-sse-llm-streaming",
+      "name": "@acme-systems/example-sse-llm-streaming",
       "version": "1.0.0",
       "devDependencies": {
-        "@paddy-systems/relay-integrations": "workspace:*",
-        "@paddy-systems/relay-testing": "workspace:*",
+        "@acme-systems/relay-integrations": "workspace:*",
+        "@acme-systems/relay-testing": "workspace:*",
         "@types/node": "^22.0.0",
         "typescript": "7.0.2",
       },
     },
     "apps/examples/sveltekit": {
-      "name": "@paddy-systems/example-sveltekit",
+      "name": "@acme-systems/example-sveltekit",
       "version": "0.0.1",
       "devDependencies": {
-        "@paddy-systems/relay-integrations": "workspace:*",
-        "@paddy-systems/relay-testing": "workspace:*",
+        "@acme-systems/relay-integrations": "workspace:*",
+        "@acme-systems/relay-testing": "workspace:*",
         "@sveltejs/adapter-auto": "^7.0.1",
         "@sveltejs/kit": "^2.63.0",
         "@sveltejs/vite-plugin-svelte": "^7.1.2",
@@ -234,25 +234,25 @@
       },
     },
     "apps/examples/tanstack-start": {
-      "name": "@paddy-systems/example-tanstack-start",
+      "name": "@acme-systems/example-tanstack-start",
       "version": "1.0.0",
       "devDependencies": {
-        "@paddy-systems/relay-integrations": "workspace:*",
-        "@paddy-systems/relay-testing": "workspace:*",
+        "@acme-systems/relay-integrations": "workspace:*",
+        "@acme-systems/relay-testing": "workspace:*",
         "@types/node": "^22.0.0",
         "typescript": "7.0.2",
       },
     },
     "apps/examples/webpack-spa": {
-      "name": "@paddy-systems/example-webpack-spa",
+      "name": "@acme-systems/example-webpack-spa",
       "version": "1.0.0",
       "dependencies": {
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
       },
       "devDependencies": {
-        "@paddy-systems/relay-integrations": "workspace:*",
-        "@paddy-systems/relay-testing": "workspace:*",
+        "@acme-systems/relay-integrations": "workspace:*",
+        "@acme-systems/relay-testing": "workspace:*",
         "@types/node": "^22.0.0",
         "@types/react": "^19.0.0",
         "@types/react-dom": "^19.0.0",
@@ -264,34 +264,34 @@
       },
     },
     "apps/relay/api": {
-      "name": "@paddy-systems/relay-api",
+      "name": "@acme-systems/relay-api",
       "version": "0.0.0",
       "dependencies": {
-        "@paddy-systems/api-core": "*",
-        "@paddy-systems/relay-protocol": "*",
+        "@acme-systems/api-core": "*",
+        "@acme-systems/relay-protocol": "*",
         "h3": "^1.15.1",
         "nitropack": "latest",
       },
       "devDependencies": {
-        "@paddy-systems/nitro-config": "*",
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/nitro-config": "*",
+        "@acme-systems/typescript-config": "*",
         "typescript": "7.0.2",
       },
     },
     "apps/relay/cli": {
-      "name": "@paddy-systems/relay-cli",
+      "name": "@acme-systems/relay-cli",
       "version": "0.0.1",
       "bin": {
         "relay": "./src/main.tsx",
       },
       "dependencies": {
-        "@paddy-systems/feature-flags": "*",
-        "@paddy-systems/lib": "*",
-        "@paddy-systems/relay-protocol": "*",
-        "@paddy-systems/relay-recording": "*",
-        "@paddy-systems/relay-replay": "*",
-        "@paddy-systems/relay-security": "*",
-        "@paddy-systems/shared-primitives": "*",
+        "@acme-systems/feature-flags": "*",
+        "@acme-systems/lib": "*",
+        "@acme-systems/relay-protocol": "*",
+        "@acme-systems/relay-recording": "*",
+        "@acme-systems/relay-replay": "*",
+        "@acme-systems/relay-security": "*",
+        "@acme-systems/shared-primitives": "*",
         "ink": "7.1.1",
         "is-online": "^12.0.2",
         "open": "^11.0.3",
@@ -300,8 +300,8 @@
       },
       "devDependencies": {
         "@biomejs/biome": "2.5.13",
-        "@paddy-systems/env": "*",
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/env": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/node": "^20",
         "@types/qrcode": "^1.5.6",
         "@types/react": "19.3.0",
@@ -309,34 +309,34 @@
       },
     },
     "apps/relay/cloud-edge": {
-      "name": "@paddy-systems/relay-cloud-edge",
+      "name": "@acme-systems/relay-cloud-edge",
       "version": "0.0.1",
       "dependencies": {
-        "@paddy-systems/api-core": "*",
-        "@paddy-systems/relay-protocol": "*",
-        "@paddy-systems/relay-transport": "*",
+        "@acme-systems/api-core": "*",
+        "@acme-systems/relay-protocol": "*",
+        "@acme-systems/relay-transport": "*",
         "h3": "^1.15.1",
         "nitropack": "latest",
       },
       "devDependencies": {
-        "@paddy-systems/nitro-config": "*",
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/nitro-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/bun": "latest",
         "@types/node": "^20",
         "typescript": "7.0.2",
       },
     },
     "apps/relay/cloud-web": {
-      "name": "@paddy-systems/relay-cloud-web",
+      "name": "@acme-systems/relay-cloud-web",
       "version": "0.1.0",
       "dependencies": {
-        "@paddy-systems/auth": "*",
-        "@paddy-systems/feature-flags": "*",
-        "@paddy-systems/lib": "*",
-        "@paddy-systems/relay-protocol": "*",
-        "@paddy-systems/relay-recording": "*",
-        "@paddy-systems/relay-replay": "*",
-        "@paddy-systems/shared-primitives": "*",
+        "@acme-systems/auth": "*",
+        "@acme-systems/feature-flags": "*",
+        "@acme-systems/lib": "*",
+        "@acme-systems/relay-protocol": "*",
+        "@acme-systems/relay-recording": "*",
+        "@acme-systems/relay-replay": "*",
+        "@acme-systems/shared-primitives": "*",
         "@tanstack/react-query": "^5.102.8",
         "clsx": "^2.1.1",
         "next": "16.3.5",
@@ -348,8 +348,8 @@
       },
       "devDependencies": {
         "@biomejs/biome": "2.5.13",
-        "@paddy-systems/env": "*",
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/env": "*",
+        "@acme-systems/typescript-config": "*",
         "@tailwindcss/postcss": "4.3.3",
         "@types/node": "^20",
         "@types/react": "19.3.0",
@@ -359,51 +359,51 @@
       },
     },
     "apps/relay/desktop": {
-      "name": "@paddy-systems/relay-desktop",
+      "name": "@acme-systems/relay-desktop",
       "version": "0.1.0",
       "dependencies": {
-        "@paddy-systems/relay-protocol": "*",
+        "@acme-systems/relay-protocol": "*",
       },
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/bun": "latest",
         "@types/node": "^20",
         "typescript": "7.0.2",
       },
     },
     "apps/relay/docs": {
-      "name": "@paddy-systems/relay-docs",
+      "name": "@acme-systems/relay-docs",
       "version": "0.1.0",
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/bun": "latest",
         "@types/node": "^20",
         "typescript": "7.0.2",
       },
     },
     "apps/relay/extension": {
-      "name": "@paddy-systems/relay-extension",
+      "name": "@acme-systems/relay-extension",
       "version": "0.1.0",
       "dependencies": {
-        "@paddy-systems/relay-protocol": "*",
+        "@acme-systems/relay-protocol": "*",
       },
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/bun": "latest",
         "@types/node": "^20",
         "typescript": "7.0.2",
       },
     },
     "apps/relay/local-web": {
-      "name": "@paddy-systems/relay-local-web",
+      "name": "@acme-systems/relay-local-web",
       "version": "0.1.0",
       "dependencies": {
-        "@paddy-systems/feature-flags": "*",
-        "@paddy-systems/lib": "*",
-        "@paddy-systems/relay-protocol": "*",
-        "@paddy-systems/relay-recording": "*",
-        "@paddy-systems/relay-replay": "*",
-        "@paddy-systems/shared-primitives": "*",
+        "@acme-systems/feature-flags": "*",
+        "@acme-systems/lib": "*",
+        "@acme-systems/relay-protocol": "*",
+        "@acme-systems/relay-recording": "*",
+        "@acme-systems/relay-replay": "*",
+        "@acme-systems/shared-primitives": "*",
         "@tanstack/react-query": "^5.102.8",
         "clsx": "^2.1.1",
         "next": "16.3.5",
@@ -415,8 +415,8 @@
       },
       "devDependencies": {
         "@biomejs/biome": "2.5.13",
-        "@paddy-systems/env": "*",
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/env": "*",
+        "@acme-systems/typescript-config": "*",
         "@tailwindcss/postcss": "4.3.3",
         "@types/node": "^20",
         "@types/react": "19.3.0",
@@ -426,72 +426,72 @@
       },
     },
     "apps/relay/vscode": {
-      "name": "@paddy-systems/relay-vscode",
+      "name": "@acme-systems/relay-vscode",
       "version": "0.1.0",
       "dependencies": {
-        "@paddy-systems/relay-protocol": "*",
+        "@acme-systems/relay-protocol": "*",
       },
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/bun": "latest",
         "@types/node": "^20",
         "typescript": "7.0.2",
       },
     },
     "packages/api-core": {
-      "name": "@paddy-systems/api-core",
+      "name": "@acme-systems/api-core",
       "version": "0.0.0",
       "dependencies": {
         "h3": "latest",
       },
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "typescript": "7.0.2",
         "vitest": "^4",
       },
     },
     "packages/database": {
-      "name": "@paddy-systems/database",
+      "name": "@acme-systems/database",
       "version": "0.0.0",
       "dependencies": {
         "@prisma/client": "^6.4.1",
       },
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/node": "^20.17.24",
         "prisma": "^6.4.1",
         "typescript": "7.0.2",
       },
     },
     "packages/env": {
-      "name": "@paddy-systems/env",
+      "name": "@acme-systems/env",
       "version": "0.0.0",
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/node": "26.4.1",
         "typescript": "7.0.2",
       },
     },
     "packages/nitro-config": {
-      "name": "@paddy-systems/nitro-config",
+      "name": "@acme-systems/nitro-config",
       "version": "0.0.0",
       "dependencies": {
         "nitropack": "latest",
       },
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "typescript": "7.0.2",
         "vitest": "^4",
       },
     },
     "packages/relay/agent": {
-      "name": "@paddy-systems/relay-agent",
+      "name": "@acme-systems/relay-agent",
       "version": "0.0.1",
       "dependencies": {
-        "@paddy-systems/relay-protocol": "*",
+        "@acme-systems/relay-protocol": "*",
       },
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/bun": "latest",
         "@types/node": "^20",
         "@types/react": "19.3.0",
@@ -500,202 +500,202 @@
       },
     },
     "packages/relay/billing": {
-      "name": "@paddy-systems/relay-billing",
+      "name": "@acme-systems/relay-billing",
       "version": "0.0.1",
       "dependencies": {
         "zod": "^3.24.2",
       },
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/bun": "latest",
         "@types/node": "^20",
         "typescript": "7.0.2",
       },
     },
     "packages/relay/capabilities": {
-      "name": "@paddy-systems/relay-capabilities",
+      "name": "@acme-systems/relay-capabilities",
       "version": "0.0.1",
       "dependencies": {
-        "@paddy-systems/relay-protocol": "*",
+        "@acme-systems/relay-protocol": "*",
         "zod": "^3.24.2",
       },
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/bun": "latest",
         "@types/node": "^20",
         "typescript": "7.0.2",
       },
     },
     "packages/relay/cli-ui": {
-      "name": "@paddy-systems/relay-cli-ui",
+      "name": "@acme-systems/relay-cli-ui",
       "version": "0.1.0",
       "dependencies": {
-        "@paddy-systems/relay-protocol": "*",
+        "@acme-systems/relay-protocol": "*",
       },
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/bun": "latest",
         "@types/node": "^20",
         "typescript": "7.0.2",
       },
     },
     "packages/relay/infra": {
-      "name": "@paddy-systems/relay-infra",
+      "name": "@acme-systems/relay-infra",
       "version": "0.0.1",
       "dependencies": {
-        "@paddy-systems/relay-protocol": "*",
+        "@acme-systems/relay-protocol": "*",
       },
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/bun": "latest",
         "@types/node": "^20",
         "typescript": "7.0.2",
       },
     },
     "packages/relay/integrations": {
-      "name": "@paddy-systems/relay-integrations",
+      "name": "@acme-systems/relay-integrations",
       "version": "0.1.0",
       "dependencies": {
-        "@paddy-systems/relay-protocol": "workspace:*",
+        "@acme-systems/relay-protocol": "workspace:*",
       },
       "devDependencies": {
-        "@paddy-systems/typescript-config": "workspace:*",
+        "@acme-systems/typescript-config": "workspace:*",
         "@types/bun": "^1.2.4",
         "@types/node": "^22.13.8",
         "typescript": "^5.7.3",
       },
     },
     "packages/relay/media": {
-      "name": "@paddy-systems/relay-media",
+      "name": "@acme-systems/relay-media",
       "version": "0.1.0",
       "dependencies": {
-        "@paddy-systems/relay-protocol": "*",
+        "@acme-systems/relay-protocol": "*",
       },
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/bun": "latest",
         "@types/node": "^20",
         "typescript": "7.0.2",
       },
     },
     "packages/relay/protocol": {
-      "name": "@paddy-systems/relay-protocol",
+      "name": "@acme-systems/relay-protocol",
       "version": "0.0.1",
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/bun": "latest",
         "@types/node": "^20",
         "typescript": "7.0.2",
       },
     },
     "packages/relay/python": {
-      "name": "@paddy-systems/relay-python",
+      "name": "@acme-systems/relay-python",
       "version": "0.1.0",
       "dependencies": {
-        "@paddy-systems/relay-protocol": "*",
+        "@acme-systems/relay-protocol": "*",
       },
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/bun": "latest",
         "@types/node": "^20",
         "typescript": "7.0.2",
       },
     },
     "packages/relay/recording": {
-      "name": "@paddy-systems/relay-recording",
+      "name": "@acme-systems/relay-recording",
       "version": "0.1.0",
       "dependencies": {
-        "@paddy-systems/relay-protocol": "*",
+        "@acme-systems/relay-protocol": "*",
       },
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/bun": "latest",
         "@types/node": "^20",
         "typescript": "7.0.2",
       },
     },
     "packages/relay/replay": {
-      "name": "@paddy-systems/relay-replay",
+      "name": "@acme-systems/relay-replay",
       "version": "0.1.0",
       "dependencies": {
-        "@paddy-systems/relay-protocol": "*",
-        "@paddy-systems/relay-recording": "*",
+        "@acme-systems/relay-protocol": "*",
+        "@acme-systems/relay-recording": "*",
       },
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/bun": "latest",
         "@types/node": "^20",
         "typescript": "7.0.2",
       },
     },
     "packages/relay/security": {
-      "name": "@paddy-systems/relay-security",
+      "name": "@acme-systems/relay-security",
       "version": "0.1.0",
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/bun": "latest",
         "@types/node": "^20",
         "typescript": "7.0.2",
       },
     },
     "packages/relay/simulation": {
-      "name": "@paddy-systems/relay-simulation",
+      "name": "@acme-systems/relay-simulation",
       "version": "0.1.0",
       "bin": {
         "relay-simulate": "./src/runner.js",
       },
       "dependencies": {
-        "@paddy-systems/relay-protocol": "*",
+        "@acme-systems/relay-protocol": "*",
       },
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/bun": "latest",
         "@types/node": "^20",
         "typescript": "7.0.2",
       },
     },
     "packages/relay/testing": {
-      "name": "@paddy-systems/relay-testing",
+      "name": "@acme-systems/relay-testing",
       "version": "0.1.0",
       "dependencies": {
-        "@paddy-systems/relay-protocol": "*",
+        "@acme-systems/relay-protocol": "*",
       },
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/bun": "latest",
         "@types/node": "^20",
         "typescript": "7.0.2",
       },
     },
     "packages/relay/transport": {
-      "name": "@paddy-systems/relay-transport",
+      "name": "@acme-systems/relay-transport",
       "version": "0.0.1",
       "dependencies": {
-        "@paddy-systems/relay-protocol": "*",
+        "@acme-systems/relay-protocol": "*",
       },
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/bun": "latest",
         "@types/node": "^20",
         "typescript": "7.0.2",
       },
     },
     "packages/relay/wasm": {
-      "name": "@paddy-systems/relay-wasm",
+      "name": "@acme-systems/relay-wasm",
       "version": "0.1.0",
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/bun": "latest",
         "@types/node": "^20",
         "typescript": "7.0.2",
       },
     },
     "packages/shared/auth": {
-      "name": "@paddy-systems/auth",
+      "name": "@acme-systems/auth",
       "version": "0.0.0",
       "dependencies": {
-        "@paddy-systems/database": "*",
-        "@paddy-systems/shared-primitives": "*",
+        "@acme-systems/database": "*",
+        "@acme-systems/shared-primitives": "*",
         "better-auth": "^1.7.4",
         "clsx": "^2.1.1",
         "react": "^19.0.0",
@@ -703,7 +703,7 @@
         "tailwind-merge": "^3.0.0",
       },
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/node": "^20.17.24",
         "@types/react": "^19.0.0",
         "@types/react-dom": "^19.0.0",
@@ -711,27 +711,27 @@
       },
     },
     "packages/shared/feature-flags": {
-      "name": "@paddy-systems/feature-flags",
+      "name": "@acme-systems/feature-flags",
       "version": "0.0.0",
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/node": "26.4.1",
         "typescript": "7.0.2",
         "vitest": "^4",
       },
     },
     "packages/shared/lib": {
-      "name": "@paddy-systems/lib",
+      "name": "@acme-systems/lib",
       "version": "0.0.0",
       "dependencies": {
-        "@paddy-systems/utils": "*",
+        "@acme-systems/utils": "*",
         "@tanstack/react-query": "^5.102.8",
         "clsx": "^2.1.1",
         "schema-dts": "^2.0.0",
         "tailwind-merge": "^3.6.0",
       },
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@types/react": "19.3.0",
         "@types/react-dom": "19.3.0",
         "react": "19.3.0",
@@ -745,14 +745,14 @@
       },
     },
     "packages/shared/primitives": {
-      "name": "@paddy-systems/shared-primitives",
+      "name": "@acme-systems/shared-primitives",
       "version": "0.0.0",
       "dependencies": {
-        "@paddy-systems/lib": "*",
+        "@acme-systems/lib": "*",
         "class-variance-authority": "^0.7.1",
       },
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "@testing-library/dom": "^10.4.1",
         "@testing-library/react": "^16.3.3",
         "@types/react": "19.3.0",
@@ -770,16 +770,16 @@
       },
     },
     "packages/shared/utils": {
-      "name": "@paddy-systems/utils",
+      "name": "@acme-systems/utils",
       "version": "0.0.0",
       "devDependencies": {
-        "@paddy-systems/typescript-config": "*",
+        "@acme-systems/typescript-config": "*",
         "typescript": "7.0.2",
         "vitest": "^4",
       },
     },
     "packages/typescript-config": {
-      "name": "@paddy-systems/typescript-config",
+      "name": "@acme-systems/typescript-config",
       "version": "0.0.0",
     },
     "sites/public": {
@@ -1264,109 +1264,109 @@
 
     "@oxc-project/types": ["@oxc-project/types@0.149.0", "", {}, "sha512-Efcc+iF0j3Bf67YjEqIqWXbX5XddXoK/Mw4K1/JuXwRCZ8N16VR7iT23nlCc9XrveFVh/E5Rqs2StT0V8v9LdA=="],
 
-    "@paddy-systems/api-core": ["@paddy-systems/api-core@workspace:packages/api-core"],
+    "@acme-systems/api-core": ["@acme-systems/api-core@workspace:packages/api-core"],
 
-    "@paddy-systems/auth": ["@paddy-systems/auth@workspace:packages/shared/auth"],
+    "@acme-systems/auth": ["@acme-systems/auth@workspace:packages/shared/auth"],
 
-    "@paddy-systems/database": ["@paddy-systems/database@workspace:packages/database"],
+    "@acme-systems/database": ["@acme-systems/database@workspace:packages/database"],
 
-    "@paddy-systems/env": ["@paddy-systems/env@workspace:packages/env"],
+    "@acme-systems/env": ["@acme-systems/env@workspace:packages/env"],
 
-    "@paddy-systems/example-angular": ["@paddy-systems/example-angular@workspace:apps/examples/angular"],
+    "@acme-systems/example-angular": ["@acme-systems/example-angular@workspace:apps/examples/angular"],
 
-    "@paddy-systems/example-astro": ["@paddy-systems/example-astro@workspace:apps/examples/astro"],
+    "@acme-systems/example-astro": ["@acme-systems/example-astro@workspace:apps/examples/astro"],
 
-    "@paddy-systems/example-docker-service": ["@paddy-systems/example-docker-service@workspace:apps/examples/docker"],
+    "@acme-systems/example-docker-service": ["@acme-systems/example-docker-service@workspace:apps/examples/docker"],
 
-    "@paddy-systems/example-fastify-api": ["@paddy-systems/example-fastify-api@workspace:apps/examples/fastify-api"],
+    "@acme-systems/example-fastify-api": ["@acme-systems/example-fastify-api@workspace:apps/examples/fastify-api"],
 
-    "@paddy-systems/example-graphql-yoga": ["@paddy-systems/example-graphql-yoga@workspace:apps/examples/graphql-yoga"],
+    "@acme-systems/example-graphql-yoga": ["@acme-systems/example-graphql-yoga@workspace:apps/examples/graphql-yoga"],
 
-    "@paddy-systems/example-hono-api": ["@paddy-systems/example-hono-api@workspace:apps/examples/hono-api"],
+    "@acme-systems/example-hono-api": ["@acme-systems/example-hono-api@workspace:apps/examples/hono-api"],
 
-    "@paddy-systems/example-nestjs-api": ["@paddy-systems/example-nestjs-api@workspace:apps/examples/nestjs-api"],
+    "@acme-systems/example-nestjs-api": ["@acme-systems/example-nestjs-api@workspace:apps/examples/nestjs-api"],
 
-    "@paddy-systems/example-nuxt": ["@paddy-systems/example-nuxt@workspace:apps/examples/nuxt"],
+    "@acme-systems/example-nuxt": ["@acme-systems/example-nuxt@workspace:apps/examples/nuxt"],
 
-    "@paddy-systems/example-python-fastapi": ["@paddy-systems/example-python-fastapi@workspace:apps/examples/python-fastapi"],
+    "@acme-systems/example-python-fastapi": ["@acme-systems/example-python-fastapi@workspace:apps/examples/python-fastapi"],
 
-    "@paddy-systems/example-qwik": ["@paddy-systems/example-qwik@workspace:apps/examples/qwik"],
+    "@acme-systems/example-qwik": ["@acme-systems/example-qwik@workspace:apps/examples/qwik"],
 
-    "@paddy-systems/example-remix": ["@paddy-systems/example-remix@workspace:apps/examples/remix"],
+    "@acme-systems/example-remix": ["@acme-systems/example-remix@workspace:apps/examples/remix"],
 
-    "@paddy-systems/example-socket-io": ["@paddy-systems/example-socket-io@workspace:apps/examples/socket-io"],
+    "@acme-systems/example-socket-io": ["@acme-systems/example-socket-io@workspace:apps/examples/socket-io"],
 
-    "@paddy-systems/example-solidstart": ["@paddy-systems/example-solidstart@workspace:apps/examples/solidstart"],
+    "@acme-systems/example-solidstart": ["@acme-systems/example-solidstart@workspace:apps/examples/solidstart"],
 
-    "@paddy-systems/example-sse-llm-streaming": ["@paddy-systems/example-sse-llm-streaming@workspace:apps/examples/sse-llm-streaming"],
+    "@acme-systems/example-sse-llm-streaming": ["@acme-systems/example-sse-llm-streaming@workspace:apps/examples/sse-llm-streaming"],
 
-    "@paddy-systems/example-sveltekit": ["@paddy-systems/example-sveltekit@workspace:apps/examples/sveltekit"],
+    "@acme-systems/example-sveltekit": ["@acme-systems/example-sveltekit@workspace:apps/examples/sveltekit"],
 
-    "@paddy-systems/example-tanstack-start": ["@paddy-systems/example-tanstack-start@workspace:apps/examples/tanstack-start"],
+    "@acme-systems/example-tanstack-start": ["@acme-systems/example-tanstack-start@workspace:apps/examples/tanstack-start"],
 
-    "@paddy-systems/example-webpack-spa": ["@paddy-systems/example-webpack-spa@workspace:apps/examples/webpack-spa"],
+    "@acme-systems/example-webpack-spa": ["@acme-systems/example-webpack-spa@workspace:apps/examples/webpack-spa"],
 
-    "@paddy-systems/feature-flags": ["@paddy-systems/feature-flags@workspace:packages/shared/feature-flags"],
+    "@acme-systems/feature-flags": ["@acme-systems/feature-flags@workspace:packages/shared/feature-flags"],
 
-    "@paddy-systems/lib": ["@paddy-systems/lib@workspace:packages/shared/lib"],
+    "@acme-systems/lib": ["@acme-systems/lib@workspace:packages/shared/lib"],
 
-    "@paddy-systems/nitro-config": ["@paddy-systems/nitro-config@workspace:packages/nitro-config"],
+    "@acme-systems/nitro-config": ["@acme-systems/nitro-config@workspace:packages/nitro-config"],
 
-    "@paddy-systems/relay-agent": ["@paddy-systems/relay-agent@workspace:packages/relay/agent"],
+    "@acme-systems/relay-agent": ["@acme-systems/relay-agent@workspace:packages/relay/agent"],
 
-    "@paddy-systems/relay-api": ["@paddy-systems/relay-api@workspace:apps/relay/api"],
+    "@acme-systems/relay-api": ["@acme-systems/relay-api@workspace:apps/relay/api"],
 
-    "@paddy-systems/relay-billing": ["@paddy-systems/relay-billing@workspace:packages/relay/billing"],
+    "@acme-systems/relay-billing": ["@acme-systems/relay-billing@workspace:packages/relay/billing"],
 
-    "@paddy-systems/relay-capabilities": ["@paddy-systems/relay-capabilities@workspace:packages/relay/capabilities"],
+    "@acme-systems/relay-capabilities": ["@acme-systems/relay-capabilities@workspace:packages/relay/capabilities"],
 
-    "@paddy-systems/relay-cli": ["@paddy-systems/relay-cli@workspace:apps/relay/cli"],
+    "@acme-systems/relay-cli": ["@acme-systems/relay-cli@workspace:apps/relay/cli"],
 
-    "@paddy-systems/relay-cli-ui": ["@paddy-systems/relay-cli-ui@workspace:packages/relay/cli-ui"],
+    "@acme-systems/relay-cli-ui": ["@acme-systems/relay-cli-ui@workspace:packages/relay/cli-ui"],
 
-    "@paddy-systems/relay-cloud-edge": ["@paddy-systems/relay-cloud-edge@workspace:apps/relay/cloud-edge"],
+    "@acme-systems/relay-cloud-edge": ["@acme-systems/relay-cloud-edge@workspace:apps/relay/cloud-edge"],
 
-    "@paddy-systems/relay-cloud-web": ["@paddy-systems/relay-cloud-web@workspace:apps/relay/cloud-web"],
+    "@acme-systems/relay-cloud-web": ["@acme-systems/relay-cloud-web@workspace:apps/relay/cloud-web"],
 
-    "@paddy-systems/relay-desktop": ["@paddy-systems/relay-desktop@workspace:apps/relay/desktop"],
+    "@acme-systems/relay-desktop": ["@acme-systems/relay-desktop@workspace:apps/relay/desktop"],
 
-    "@paddy-systems/relay-docs": ["@paddy-systems/relay-docs@workspace:apps/relay/docs"],
+    "@acme-systems/relay-docs": ["@acme-systems/relay-docs@workspace:apps/relay/docs"],
 
-    "@paddy-systems/relay-extension": ["@paddy-systems/relay-extension@workspace:apps/relay/extension"],
+    "@acme-systems/relay-extension": ["@acme-systems/relay-extension@workspace:apps/relay/extension"],
 
-    "@paddy-systems/relay-infra": ["@paddy-systems/relay-infra@workspace:packages/relay/infra"],
+    "@acme-systems/relay-infra": ["@acme-systems/relay-infra@workspace:packages/relay/infra"],
 
-    "@paddy-systems/relay-integrations": ["@paddy-systems/relay-integrations@workspace:packages/relay/integrations"],
+    "@acme-systems/relay-integrations": ["@acme-systems/relay-integrations@workspace:packages/relay/integrations"],
 
-    "@paddy-systems/relay-local-web": ["@paddy-systems/relay-local-web@workspace:apps/relay/local-web"],
+    "@acme-systems/relay-local-web": ["@acme-systems/relay-local-web@workspace:apps/relay/local-web"],
 
-    "@paddy-systems/relay-media": ["@paddy-systems/relay-media@workspace:packages/relay/media"],
+    "@acme-systems/relay-media": ["@acme-systems/relay-media@workspace:packages/relay/media"],
 
-    "@paddy-systems/relay-protocol": ["@paddy-systems/relay-protocol@workspace:packages/relay/protocol"],
+    "@acme-systems/relay-protocol": ["@acme-systems/relay-protocol@workspace:packages/relay/protocol"],
 
-    "@paddy-systems/relay-python": ["@paddy-systems/relay-python@workspace:packages/relay/python"],
+    "@acme-systems/relay-python": ["@acme-systems/relay-python@workspace:packages/relay/python"],
 
-    "@paddy-systems/relay-recording": ["@paddy-systems/relay-recording@workspace:packages/relay/recording"],
+    "@acme-systems/relay-recording": ["@acme-systems/relay-recording@workspace:packages/relay/recording"],
 
-    "@paddy-systems/relay-replay": ["@paddy-systems/relay-replay@workspace:packages/relay/replay"],
+    "@acme-systems/relay-replay": ["@acme-systems/relay-replay@workspace:packages/relay/replay"],
 
-    "@paddy-systems/relay-security": ["@paddy-systems/relay-security@workspace:packages/relay/security"],
+    "@acme-systems/relay-security": ["@acme-systems/relay-security@workspace:packages/relay/security"],
 
-    "@paddy-systems/relay-simulation": ["@paddy-systems/relay-simulation@workspace:packages/relay/simulation"],
+    "@acme-systems/relay-simulation": ["@acme-systems/relay-simulation@workspace:packages/relay/simulation"],
 
-    "@paddy-systems/relay-testing": ["@paddy-systems/relay-testing@workspace:packages/relay/testing"],
+    "@acme-systems/relay-testing": ["@acme-systems/relay-testing@workspace:packages/relay/testing"],
 
-    "@paddy-systems/relay-transport": ["@paddy-systems/relay-transport@workspace:packages/relay/transport"],
+    "@acme-systems/relay-transport": ["@acme-systems/relay-transport@workspace:packages/relay/transport"],
 
-    "@paddy-systems/relay-vscode": ["@paddy-systems/relay-vscode@workspace:apps/relay/vscode"],
+    "@acme-systems/relay-vscode": ["@acme-systems/relay-vscode@workspace:apps/relay/vscode"],
 
-    "@paddy-systems/relay-wasm": ["@paddy-systems/relay-wasm@workspace:packages/relay/wasm"],
+    "@acme-systems/relay-wasm": ["@acme-systems/relay-wasm@workspace:packages/relay/wasm"],
 
-    "@paddy-systems/shared-primitives": ["@paddy-systems/shared-primitives@workspace:packages/shared/primitives"],
+    "@acme-systems/shared-primitives": ["@acme-systems/shared-primitives@workspace:packages/shared/primitives"],
 
-    "@paddy-systems/typescript-config": ["@paddy-systems/typescript-config@workspace:packages/typescript-config"],
+    "@acme-systems/typescript-config": ["@acme-systems/typescript-config@workspace:packages/typescript-config"],
 
-    "@paddy-systems/utils": ["@paddy-systems/utils@workspace:packages/shared/utils"],
+    "@acme-systems/utils": ["@acme-systems/utils@workspace:packages/shared/utils"],
 
     "@parcel/watcher-wasm": ["@parcel/watcher-wasm@2.6.0", "", { "dependencies": { "is-glob": "^4.0.3", "napi-wasm": "^1.1.0", "picomatch": "^4.0.4" } }, "sha512-dtjbDxKSDPQ8AmA+pS4OFaHE1FKrjtGpLGBxw85uKFkRorjNbvDM/aFPgqosu40wprbp1xw2ZSxIKqghCUHe2w=="],
 
@@ -3602,85 +3602,85 @@
 
     "@nuxt/vite-builder/seroval": ["seroval@1.6.7", "", {}, "sha512-AeDcLh0yO2SFm9W71essgnSzLV9DI8ZH0x0knXn2DMnUZj728mpLbxjlbB6IqKCmqh8JA3cEqRyGoNkt584JcQ=="],
 
-    "@paddy-systems/env/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
+    "@acme-systems/env/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
 
-    "@paddy-systems/example-angular/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
+    "@acme-systems/example-angular/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
 
-    "@paddy-systems/example-docker-service/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
+    "@acme-systems/example-docker-service/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
 
-    "@paddy-systems/example-fastify-api/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
+    "@acme-systems/example-fastify-api/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
 
-    "@paddy-systems/example-graphql-yoga/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
+    "@acme-systems/example-graphql-yoga/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
 
-    "@paddy-systems/example-hono-api/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
+    "@acme-systems/example-hono-api/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
 
-    "@paddy-systems/example-nestjs-api/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
+    "@acme-systems/example-nestjs-api/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
 
-    "@paddy-systems/example-python-fastapi/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
+    "@acme-systems/example-python-fastapi/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
 
-    "@paddy-systems/example-qwik/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
+    "@acme-systems/example-qwik/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
 
-    "@paddy-systems/example-remix/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
+    "@acme-systems/example-remix/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
 
-    "@paddy-systems/example-remix/typescript": ["typescript@5.9.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw=="],
+    "@acme-systems/example-remix/typescript": ["typescript@5.9.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw=="],
 
-    "@paddy-systems/example-socket-io/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
+    "@acme-systems/example-socket-io/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
 
-    "@paddy-systems/example-solidstart/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
+    "@acme-systems/example-solidstart/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
 
-    "@paddy-systems/example-sse-llm-streaming/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
+    "@acme-systems/example-sse-llm-streaming/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
 
-    "@paddy-systems/example-sveltekit/typescript": ["typescript@6.0.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw=="],
+    "@acme-systems/example-sveltekit/typescript": ["typescript@6.0.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw=="],
 
-    "@paddy-systems/example-tanstack-start/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
+    "@acme-systems/example-tanstack-start/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
 
-    "@paddy-systems/example-webpack-spa/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
+    "@acme-systems/example-webpack-spa/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
 
-    "@paddy-systems/feature-flags/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
+    "@acme-systems/feature-flags/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
 
-    "@paddy-systems/relay-agent/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
+    "@acme-systems/relay-agent/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
 
-    "@paddy-systems/relay-api/h3": ["h3@1.15.11", "", { "dependencies": { "cookie-es": "^1.2.3", "crossws": "^0.3.5", "defu": "^6.1.6", "destr": "^2.0.5", "iron-webcrypto": "^1.2.1", "node-mock-http": "^1.0.4", "radix3": "^1.1.2", "ufo": "^1.6.3", "uncrypto": "^0.1.3" } }, "sha512-L3THSe2MPeBwgIZVSH5zLdBBU90TOxarvhK9d04IDY2AmVS8j2Jz2LIWtwsGOU3lu2I5jCN7FNvVfY2+XyF+mg=="],
+    "@acme-systems/relay-api/h3": ["h3@1.15.11", "", { "dependencies": { "cookie-es": "^1.2.3", "crossws": "^0.3.5", "defu": "^6.1.6", "destr": "^2.0.5", "iron-webcrypto": "^1.2.1", "node-mock-http": "^1.0.4", "radix3": "^1.1.2", "ufo": "^1.6.3", "uncrypto": "^0.1.3" } }, "sha512-L3THSe2MPeBwgIZVSH5zLdBBU90TOxarvhK9d04IDY2AmVS8j2Jz2LIWtwsGOU3lu2I5jCN7FNvVfY2+XyF+mg=="],
 
-    "@paddy-systems/relay-billing/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
+    "@acme-systems/relay-billing/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
 
-    "@paddy-systems/relay-capabilities/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
+    "@acme-systems/relay-capabilities/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
 
-    "@paddy-systems/relay-cli-ui/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
+    "@acme-systems/relay-cli-ui/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
 
-    "@paddy-systems/relay-cloud-edge/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
+    "@acme-systems/relay-cloud-edge/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
 
-    "@paddy-systems/relay-cloud-edge/h3": ["h3@1.15.11", "", { "dependencies": { "cookie-es": "^1.2.3", "crossws": "^0.3.5", "defu": "^6.1.6", "destr": "^2.0.5", "iron-webcrypto": "^1.2.1", "node-mock-http": "^1.0.4", "radix3": "^1.1.2", "ufo": "^1.6.3", "uncrypto": "^0.1.3" } }, "sha512-L3THSe2MPeBwgIZVSH5zLdBBU90TOxarvhK9d04IDY2AmVS8j2Jz2LIWtwsGOU3lu2I5jCN7FNvVfY2+XyF+mg=="],
+    "@acme-systems/relay-cloud-edge/h3": ["h3@1.15.11", "", { "dependencies": { "cookie-es": "^1.2.3", "crossws": "^0.3.5", "defu": "^6.1.6", "destr": "^2.0.5", "iron-webcrypto": "^1.2.1", "node-mock-http": "^1.0.4", "radix3": "^1.1.2", "ufo": "^1.6.3", "uncrypto": "^0.1.3" } }, "sha512-L3THSe2MPeBwgIZVSH5zLdBBU90TOxarvhK9d04IDY2AmVS8j2Jz2LIWtwsGOU3lu2I5jCN7FNvVfY2+XyF+mg=="],
 
-    "@paddy-systems/relay-desktop/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
+    "@acme-systems/relay-desktop/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
 
-    "@paddy-systems/relay-docs/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
+    "@acme-systems/relay-docs/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
 
-    "@paddy-systems/relay-extension/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
+    "@acme-systems/relay-extension/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
 
-    "@paddy-systems/relay-infra/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
+    "@acme-systems/relay-infra/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
 
-    "@paddy-systems/relay-integrations/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
+    "@acme-systems/relay-integrations/@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
 
-    "@paddy-systems/relay-integrations/typescript": ["typescript@5.9.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw=="],
+    "@acme-systems/relay-integrations/typescript": ["typescript@5.9.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw=="],
 
-    "@paddy-systems/relay-media/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
+    "@acme-systems/relay-media/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
 
-    "@paddy-systems/relay-python/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
+    "@acme-systems/relay-python/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
 
-    "@paddy-systems/relay-recording/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
+    "@acme-systems/relay-recording/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
 
-    "@paddy-systems/relay-replay/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
+    "@acme-systems/relay-replay/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
 
-    "@paddy-systems/relay-security/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
+    "@acme-systems/relay-security/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
 
-    "@paddy-systems/relay-simulation/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
+    "@acme-systems/relay-simulation/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
 
-    "@paddy-systems/relay-transport/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
+    "@acme-systems/relay-transport/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
 
-    "@paddy-systems/relay-vscode/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
+    "@acme-systems/relay-vscode/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
 
-    "@paddy-systems/relay-wasm/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
+    "@acme-systems/relay-wasm/@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
 
     "@parcel/watcher-wasm/napi-wasm": ["napi-wasm@1.1.3", "", { "bundled": true }, "sha512-h/4nMGsHjZDCYmQVNODIrYACVJ+I9KItbG+0si6W/jSjdA9JbWDoU4LLeMXVcEQGHjttI2tuXqDrbGF7qkUHHg=="],
 
@@ -4022,49 +4022,49 @@
 
     "@nuxt/nitro-server/h3/cookie-es": ["cookie-es@1.2.3", "", {}, "sha512-lXVyvUvrNXblMqzIRrxHb57UUVmqsSWlxqt3XIjCkUP0wDAf6uicO6KMbEgYrMNtEvWgWHwe42CKxPu9MYAnWw=="],
 
-    "@paddy-systems/env/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
+    "@acme-systems/env/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
 
-    "@paddy-systems/feature-flags/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
+    "@acme-systems/feature-flags/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
 
-    "@paddy-systems/relay-agent/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
+    "@acme-systems/relay-agent/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
 
-    "@paddy-systems/relay-api/h3/cookie-es": ["cookie-es@1.2.3", "", {}, "sha512-lXVyvUvrNXblMqzIRrxHb57UUVmqsSWlxqt3XIjCkUP0wDAf6uicO6KMbEgYrMNtEvWgWHwe42CKxPu9MYAnWw=="],
+    "@acme-systems/relay-api/h3/cookie-es": ["cookie-es@1.2.3", "", {}, "sha512-lXVyvUvrNXblMqzIRrxHb57UUVmqsSWlxqt3XIjCkUP0wDAf6uicO6KMbEgYrMNtEvWgWHwe42CKxPu9MYAnWw=="],
 
-    "@paddy-systems/relay-billing/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
+    "@acme-systems/relay-billing/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
 
-    "@paddy-systems/relay-capabilities/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
+    "@acme-systems/relay-capabilities/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
 
-    "@paddy-systems/relay-cli-ui/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
+    "@acme-systems/relay-cli-ui/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
 
-    "@paddy-systems/relay-cloud-edge/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
+    "@acme-systems/relay-cloud-edge/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
 
-    "@paddy-systems/relay-cloud-edge/h3/cookie-es": ["cookie-es@1.2.3", "", {}, "sha512-lXVyvUvrNXblMqzIRrxHb57UUVmqsSWlxqt3XIjCkUP0wDAf6uicO6KMbEgYrMNtEvWgWHwe42CKxPu9MYAnWw=="],
+    "@acme-systems/relay-cloud-edge/h3/cookie-es": ["cookie-es@1.2.3", "", {}, "sha512-lXVyvUvrNXblMqzIRrxHb57UUVmqsSWlxqt3XIjCkUP0wDAf6uicO6KMbEgYrMNtEvWgWHwe42CKxPu9MYAnWw=="],
 
-    "@paddy-systems/relay-desktop/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
+    "@acme-systems/relay-desktop/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
 
-    "@paddy-systems/relay-docs/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
+    "@acme-systems/relay-docs/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
 
-    "@paddy-systems/relay-extension/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
+    "@acme-systems/relay-extension/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
 
-    "@paddy-systems/relay-infra/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
+    "@acme-systems/relay-infra/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
 
-    "@paddy-systems/relay-media/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
+    "@acme-systems/relay-media/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
 
-    "@paddy-systems/relay-python/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
+    "@acme-systems/relay-python/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
 
-    "@paddy-systems/relay-recording/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
+    "@acme-systems/relay-recording/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
 
-    "@paddy-systems/relay-replay/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
+    "@acme-systems/relay-replay/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
 
-    "@paddy-systems/relay-security/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
+    "@acme-systems/relay-security/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
 
-    "@paddy-systems/relay-simulation/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
+    "@acme-systems/relay-simulation/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
 
-    "@paddy-systems/relay-transport/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
+    "@acme-systems/relay-transport/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
 
-    "@paddy-systems/relay-vscode/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
+    "@acme-systems/relay-vscode/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
 
-    "@paddy-systems/relay-wasm/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
+    "@acme-systems/relay-wasm/@types/bun/bun-types": ["bun-types@1.4.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-bxV1FgK7yBIzjRe5zBozIM4Bem11ZJcCXSrjWRG3YWLt8yFDePu4cLjpebO8OvPeIE9trbyPF4fuj3Cia4Fj3w=="],
 
     "@prisma/config/c12/chokidar": ["chokidar@4.0.3", "", { "dependencies": { "readdirp": "^4.0.1" } }, "sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA=="],
 
@@ -4270,41 +4270,41 @@
 
     "yargs/string-width/strip-ansi": ["strip-ansi@6.0.1", "", { "dependencies": { "ansi-regex": "^5.0.1" } }, "sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A=="],
 
-    "@paddy-systems/relay-agent/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
+    "@acme-systems/relay-agent/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
 
-    "@paddy-systems/relay-billing/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
+    "@acme-systems/relay-billing/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
 
-    "@paddy-systems/relay-capabilities/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
+    "@acme-systems/relay-capabilities/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
 
-    "@paddy-systems/relay-cli-ui/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
+    "@acme-systems/relay-cli-ui/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
 
-    "@paddy-systems/relay-cloud-edge/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
+    "@acme-systems/relay-cloud-edge/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
 
-    "@paddy-systems/relay-desktop/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
+    "@acme-systems/relay-desktop/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
 
-    "@paddy-systems/relay-docs/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
+    "@acme-systems/relay-docs/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
 
-    "@paddy-systems/relay-extension/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
+    "@acme-systems/relay-extension/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
 
-    "@paddy-systems/relay-infra/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
+    "@acme-systems/relay-infra/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
 
-    "@paddy-systems/relay-media/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
+    "@acme-systems/relay-media/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
 
-    "@paddy-systems/relay-python/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
+    "@acme-systems/relay-python/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
 
-    "@paddy-systems/relay-recording/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
+    "@acme-systems/relay-recording/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
 
-    "@paddy-systems/relay-replay/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
+    "@acme-systems/relay-replay/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
 
-    "@paddy-systems/relay-security/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
+    "@acme-systems/relay-security/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
 
-    "@paddy-systems/relay-simulation/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
+    "@acme-systems/relay-simulation/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
 
-    "@paddy-systems/relay-transport/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
+    "@acme-systems/relay-transport/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
 
-    "@paddy-systems/relay-vscode/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
+    "@acme-systems/relay-vscode/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
 
-    "@paddy-systems/relay-wasm/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
+    "@acme-systems/relay-wasm/@types/bun/bun-types/@types/node": ["@types/node@26.4.1", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA=="],
 
     "@prisma/config/c12/chokidar/readdirp": ["readdirp@4.1.2", "", {}, "sha512-GDhwkLfywWL2s6vEjyhri+eXmfH6j1L7JE27WhqLeYzoh/A3DBaYGEj2H/HFZCn/kMfim73FXxEJTw06WtxQwg=="],
 
@@ -4350,41 +4350,41 @@
 
     "webpack-dev-server/express/type-is/mime-types": ["mime-types@2.1.35", "", { "dependencies": { "mime-db": "1.52.0" } }, "sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw=="],
 
-    "@paddy-systems/relay-agent/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
+    "@acme-systems/relay-agent/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
 
-    "@paddy-systems/relay-billing/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
+    "@acme-systems/relay-billing/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
 
-    "@paddy-systems/relay-capabilities/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
+    "@acme-systems/relay-capabilities/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
 
-    "@paddy-systems/relay-cli-ui/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
+    "@acme-systems/relay-cli-ui/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
 
-    "@paddy-systems/relay-cloud-edge/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
+    "@acme-systems/relay-cloud-edge/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
 
-    "@paddy-systems/relay-desktop/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
+    "@acme-systems/relay-desktop/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
 
-    "@paddy-systems/relay-docs/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
+    "@acme-systems/relay-docs/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
 
-    "@paddy-systems/relay-extension/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
+    "@acme-systems/relay-extension/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
 
-    "@paddy-systems/relay-infra/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
+    "@acme-systems/relay-infra/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
 
-    "@paddy-systems/relay-media/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
+    "@acme-systems/relay-media/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
 
-    "@paddy-systems/relay-python/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
+    "@acme-systems/relay-python/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
 
-    "@paddy-systems/relay-recording/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
+    "@acme-systems/relay-recording/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
 
-    "@paddy-systems/relay-replay/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
+    "@acme-systems/relay-replay/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
 
-    "@paddy-systems/relay-security/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
+    "@acme-systems/relay-security/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
 
-    "@paddy-systems/relay-simulation/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
+    "@acme-systems/relay-simulation/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
 
-    "@paddy-systems/relay-transport/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
+    "@acme-systems/relay-transport/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
 
-    "@paddy-systems/relay-vscode/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
+    "@acme-systems/relay-vscode/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
 
-    "@paddy-systems/relay-wasm/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
+    "@acme-systems/relay-wasm/@types/bun/bun-types/@types/node/undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
 
     "archiver-utils/glob/minimatch/brace-expansion/balanced-match": ["balanced-match@1.0.2", "", {}, "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw=="],
 

@@ -1,6 +1,6 @@
 name: "Relay Ephemeral Preview Tunnel"
 description: "Starts an ephemeral Relay tunnel for CI PRs and posts an interactive mobile QR code comment"
-author: "Paddy Systems"
+author: "Acme Systems"
 inputs:
   port:
     description: "Local dev server port to expose"

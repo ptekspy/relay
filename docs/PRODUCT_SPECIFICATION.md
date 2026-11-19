@@ -1263,7 +1263,7 @@ Only one person may control a given Connection at one time.
 
 Example:
 
-- Paddy controls Android device A
+- Acme controls Android device A
 - Derek controls browser B
 - Sally observes browser C
 
@@ -1353,8 +1353,8 @@ Aliases may target:
 Examples:
 
 ```text
-paddy-checkout
-paddy-api-demo
+acme-checkout
+acme-api-demo
 team-mobile-qa
 ```
 

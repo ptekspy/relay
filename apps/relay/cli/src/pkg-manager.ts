@@ -22,7 +22,7 @@ export function detectPackageManager(
       return {
         name: "bun",
         executeCommand: (args: string) =>
-          `bunx @paddy-systems/relay ${args}`.trim(),
+          `bunx @acme-systems/relay ${args}`.trim(),
         installCommand: (pkg: string, isDev = true) =>
           `bun add ${isDev ? "-d " : ""}${pkg}`,
       };
@@ -31,7 +31,7 @@ export function detectPackageManager(
       return {
         name: "pnpm",
         executeCommand: (args: string) =>
-          `pnpm dlx @paddy-systems/relay ${args}`.trim(),
+          `pnpm dlx @acme-systems/relay ${args}`.trim(),
         installCommand: (pkg: string, isDev = true) =>
           `pnpm add ${isDev ? "-D " : ""}${pkg}`,
       };
@@ -40,7 +40,7 @@ export function detectPackageManager(
       return {
         name: "yarn",
         executeCommand: (args: string) =>
-          `yarn dlx @paddy-systems/relay ${args}`.trim(),
+          `yarn dlx @acme-systems/relay ${args}`.trim(),
         installCommand: (pkg: string, isDev = true) =>
           `yarn add ${isDev ? "-D " : ""}${pkg}`,
       };
@@ -49,7 +49,7 @@ export function detectPackageManager(
       return {
         name: "npm",
         executeCommand: (args: string) =>
-          `npx @paddy-systems/relay ${args}`.trim(),
+          `npx @acme-systems/relay ${args}`.trim(),
         installCommand: (pkg: string, isDev = true) =>
           `npm install ${isDev ? "-D " : ""}${pkg}`,
       };
@@ -61,7 +61,7 @@ export function detectPackageManager(
   return {
     name: "bun",
     executeCommand: (args: string) =>
-      `bunx @paddy-systems/relay ${args}`.trim(),
+      `bunx @acme-systems/relay ${args}`.trim(),
     installCommand: (pkg: string, isDev = true) =>
       `bun add ${isDev ? "-d " : ""}${pkg}`,
   };

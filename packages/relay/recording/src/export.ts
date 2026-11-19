@@ -35,7 +35,7 @@ export class SessionExporter {
         ? `\`\`\`\n${failedRequests.join("\n")}\n\`\`\``
         : "_No failed network requests._",
       "",
-      "> Generated automatically by Paddy Systems Relay Recording Engine",
+      "> Generated automatically by Acme Systems Relay Recording Engine",
     ].join("\n");
   }
 
@@ -81,7 +81,7 @@ export class SessionExporter {
       {
         log: {
           version: "1.2",
-          creator: { name: "Paddy Systems Relay", version: "1.0.0" },
+          creator: { name: "Acme Systems Relay", version: "1.0.0" },
           comment: `Session: ${sessionId}`,
           entries,
         },

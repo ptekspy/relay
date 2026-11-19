@@ -3,7 +3,7 @@ import crypto from "node:crypto";
 export class TunnelEncryption {
   private key: Buffer;
 
-  constructor(sessionSecret: string, salt = "paddy-systems-relay-v1") {
+  constructor(sessionSecret: string, salt = "acme-systems-relay-v1") {
     // Derive 256-bit encryption key
     this.key = crypto.pbkdf2Sync(sessionSecret, salt, 10000, 32, "sha256");
   }

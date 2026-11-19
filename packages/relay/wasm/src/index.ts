@@ -1,5 +1,5 @@
 /**
- * @paddy-systems/relay-wasm
+ * @acme-systems/relay-wasm
  * WebAssembly High-Performance Acceleration Modules.
  */
 

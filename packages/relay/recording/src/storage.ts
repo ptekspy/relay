@@ -29,7 +29,7 @@ export class RecordingStorageEngine {
     const buf = Buffer.from(chunk);
     if (!buf.subarray(0, 4).equals(MAGIC_BYTES)) {
       throw new Error(
-        "Invalid magic bytes: not a Paddy Systems recording chunk",
+        "Invalid magic bytes: not an Acme Systems recording chunk",
       );
     }
 

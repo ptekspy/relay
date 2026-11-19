@@ -1,4 +1,4 @@
-package com.paddysystems.relay
+package com.acmesystems.relay
 
 import org.junit.Test
 import kotlin.test.assertEquals

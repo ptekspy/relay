@@ -4,7 +4,7 @@ import {
   type ProductId,
   prisma,
   type Subscription,
-} from "@paddy-systems/database";
+} from "@acme-systems/database";
 
 export interface SessionUser {
   id: string;

@@ -11,17 +11,17 @@ import { connect as netConnect, type Socket } from "node:net";
 import {
   toReceiverId,
   verifyTimingSafeToken,
-} from "@paddy-systems/relay-protocol";
+} from "@acme-systems/relay-protocol";
 import {
   generateClientRecorderScript,
   type RecordedEvent,
   type SessionComment,
-} from "@paddy-systems/relay-recording";
+} from "@acme-systems/relay-recording";
 import {
   DEFAULT_LAN_APEX_DOMAIN,
   ipToLanDomain,
   oauthStateBridge,
-} from "@paddy-systems/relay-security";
+} from "@acme-systems/relay-security";
 import { findProcessOnPort, terminateProcess } from "./firewall.js";
 import { SlidingWindowRateLimiter } from "./rate-limiter.js";
 import { ReceiverConnectionPool } from "./receiver-pool.js";

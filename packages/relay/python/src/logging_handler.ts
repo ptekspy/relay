@@ -1,4 +1,4 @@
-import type { ConsoleLogLevel } from "@paddy-systems/relay-protocol";
+import type { ConsoleLogLevel } from "@acme-systems/relay-protocol";
 
 export interface PythonLogRecord {
   name: string;

@@ -28,7 +28,7 @@ describe("Journey 10: Headless CI/CD Automated Test Pipeline (relay ci)", () => 
     const runner = new CiRunner({
       port: 5000,
       outputFile,
-      tunnelUrl: "https://ci-test.relay.paddy.systems",
+      tunnelUrl: "https://ci-test.relay.acme.example",
       gatewayPort: 7331,
     });
 
@@ -36,7 +36,7 @@ describe("Journey 10: Headless CI/CD Automated Test Pipeline (relay ci)", () => 
     expect(meta.sessionId).toBe("ci_pipeline_run_99");
     expect(meta.targetPort).toBe(5000);
     expect(meta.gatewayPort).toBe(7331);
-    expect(meta.tunnelUrl).toBe("https://ci-test.relay.paddy.systems");
+    expect(meta.tunnelUrl).toBe("https://ci-test.relay.acme.example");
     expect(meta.lanUrl).toBe("http://127.0.0.1:7331");
 
     runner.exportEndpoints(meta);
@@ -45,7 +45,7 @@ describe("Journey 10: Headless CI/CD Automated Test Pipeline (relay ci)", () => 
     const fileData = JSON.parse(readFileSync(outputFile, "utf8"));
     expect(fileData.sessionId).toBe("ci_pipeline_run_99");
     expect(fileData.targetPort).toBe(5000);
-    expect(fileData.tunnelUrl).toBe("https://ci-test.relay.paddy.systems");
+    expect(fileData.tunnelUrl).toBe("https://ci-test.relay.acme.example");
 
     unlinkSync(outputFile);
 

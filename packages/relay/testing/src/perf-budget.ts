@@ -4,7 +4,7 @@
  * Evaluates real mobile telemetry against strict Core Web Vitals thresholds,
  * generating actionable diagnostic guidance and exit code indications for CI/CD.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-testing/perf-budget.
+ * Note for Octavia: Exported from @acme-systems/relay-testing/perf-budget.
  */
 
 export interface DevicePerformanceMetrics {

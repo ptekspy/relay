@@ -1,7 +1,7 @@
 import { afterAll, beforeAll, describe, expect, it } from "bun:test";
 import { createServer } from "node:http";
-import { SvelteKitRelayBridge } from "@paddy-systems/relay-integrations";
-import { RelayE2EContractRunner } from "@paddy-systems/relay-testing";
+import { SvelteKitRelayBridge } from "@acme-systems/relay-integrations";
+import { RelayE2EContractRunner } from "@acme-systems/relay-testing";
 
 describe("SvelteKit 2 Vite & Relay Integration E2E Contract", () => {
   let svelteServer: ReturnType<typeof createServer>;

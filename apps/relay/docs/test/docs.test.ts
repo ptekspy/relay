@@ -58,7 +58,7 @@ describe("Relay Documentation Portal, Spec Explorer & RFC System Tests", () => {
   test("self-hosting guide generates valid Docker Compose and Kubernetes manifests", () => {
     const dockerCompose = relaySelfHostingGuide.getDockerComposeTemplate();
     expect(dockerCompose).toContain(
-      "image: ghcr.io/paddy-systems/relay-edge:latest",
+      "image: ghcr.io/acme-systems/relay-edge:latest",
     );
     expect(dockerCompose).toContain("image: coturn/coturn:latest");
 

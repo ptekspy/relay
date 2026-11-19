@@ -1,5 +1,5 @@
 {
-  "extends": "@paddy-systems/typescript-config/nextjs.json",
+  "extends": "@acme-systems/typescript-config/nextjs.json",
   "compilerOptions": {
     "jsx": "react-jsx",
     "noEmit": true,

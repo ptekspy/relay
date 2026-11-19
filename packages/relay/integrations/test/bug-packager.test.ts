@@ -36,7 +36,7 @@ describe("TASK-175: Comprehensive Bug Metadata Packager", () => {
           durationMs: 85,
         },
       ],
-      replayUrl: "https://relay.paddy.systems/replay/rep_galaxy_23",
+      replayUrl: "https://relay.acme.example/replay/rep_galaxy_23",
     });
 
     expect(report.schemaVersion).toBe("1.0.0");

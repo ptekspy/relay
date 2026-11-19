@@ -2,7 +2,7 @@ import type {
   ConnectionId,
   ReceiverId,
   SessionId,
-} from "@paddy-systems/relay-protocol";
+} from "@acme-systems/relay-protocol";
 
 export type SessionStatus = "active" | "closed" | "expired";
 

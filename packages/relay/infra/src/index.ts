@@ -1,5 +1,5 @@
 /**
- * @paddy-systems/relay-infra
+ * @acme-systems/relay-infra
  *
  * Enterprise Scale, Multi-Region Ingress, Storage, and Production Reliability.
  *

@@ -19,30 +19,30 @@ interface ActivePat {
 
 const INITIAL_MEMBERS: TeamMember[] = [
   {
-    id: "usr_paddy",
-    name: "Paddy",
-    email: "paddy@paddy-systems.com",
+    id: "usr_acme",
+    name: "Acme",
+    email: "acme@example.com",
     role: "OWNER",
     joinedDate: "Jan 2026",
   },
   {
     id: "usr_sally",
     name: "Sally Smith",
-    email: "sally@paddy-systems.com",
+    email: "sally@example.com",
     role: "OWNER",
     joinedDate: "Mar 2026",
   },
   {
     id: "usr_alex",
     name: "Alex Dev",
-    email: "alex@paddy-systems.com",
+    email: "alex@example.com",
     role: "MEMBER",
     joinedDate: "Feb 2026",
   },
   {
     id: "usr_sam",
     name: "Sam QA",
-    email: "sam@paddy-systems.com",
+    email: "sam@example.com",
     role: "VIEWER",
     joinedDate: "Mar 2026",
   },

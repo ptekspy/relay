@@ -1,5 +1,5 @@
 {
-  "name": "@paddy-systems/nitro-config",
+  "name": "@acme-systems/nitro-config",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -14,8 +14,9 @@
     "nitropack": "latest"
   },
   "devDependencies": {
-    "@paddy-systems/typescript-config": "*",
+    "@acme-systems/typescript-config": "*",
     "typescript": "7.0.2",
     "vitest": "^4"
-  }
+  },
+  "license": "Apache-2.0"
 }

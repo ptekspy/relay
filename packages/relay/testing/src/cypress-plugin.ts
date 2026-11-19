@@ -4,7 +4,7 @@
  * Configures Cypress test runner to proxy requests through Relay tunnels,
  * emulating physical device user agents, viewports, and network interception.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-testing/cypress.
+ * Note for Octavia: Exported from @acme-systems/relay-testing/cypress.
  */
 
 export interface CypressRelayConfig {

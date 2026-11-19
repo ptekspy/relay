@@ -1,5 +1,5 @@
 /**
- * @paddy-systems/relay-cli-ui
+ * @acme-systems/relay-cli-ui
  * Types for reusable Terminal UI component library.
  */
 

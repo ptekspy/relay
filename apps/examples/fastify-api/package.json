@@ -1,5 +1,5 @@
 {
-  "name": "@paddy-systems/example-fastify-api",
+  "name": "@acme-systems/example-fastify-api",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -10,9 +10,10 @@
     "fastify": "^5.2.1"
   },
   "devDependencies": {
-    "@paddy-systems/relay-integrations": "workspace:*",
-    "@paddy-systems/relay-testing": "workspace:*",
+    "@acme-systems/relay-integrations": "workspace:*",
+    "@acme-systems/relay-testing": "workspace:*",
     "@types/node": "^22.0.0",
     "typescript": "7.0.2"
-  }
+  },
+  "license": "Apache-2.0"
 }

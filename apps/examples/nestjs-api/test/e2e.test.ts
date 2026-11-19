@@ -3,8 +3,8 @@ import { afterAll, beforeAll, describe, expect, it } from "bun:test";
 import { createServer } from "node:http";
 import type { INestApplication } from "@nestjs/common";
 import { NestFactory } from "@nestjs/core";
-import { NestJsRelayAdapter } from "@paddy-systems/relay-integrations";
-import { RelayE2EContractRunner } from "@paddy-systems/relay-testing";
+import { NestJsRelayAdapter } from "@acme-systems/relay-integrations";
+import { RelayE2EContractRunner } from "@acme-systems/relay-testing";
 import { AppModule } from "../src/app.module";
 
 describe("NestJS Enterprise API & Relay Integration E2E Contract", () => {

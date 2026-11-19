@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "@paddy-systems/shared-primitives/theme.css";
+@import "@acme-systems/shared-primitives/theme.css";
 @import "tw-animate-css";
 
 @source "../../../../packages/shared/primitives/src";
@@ -143,7 +143,7 @@
 }
 
 /*
- * Relay design system — inherits the Paddy Systems foundation:
+ * Relay design system — inherits the Acme Systems foundation:
  * dark canvas, zero radius, Inter + JetBrains Mono, spectrum accent
  * (blue -> violet -> magenta) used for the three-dot relay motif.
  *
@@ -405,7 +405,7 @@
 }
 
 /* ================= MAXIMUM VOLUME =================
-   Ported from the Paddy Systems Field Manual: colossal display type,
+   Ported from the Acme Systems Field Manual: colossal display type,
    spectral light fields, kinetic bands, film grain, ghost numerals.
    Every animation here is neutralised by the reduced-motion block above. */
 

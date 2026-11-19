@@ -1,5 +1,5 @@
 {
-  "name": "@paddy-systems/example-astro",
+  "name": "@acme-systems/example-astro",
   "type": "module",
   "version": "0.0.1",
   "private": true,
@@ -17,10 +17,11 @@
     "astro": "^7.3.2"
   },
   "devDependencies": {
-    "@paddy-systems/relay-integrations": "workspace:*",
-    "@paddy-systems/relay-testing": "workspace:*"
+    "@acme-systems/relay-integrations": "workspace:*",
+    "@acme-systems/relay-testing": "workspace:*"
   },
   "allowScripts": {
     "esbuild": true
-  }
+  },
+  "license": "Apache-2.0"
 }

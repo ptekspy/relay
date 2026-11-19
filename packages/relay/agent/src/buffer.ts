@@ -1,4 +1,4 @@
-import type { RelayTelemetryEvent } from "@paddy-systems/relay-protocol";
+import type { RelayTelemetryEvent } from "@acme-systems/relay-protocol";
 
 export type TransportEmitter = (
   events: RelayTelemetryEvent[],

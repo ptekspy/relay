@@ -1,5 +1,5 @@
 {
-  "name": "@paddy-systems/relay-local-web",
+  "name": "@acme-systems/relay-local-web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,12 +11,12 @@
     "check-types": "next typegen && tsc --noEmit"
   },
   "dependencies": {
-    "@paddy-systems/feature-flags": "*",
-    "@paddy-systems/lib": "*",
-    "@paddy-systems/relay-protocol": "*",
-    "@paddy-systems/relay-recording": "*",
-    "@paddy-systems/relay-replay": "*",
-    "@paddy-systems/shared-primitives": "*",
+    "@acme-systems/feature-flags": "*",
+    "@acme-systems/lib": "*",
+    "@acme-systems/relay-protocol": "*",
+    "@acme-systems/relay-recording": "*",
+    "@acme-systems/relay-replay": "*",
+    "@acme-systems/shared-primitives": "*",
     "@tanstack/react-query": "^5.102.8",
     "clsx": "^2.1.1",
     "next": "16.3.5",
@@ -28,8 +28,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.13",
-    "@paddy-systems/typescript-config": "*",
-    "@paddy-systems/env": "*",
+    "@acme-systems/typescript-config": "*",
+    "@acme-systems/env": "*",
     "@tailwindcss/postcss": "4.3.3",
     "@types/node": "^20",
     "@types/react": "19.3.0",
@@ -45,5 +45,6 @@
   "trustedDependencies": [
     "sharp",
     "unrs-resolver"
-  ]
+  ],
+  "license": "Apache-2.0"
 }

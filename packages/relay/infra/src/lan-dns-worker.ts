@@ -1,8 +1,8 @@
 /**
- * @paddy-systems/relay-infra
- * Cloudflare Worker / Edge DNS Resolver for *.lan.paddy.systems
+ * @acme-systems/relay-infra
+ * Cloudflare Worker / Edge DNS Resolver for *.lan.acme.example
  *
- * Translates IP-encoded subdomains (e.g. 192-168-1-50.lan.paddy.systems)
+ * Translates IP-encoded subdomains (e.g. 192-168-1-50.lan.acme.example)
  * into RFC 1918 private IPv4 A records, while enforcing strict anti-SSRF
  * filtering and handling ACME DNS-01 challenges.
  */
@@ -44,7 +44,7 @@ export function isRfc1918PrivateIp(ip: string): boolean {
 
 export function resolveLanDnsQuery(
   hostname: string,
-  apexDomain = "lan.relay.paddy.systems",
+  apexDomain = "lan.relay.acme.example",
 ): { ip: string | null; status: number } {
   const clean = hostname.toLowerCase().replace(/\.$/, "").trim();
   const suffix = `.${apexDomain.toLowerCase()}`;

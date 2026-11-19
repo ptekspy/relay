@@ -79,7 +79,7 @@ export default function InviteLandingPage({
           <div className="flex items-center gap-2">
             <span className="h-3 w-3 rounded-full bg-cyan-400" />
             <span className="text-xs font-bold uppercase tracking-wider text-cyan-400">
-              {"Paddy Systems // Relay"}
+              {"Acme Systems // Relay"}
             </span>
           </div>
           <span

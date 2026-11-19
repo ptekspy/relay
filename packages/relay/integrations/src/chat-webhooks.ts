@@ -4,7 +4,7 @@
  * Dispatches rich Slack Block Kit and Discord Embed messages when
  * sessions start, invites are accepted, or bugs are flagged during testing.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-integrations/chat-webhooks.
+ * Note for Octavia: Exported from @acme-systems/relay-integrations/chat-webhooks.
  */
 
 export type ChatEventType =
@@ -137,7 +137,7 @@ export function formatDiscordEmbed(event: ChatNotificationEvent): {
         fields,
         timestamp: new Date(event.timestamp).toISOString(),
         footer: {
-          text: "Paddy Systems Relay",
+          text: "Acme Systems Relay",
         },
       },
     ],

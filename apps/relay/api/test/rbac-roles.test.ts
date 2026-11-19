@@ -23,7 +23,7 @@ describe("TASK-165: Fine-Grained Team Roles (Owner, Admin, Engineer, Guest)", ()
       assertPermission(
         {
           userId: "usr_admin",
-          email: "admin@corp.com",
+          email: "admin@example.com",
           teamId: "team_1",
           role: "ADMIN",
         },
@@ -52,7 +52,7 @@ describe("TASK-165: Fine-Grained Team Roles (Owner, Admin, Engineer, Guest)", ()
       assertPermission(
         {
           userId: "usr_guest",
-          email: "guest@external.com",
+          email: "guest@example.com",
           teamId: "team_1",
           role: "GUEST",
         },

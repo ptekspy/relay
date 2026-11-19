@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.paddysystems.relay"
+    namespace = "com.acmesystems.relay"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.paddysystems.relay"
+        applicationId = "com.acmesystems.relay"
         minSdk = 26
         targetSdk = 34
         versionCode = 1

@@ -5,7 +5,7 @@
  * normalized screen coordinates (x%, y%), and target DOM selectors.
  */
 
-import type { SessionComment } from "@paddy-systems/relay-recording";
+import type { SessionComment } from "@acme-systems/relay-recording";
 
 export interface CommentTimelineMarker {
   id: string;

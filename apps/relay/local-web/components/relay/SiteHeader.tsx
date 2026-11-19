@@ -1,7 +1,7 @@
 "use client";
 
-import { GLOBAL_CONFIG } from "@paddy-systems/feature-flags/global";
-import { cn } from "@paddy-systems/lib/cn";
+import { GLOBAL_CONFIG } from "@acme-systems/feature-flags/global";
+import { cn } from "@acme-systems/lib/cn";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -49,14 +49,6 @@ export function SiteHeader() {
                 </Link>
               </li>
             ))}
-            <li>
-              <a
-                href="https://github.com/paddy-systems"
-                className="inline-flex min-h-9 items-center px-3 text-sm text-muted-foreground transition-colors hover:text-foreground"
-              >
-                GitHub
-              </a>
-            </li>
           </ul>
         </nav>
 
@@ -110,15 +102,6 @@ export function SiteHeader() {
                 </Link>
               </li>
             ))}
-            <li className="border-b border-rule">
-              <a
-                href="https://github.com/paddy-systems"
-                className="flex min-h-12 items-center justify-between text-base"
-              >
-                GitHub
-                <span className="label">05</span>
-              </a>
-            </li>
           </ul>
           <div className="mt-4 flex gap-2">
             {GLOBAL_CONFIG.AUTH_ENABLED && (

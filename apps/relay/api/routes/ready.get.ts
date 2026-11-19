@@ -1,4 +1,4 @@
-import { createReadyHandler } from "@paddy-systems/api-core";
+import { createReadyHandler } from "@acme-systems/api-core";
 
 export default createReadyHandler({
   name: "relay-api",

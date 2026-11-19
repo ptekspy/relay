@@ -10,7 +10,7 @@ describe("TASK-185: Automated Mobile Device Touch Interaction Recorder & Script 
   const interactions: RecordedInteraction[] = [
     {
       type: "navigate",
-      url: "https://shop.relay.paddy.systems",
+      url: "https://shop.relay.acme.example",
       timestamp: 1000,
     },
     {
@@ -48,7 +48,7 @@ describe("TASK-185: Automated Mobile Device Touch Interaction Recorder & Script 
     expect(spec).toContain('test.use({ ...devices["Pixel 7"] });');
     expect(spec).toContain('test("Mobile Checkout Flow Verification"');
     expect(spec).toContain(
-      'await page.goto("https://shop.relay.paddy.systems");',
+      'await page.goto("https://shop.relay.acme.example");',
     );
     expect(spec).toContain('await page.click("button#menu-toggle");');
     expect(spec).toContain(
@@ -80,7 +80,7 @@ describe("TASK-185: Automated Mobile Device Touch Interaction Recorder & Script 
     expect(spec).toContain('import puppeteer from "puppeteer";');
     expect(spec).toContain("const browser = await puppeteer.launch();");
     expect(spec).toContain(
-      'await page.goto("https://shop.relay.paddy.systems");',
+      'await page.goto("https://shop.relay.acme.example");',
     );
     expect(spec).toContain('await page.click("button#menu-toggle");');
     expect(spec).toContain(

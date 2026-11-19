@@ -85,7 +85,7 @@ describe("TASK-180: Issue Tracker Integration Contract & Failure Resilience Test
         }
         return ghClient.createIssue(
           {
-            owner: "Paddy-Systems",
+            owner: "Acme-Systems",
             repo: "p-s-core",
             title: "Resilience verified",
             body: "Verified automated retry contract",
@@ -104,7 +104,7 @@ describe("TASK-180: Issue Tracker Integration Contract & Failure Resilience Test
 
     const jiraClient = new JiraCloudClient(
       "acme.atlassian.net",
-      "test@acme.com",
+      "test@example.com",
       "tok",
     );
     let jiraAttempts = 0;

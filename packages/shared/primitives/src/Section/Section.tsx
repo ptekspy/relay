@@ -1,4 +1,4 @@
-import { cn } from "@paddy-systems/lib/cn";
+import { cn } from "@acme-systems/lib/cn";
 import type { ReactNode } from "react";
 import { Container } from "../Container/Container";
 import { Label } from "../Label/Label";

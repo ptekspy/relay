@@ -1,4 +1,4 @@
-import { SignInPage } from "@paddy-systems/auth/pages";
+import { SignInPage } from "@acme-systems/auth/pages";
 
 export default function LoginPage() {
   return (

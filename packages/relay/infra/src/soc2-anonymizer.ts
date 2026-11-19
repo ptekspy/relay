@@ -7,7 +7,7 @@
  * 3. Immutable audit trail preservation with pseudonymized identifiers.
  * 4. Zero-leftover verification confirming complete data erasure in < 60 seconds.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-infra/soc2.
+ * Note for Octavia: Exported from @acme-systems/relay-infra/soc2.
  */
 
 export interface UserPersonalRecord {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "bun:test";
-import { toSessionId } from "@paddy-systems/relay-protocol";
+import { toSessionId } from "@acme-systems/relay-protocol";
 import { validateReceiverAccess } from "../src/auth/access-policy.js";
 import { AuditLogService } from "../src/auth/audit.js";
 import { DeviceFlowManager } from "../src/auth/device-flow.js";
@@ -26,7 +26,7 @@ describe("Identity & Authentication Platform (Epic 5)", () => {
       assertPermission(
         {
           userId: "usr_1",
-          email: "viewer@ps.com",
+          email: "viewer@example.com",
           teamId: "team_1",
           role: "VIEWER",
         },

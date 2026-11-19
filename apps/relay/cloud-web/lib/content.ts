@@ -1,4 +1,4 @@
-/** Product truth — nothing here is invented beyond what Paddy Systems publishes. */
+/** Product truth — nothing here is invented beyond what Acme Systems publishes. */
 
 export type ProductStatus = "AVAILABLE NOW" | "IN DEVELOPMENT" | "UNANNOUNCED";
 
@@ -35,12 +35,12 @@ export const PRODUCTS: Product[] = [
   },
 ];
 
-export const RELAY_CLI = "npx --package @paddy-systems/relay-cli relay 3000";
+export const RELAY_CLI = "npx --package @acme-systems/relay-cli relay 3000";
 
 /** Each product keeps its own site; these are the authoritative product homes. */
 export const PRODUCT_SITES = {
-  relay: "https://relay.paddy.systems",
-  mirror: "https://mirror.paddy.systems",
+  relay: "https://relay.acme.example",
+  mirror: "https://mirror.acme.example",
 } as const;
 
 export type Note = {

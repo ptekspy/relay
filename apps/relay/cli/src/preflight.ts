@@ -77,7 +77,7 @@ export async function checkRelayApiHealth(timeoutMs = 2500): Promise<boolean> {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), timeoutMs);
 
-    const res = await fetch("https://api.relay.paddy.systems/health", {
+    const res = await fetch("https://api.relay.acme.example/health", {
       signal: controller.signal,
     });
     clearTimeout(timeout);
@@ -96,7 +96,7 @@ export async function runPreflightChecks(
   const [onlineResult, apiResult, targetActive, firewallResult] =
     await Promise.allSettled([
       isOnline({
-        fallbackUrls: ["https://api.relay.paddy.systems/health"],
+        fallbackUrls: ["https://api.relay.acme.example/health"],
       }),
       checkRelayApiHealth(),
       checkPortReachable(config.port, config.host ?? "127.0.0.1"),
@@ -161,9 +161,9 @@ export async function handlePostPreflightAction(
     return;
   }
 
-  // Step 3: If online -> load relay.paddy.systems/connect?<connection stuff>
+  // Step 3: If online -> load relay.acme.example/connect?<connection stuff>
   if (preflight.isOnline && preflight.apiHealthy) {
-    await open(`https://relay.paddy.systems/connect${queryString}`);
+    await open(`https://relay.acme.example/connect${queryString}`);
     return;
   }
 

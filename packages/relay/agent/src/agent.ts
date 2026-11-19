@@ -1,4 +1,4 @@
-import type { RelayTelemetryEvent } from "@paddy-systems/relay-protocol";
+import type { RelayTelemetryEvent } from "@acme-systems/relay-protocol";
 import { EventRingBuffer, type TransportEmitter } from "./buffer.js";
 import { ConsoleInterceptor } from "./console.js";
 import { ErrorInterceptor } from "./errors.js";

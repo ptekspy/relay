@@ -25,13 +25,13 @@ describe("TASK-181: Relay Headless CLI Runner for CI/CD Pipelines (relay ci)", (
   it("generates deterministic machine-readable endpoint metadata", () => {
     const runner = new CiRunner({
       port: 3000,
-      tunnelUrl: "https://ci-test.relay.paddy.systems",
+      tunnelUrl: "https://ci-test.relay.acme.example",
     });
 
     const meta = runner.generateMetadata("ci_static_id");
     expect(meta.sessionId).toBe("ci_static_id");
     expect(meta.targetPort).toBe(3000);
-    expect(meta.tunnelUrl).toBe("https://ci-test.relay.paddy.systems");
+    expect(meta.tunnelUrl).toBe("https://ci-test.relay.acme.example");
     expect(meta.lanUrl).toBe("http://127.0.0.1:7331");
   });
 

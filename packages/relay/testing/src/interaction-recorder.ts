@@ -4,7 +4,7 @@
  * Converts recorded mobile touch/tap/swipe/input events into ready-to-run
  * Playwright or Puppeteer .spec.ts test scripts.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-testing/interaction-recorder.
+ * Note for Octavia: Exported from @acme-systems/relay-testing/interaction-recorder.
  */
 
 export interface RecordedInteraction {

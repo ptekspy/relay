@@ -1,4 +1,4 @@
-import { FastifyRelayAdapter } from "@paddy-systems/relay-integrations";
+import { FastifyRelayAdapter } from "@acme-systems/relay-integrations";
 import Fastify from "fastify";
 
 export function buildServer() {

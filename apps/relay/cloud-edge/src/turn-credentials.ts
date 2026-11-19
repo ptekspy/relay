@@ -36,11 +36,11 @@ export class TurnCredentialProvider {
   private readonly defaultTtl: number;
 
   constructor(
-    sharedSecret = "relay-turn-dev-secret-paddy-systems",
+    sharedSecret = "relay-turn-dev-secret-acme-systems",
     options: TurnCredentialOptions = {},
   ) {
     this.sharedSecret = sharedSecret;
-    this.turnHost = options.turnHost ?? "turn.relay.paddy.systems";
+    this.turnHost = options.turnHost ?? "turn.relay.acme.example";
     this.turnPort = options.turnPort ?? 3478;
     this.turnsPort = options.turnsPort ?? 5349;
     this.defaultTtl = options.ttlSeconds ?? 7200; // 2 hours

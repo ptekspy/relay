@@ -2,8 +2,8 @@ import { afterAll, beforeAll, describe, expect, it } from "bun:test";
 import { type ChildProcess, spawn } from "node:child_process";
 import { createServer } from "node:http";
 import { join } from "node:path";
-import { PythonServerAdapter } from "@paddy-systems/relay-integrations";
-import { RelayE2EContractRunner } from "@paddy-systems/relay-testing";
+import { PythonServerAdapter } from "@acme-systems/relay-integrations";
+import { RelayE2EContractRunner } from "@acme-systems/relay-testing";
 
 describe("Python Polyglot Service & Relay Integration E2E Contract", () => {
   let pythonProc: ChildProcess;

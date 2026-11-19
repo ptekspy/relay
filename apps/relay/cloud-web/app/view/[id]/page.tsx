@@ -3,7 +3,7 @@
 import type {
   RecordedEvent,
   SessionComment,
-} from "@paddy-systems/relay-recording";
+} from "@acme-systems/relay-recording";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Suspense, use, useEffect, useRef, useState } from "react";

@@ -3,7 +3,7 @@ import type {
   ConsoleEvent,
   DomMutationEvent,
   RelayTelemetryEvent,
-} from "@paddy-systems/relay-protocol";
+} from "@acme-systems/relay-protocol";
 import { EventRingBuffer } from "../src/buffer.js";
 
 describe("TASK-150: DevTools Telemetry Benchmark & Ring Buffer Stress Tests", () => {

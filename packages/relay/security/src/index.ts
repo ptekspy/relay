@@ -1,5 +1,5 @@
 /**
- * @paddy-systems/relay-security
+ * @acme-systems/relay-security
  * Security Governance, Attestation & Audit Vault.
  */
 

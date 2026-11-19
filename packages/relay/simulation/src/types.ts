@@ -1,5 +1,5 @@
 /**
- * @paddy-systems/relay-simulation
+ * @acme-systems/relay-simulation
  * Types for synthetic device farm simulator and chaos testing harness.
  */
 

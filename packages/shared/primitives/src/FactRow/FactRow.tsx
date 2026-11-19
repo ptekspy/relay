@@ -1,4 +1,4 @@
-import { cn } from "@paddy-systems/lib/cn";
+import { cn } from "@acme-systems/lib/cn";
 import type { ReactNode } from "react";
 
 /** Definition-style metadata rows used across product and legal pages. */

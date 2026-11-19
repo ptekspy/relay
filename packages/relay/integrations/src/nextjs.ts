@@ -17,8 +17,8 @@ export interface ServerActionRequestNormalizerOptions {
 }
 
 export interface ServerActionResponseNormalizerOptions {
-  relayHost: string; // e.g. "sess-xyz.relay.paddy.systems" or "192.168.1.50:7331"
-  relayOrigin: string; // e.g. "https://sess-xyz.relay.paddy.systems"
+  relayHost: string; // e.g. "sess-xyz.relay.acme.example" or "192.168.1.50:7331"
+  relayOrigin: string; // e.g. "https://sess-xyz.relay.acme.example"
 }
 
 export class NextJsServerActionsNormalizer {

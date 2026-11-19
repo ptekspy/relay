@@ -44,7 +44,7 @@ export class CiRunner {
     sessionId = `ci_${Math.random().toString(36).slice(2, 10)}`,
   ): CiEndpointMetadata {
     const tunnelUrl =
-      this.config.tunnelUrl ?? `https://${sessionId}.relay.paddy.systems`;
+      this.config.tunnelUrl ?? `https://${sessionId}.relay.acme.example`;
     const gatewayPort = this.config.gatewayPort ?? 7331;
 
     return {

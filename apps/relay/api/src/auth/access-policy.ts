@@ -1,4 +1,4 @@
-import { verifyTimingSafeToken } from "@paddy-systems/relay-protocol";
+import { verifyTimingSafeToken } from "@acme-systems/relay-protocol";
 
 export type ReceiverAccessPolicy = "OPEN" | "PASSCODE" | "TEAM_ONLY";
 

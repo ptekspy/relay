@@ -6,7 +6,7 @@ import os from "node:os";
 import path from "node:path";
 import type { DnsProbeResult, LanTlsBundle } from "./types.js";
 
-export const DEFAULT_LAN_APEX_DOMAIN = "lan.relay.paddy.systems";
+export const DEFAULT_LAN_APEX_DOMAIN = "lan.relay.acme.example";
 
 /**
  * Checks if an IPv4 address belongs to RFC 1918 private ranges or loopback.
@@ -36,7 +36,7 @@ export function isRfc1918PrivateIp(ip: string): boolean {
 
 /**
  * Encodes an IPv4 address into a wildcard LAN subdomain.
- * e.g. "192.168.1.50" -> "192-168-1-50.lan.paddy.systems"
+ * e.g. "192.168.1.50" -> "192-168-1-50.lan.acme.example"
  */
 export function ipToLanDomain(
   ip: string,

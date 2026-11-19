@@ -1,5 +1,5 @@
 import { describe, expect, it } from "bun:test";
-import { toSessionId } from "@paddy-systems/relay-protocol";
+import { toSessionId } from "@acme-systems/relay-protocol";
 import { CloudApiRateLimiter } from "../src/middleware/rate-limit.js";
 import { WebRtcSignalingHub } from "../src/signaling/webrtc.js";
 import { SessionRegistry } from "../src/storage/session-store.js";

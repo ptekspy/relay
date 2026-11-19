@@ -1,10 +1,10 @@
 import { describe, expect, it } from "bun:test";
 import { relayAstro } from "../src/astro.js";
 
-describe("TASK-124: Astro Integration Plugin (@paddy-systems/relay-astro)", () => {
+describe("TASK-124: Astro Integration Plugin (@acme-systems/relay-astro)", () => {
   it("registers integration with proper hooks", () => {
     const integration = relayAstro({ relayHost: "http://192.168.1.50:7331" });
-    expect(integration.name).toBe("@paddy-systems/relay-astro");
+    expect(integration.name).toBe("@acme-systems/relay-astro");
     expect(integration.hooks["astro:config:setup"]).toBeDefined();
     expect(integration.hooks["astro:server:setup"]).toBeDefined();
   });

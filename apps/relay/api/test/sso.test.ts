@@ -26,7 +26,7 @@ describe("TASK-164: Enterprise SAML 2.0 / OIDC SSO Integration via Logto", () =>
 
     const loginUrl = sso.generateLoginUrl(
       "acme.corp",
-      "https://relay.paddy.systems/auth/callback",
+      "https://relay.acme.example/auth/callback",
     );
     expect(loginUrl).toContain("https://acme.okta.com/oauth2/v1/authorize");
     expect(loginUrl).toContain("client_id=sso-app-1");
@@ -49,12 +49,12 @@ describe("TASK-164: Enterprise SAML 2.0 / OIDC SSO Integration via Logto", () =>
 
     const assertionResult = sso.processAssertion("globex.com", {
       nameId: "usr-emp-101",
-      email: "engineer@globex.com",
+      email: "engineer@example.com",
       displayName: "Jane Doe",
       groups: ["developers"],
     });
 
-    expect(assertionResult.email).toBe("engineer@globex.com");
+    expect(assertionResult.email).toBe("engineer@example.com");
     expect(assertionResult.teamId).toBe("team-globex");
     expect(assertionResult.role).toBe("ENGINEER");
     expect(assertionResult.isNewUser).toBe(true);
@@ -63,7 +63,7 @@ describe("TASK-164: Enterprise SAML 2.0 / OIDC SSO Integration via Logto", () =>
     // Second login recognized as existing user
     const secondLogin = sso.processAssertion("globex.com", {
       nameId: "usr-emp-101",
-      email: "engineer@globex.com",
+      email: "engineer@example.com",
     });
     expect(secondLogin.userId).toBe(assertionResult.userId);
     expect(secondLogin.isNewUser).toBe(false);
@@ -85,7 +85,7 @@ describe("TASK-164: Enterprise SAML 2.0 / OIDC SSO Integration via Logto", () =>
 
     const result = sso.processAssertion("corp.net", {
       nameId: "usr-admin-1",
-      email: "lead@corp.net",
+      email: "lead@example.com",
       groups: ["engineers", "relay-admins"],
     });
 

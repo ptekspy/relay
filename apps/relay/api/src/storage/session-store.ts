@@ -3,7 +3,7 @@ import {
   generateShortCode,
   type SessionId,
   toSessionId,
-} from "@paddy-systems/relay-protocol";
+} from "@acme-systems/relay-protocol";
 import type {
   RelayConnectionRecord,
   RelaySessionRecord,

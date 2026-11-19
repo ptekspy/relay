@@ -2,21 +2,21 @@ import { describe, expect, it } from "bun:test";
 import { SniDynamicRouter } from "../src/sni-router";
 
 describe("TASK-102: Wildcard Subdomain & SNI Dynamic Routing", () => {
-  const router = new SniDynamicRouter(["relay.paddy.systems", "relay.zone"]);
+  const router = new SniDynamicRouter(["relay.acme.example", "relay.zone"]);
 
   it("extracts session IDs accurately from wildcard subdomains and region prefixes", () => {
     expect(
-      router.extractSessionIdFromHost("sess-xyz123.relay.paddy.systems"),
+      router.extractSessionIdFromHost("sess-xyz123.relay.acme.example"),
     ).toBe("sess-xyz123");
     expect(
       router.extractSessionIdFromHost(
-        "sess-xyz123.eu-west.relay.paddy.systems",
+        "sess-xyz123.eu-west.relay.acme.example",
       ),
     ).toBe("sess-xyz123");
     expect(router.extractSessionIdFromHost("demo-test.relay.zone:443")).toBe(
       "demo-test",
     );
-    expect(router.extractSessionIdFromHost("relay.paddy.systems")).toBeNull();
+    expect(router.extractSessionIdFromHost("relay.acme.example")).toBeNull();
     expect(router.extractSessionIdFromHost("unknown-domain.com")).toBeNull();
   });
 
@@ -30,7 +30,7 @@ describe("TASK-102: Wildcard Subdomain & SNI Dynamic Routing", () => {
       expiresAt: future,
     });
 
-    const result = router.resolveHost("session-abc.relay.paddy.systems");
+    const result = router.resolveHost("session-abc.relay.acme.example");
     expect(result.found).toBe(true);
     if (result.found) {
       expect(result.sessionId).toBe("session-abc");
@@ -39,7 +39,7 @@ describe("TASK-102: Wildcard Subdomain & SNI Dynamic Routing", () => {
   });
 
   it("returns typed ERR_SESSION_NOT_FOUND with HTML page for unknown sessions", () => {
-    const result = router.resolveHost("nonexistent-sess.relay.paddy.systems");
+    const result = router.resolveHost("nonexistent-sess.relay.acme.example");
     expect(result.found).toBe(false);
     if (!result.found) {
       expect(result.errorCode).toBe("ERR_SESSION_NOT_FOUND");
@@ -58,7 +58,7 @@ describe("TASK-102: Wildcard Subdomain & SNI Dynamic Routing", () => {
       expiresAt: past,
     });
 
-    const result = router.resolveHost("session-expired.relay.paddy.systems");
+    const result = router.resolveHost("session-expired.relay.acme.example");
     expect(result.found).toBe(false);
     if (!result.found) {
       expect(result.errorCode).toBe("ERR_SESSION_EXPIRED");

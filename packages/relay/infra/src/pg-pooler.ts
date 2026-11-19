@@ -4,7 +4,7 @@
  * Implements transaction-level connection pooling (PgBouncer-compatible),
  * automatic read/write intent query splitting, and load-balanced read-replica routing.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-infra/pg-pooler.
+ * Note for Octavia: Exported from @acme-systems/relay-infra/pg-pooler.
  */
 
 export type QueryIntent = "read" | "write" | "transaction";

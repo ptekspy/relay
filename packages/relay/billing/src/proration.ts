@@ -5,7 +5,7 @@
  * calculates second-accurate proration for mid-cycle seat additions or removals,
  * and updates team authorization ceilings immediately.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-billing/proration.
+ * Note for Octavia: Exported from @acme-systems/relay-billing/proration.
  */
 
 export const TEAMS_TIER_MINIMUM_SEATS = 3;

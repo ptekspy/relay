@@ -1,5 +1,5 @@
 import type { Socket } from "node:net";
-import type { RelayReceiverMetadata } from "@paddy-systems/relay-protocol";
+import type { RelayReceiverMetadata } from "@acme-systems/relay-protocol";
 
 export interface ConnectedReceiver extends RelayReceiverMetadata {
   socket?: Socket;

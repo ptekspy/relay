@@ -4,8 +4,8 @@ import { createAuthClient } from "better-auth/react";
 
 export const authUrl =
   typeof window !== "undefined"
-    ? process.env.NEXT_PUBLIC_BETTER_AUTH_URL || "https://auth.paddy.systems"
-    : process.env.BETTER_AUTH_URL || "https://auth.paddy.systems";
+    ? process.env.NEXT_PUBLIC_BETTER_AUTH_URL || "https://auth.acme.example"
+    : process.env.BETTER_AUTH_URL || "https://auth.acme.example";
 
 export const authClient = createAuthClient({
   baseURL: authUrl,

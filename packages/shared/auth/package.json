@@ -1,5 +1,5 @@
 {
-  "name": "@paddy-systems/auth",
+  "name": "@acme-systems/auth",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -15,8 +15,8 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "@paddy-systems/database": "*",
-    "@paddy-systems/shared-primitives": "*",
+    "@acme-systems/database": "*",
+    "@acme-systems/shared-primitives": "*",
     "better-auth": "^1.7.4",
     "clsx": "^2.1.1",
     "react": "^19.0.0",
@@ -24,11 +24,12 @@
     "tailwind-merge": "^3.0.0"
   },
   "devDependencies": {
-    "@paddy-systems/typescript-config": "*",
+    "@acme-systems/typescript-config": "*",
     "@types/node": "^20.17.24",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "typescript": "7.0.2"
   },
-  "packageManager": "bun@1.4.0"
+  "packageManager": "bun@1.4.0",
+  "license": "Apache-2.0"
 }

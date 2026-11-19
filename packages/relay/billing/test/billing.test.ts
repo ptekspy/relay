@@ -64,7 +64,7 @@ describe("Relay Security: SSRF Protection (TASK-P33)", () => {
   });
 
   it("allows valid public addresses", () => {
-    expect(validateRemoteTarget("https://api.paddy.systems").allowed).toBe(
+    expect(validateRemoteTarget("https://api.acme.example").allowed).toBe(
       true,
     );
     expect(validateRemoteTarget("8.8.8.8").allowed).toBe(true);

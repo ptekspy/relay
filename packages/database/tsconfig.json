@@ -1,5 +1,5 @@
 {
-  "extends": "@paddy-systems/typescript-config/base.json",
+  "extends": "@acme-systems/typescript-config/base.json",
   "compilerOptions": {
     "noEmit": true,
     "types": ["node"]

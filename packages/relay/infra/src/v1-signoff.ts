@@ -13,7 +13,7 @@
  * - Epic 19: CI/CD Device Automation (TASK-181 - TASK-190) [COMPLETED]
  * - Epic 20: Enterprise Infrastructure & Production Hardening (TASK-191 - TASK-200) [COMPLETED]
  *
- * Note for Octavia: Exported from @paddy-systems/relay-infra/v1-signoff.
+ * Note for Octavia: Exported from @acme-systems/relay-infra/v1-signoff.
  */
 
 export interface EpicReadinessSummary {
@@ -139,10 +139,10 @@ export class V1LaunchSignoffEngine {
     );
 
     return {
-      product: "Paddy Systems Relay",
+      product: "Acme Systems Relay",
       version: "1.0.0-GA",
       signoffDate: new Date().toISOString(),
-      engineer: "Sally Smith <sally@paddy.systems>",
+      engineer: "Sally Smith <sally@example.com>",
       totalTasks,
       activeTasksCompleted,
       blockedTasksSkipped,

@@ -39,31 +39,13 @@ export function SiteFooter() {
         />
 
         <div>
-          <h2 className="label">Paddy Systems</h2>
-          <ul className="mt-4 space-y-2 text-sm">
-            <li>
-              <a
-                href="https://paddy-systems-web.lovable.app/"
-                className="text-muted-foreground transition-colors hover:text-foreground"
-              >
-                paddy.systems
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/paddy-systems"
-                className="text-muted-foreground transition-colors hover:text-foreground"
-              >
-                GitHub
-              </a>
-            </li>
-          </ul>
+          <h2 className="label">Acme Systems</h2>
         </div>
       </div>
 
       <div className="shell flex flex-col gap-2 border-t border-rule py-6 sm:flex-row sm:items-center sm:justify-between">
-        <p className="label">Relay — a Paddy Systems product</p>
-        <p className="label">© 2026 Paddy Systems Ltd</p>
+        <p className="label">Relay — an Acme Systems product</p>
+        <p className="label">© 2026 Acme Systems Ltd</p>
       </div>
     </footer>
   );

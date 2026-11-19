@@ -64,9 +64,9 @@ export function ConnectionDetailsCard({
   );
 
   const commands = {
-    bun: `bunx @paddy-systems/relay connect ${shortCode}`,
-    pnpm: `pnpm dlx @paddy-systems/relay connect ${shortCode}`,
-    npm: `npx @paddy-systems/relay connect ${shortCode}`,
+    bun: `bunx @acme-systems/relay connect ${shortCode}`,
+    pnpm: `pnpm dlx @acme-systems/relay connect ${shortCode}`,
+    npm: `npx @acme-systems/relay connect ${shortCode}`,
   };
 
   const copyToClipboard = (text: string, key: string) => {

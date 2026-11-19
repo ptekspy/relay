@@ -1,5 +1,5 @@
 {
-  "extends": "@paddy-systems/typescript-config/nextjs.json",
+  "extends": "@acme-systems/typescript-config/nextjs.json",
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -20,7 +20,7 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@paddy-systems/relay-protocol": [
+      "@acme-systems/relay-protocol": [
         "../../packages/relay/protocol/src/index.ts"
       ]
     }

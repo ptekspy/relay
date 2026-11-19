@@ -4,7 +4,7 @@
  * Synchronizes voice notes and audio commentary with the replay timeline scrubber,
  * enabling developers and QA testers to record verbal explanations linked to exact playhead timestamps.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-replay/voice-notes.
+ * Note for Octavia: Exported from @acme-systems/relay-replay/voice-notes.
  */
 
 export interface VoiceNoteTrack {

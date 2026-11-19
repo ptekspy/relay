@@ -1,4 +1,4 @@
-package com.paddysystems.relay
+package com.acmesystems.relay
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -104,7 +104,7 @@ class ScreenCaptureService : Service() {
     private fun startForegroundNotification() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val notification = Notification.Builder(this, CHANNEL_ID)
-                .setContentTitle("Paddy Relay Live Screen Stream")
+                .setContentTitle("Acme Relay Live Screen Stream")
                 .setContentText("Streaming physical device screen to dashboard")
                 .setSmallIcon(android.R.drawable.presence_video_online)
                 .build()

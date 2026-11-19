@@ -2,7 +2,7 @@ import { describe, expect, it } from "bun:test";
 import type {
   ConsoleEvent,
   RelayTelemetryEvent,
-} from "@paddy-systems/relay-protocol";
+} from "@acme-systems/relay-protocol";
 import { RelayAgent } from "../src/agent.js";
 import { EventRingBuffer } from "../src/buffer.js";
 import { ConsoleInterceptor } from "../src/console.js";

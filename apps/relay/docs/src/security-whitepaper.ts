@@ -31,7 +31,7 @@ export class RelaySecurityWhitepaper {
   }
 
   public getSummary(): string {
-    return "Paddy Systems Relay employs a zero-trust, local-first architecture with end-to-end payload encryption and hardware-bound device attestation.";
+    return "Acme Systems Relay employs a zero-trust, local-first architecture with end-to-end payload encryption and hardware-bound device attestation.";
   }
 }
 

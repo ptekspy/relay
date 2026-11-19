@@ -1,4 +1,4 @@
-import { cn } from "@paddy-systems/lib/cn";
+import { cn } from "@acme-systems/lib/cn";
 import { CopyButton } from "../CopyButton/CopyButton";
 
 /** Horizontally scrollable technical code line, optionally copyable. */

@@ -6,9 +6,9 @@ export class RelayFrameworkGuides {
       slug: "nextjs",
       title: "Next.js (App Router & Pages)",
       framework: "Next.js",
-      installCommand: "bun add -D @paddy-systems/relay-next",
+      installCommand: "bun add -D @acme-systems/relay-next",
       snippet: `// next.config.mjs
-import { withRelay } from '@paddy-systems/relay-next';
+import { withRelay } from '@acme-systems/relay-next';
 
 export default withRelay({
   reactStrictMode: true,
@@ -19,10 +19,10 @@ export default withRelay({
       slug: "vite",
       title: "Vite + React / Vue / Svelte",
       framework: "Vite",
-      installCommand: "bun add -D @paddy-systems/relay-vite",
+      installCommand: "bun add -D @acme-systems/relay-vite",
       snippet: `// vite.config.ts
 import { defineConfig } from 'vite';
-import relayPlugin from '@paddy-systems/relay-vite';
+import relayPlugin from '@acme-systems/relay-vite';
 
 export default defineConfig({
   plugins: [relayPlugin()],
@@ -33,10 +33,10 @@ export default defineConfig({
       slug: "astro",
       title: "Astro Modern Web Framework",
       framework: "Astro",
-      installCommand: "bun add -D @paddy-systems/relay-astro",
+      installCommand: "bun add -D @acme-systems/relay-astro",
       snippet: `// astro.config.mjs
 import { defineConfig } from 'astro/config';
-import relay from '@paddy-systems/relay-astro';
+import relay from '@acme-systems/relay-astro';
 
 export default defineConfig({
   integrations: [relay()],
@@ -47,7 +47,7 @@ export default defineConfig({
       slug: "django",
       title: "Django Web Framework (Python)",
       framework: "Django",
-      installCommand: "pip install paddy-systems-relay",
+      installCommand: "pip install acme-systems-relay",
       snippet: `# settings.py
 MIDDLEWARE = [
     'relay_sdk.django_middleware.RelayScriptInjectionMiddleware',
@@ -59,7 +59,7 @@ MIDDLEWARE = [
       slug: "fastapi",
       title: "FastAPI Async Web Framework (Python)",
       framework: "FastAPI",
-      installCommand: "pip install paddy-systems-relay",
+      installCommand: "pip install acme-systems-relay",
       snippet: `# main.py
 from fastapi import FastAPI
 from relay_sdk.fastapi_middleware import RelayTelemetryMiddleware

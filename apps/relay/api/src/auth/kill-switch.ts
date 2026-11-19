@@ -1,4 +1,4 @@
-import type { SessionId } from "@paddy-systems/relay-protocol";
+import type { SessionId } from "@acme-systems/relay-protocol";
 import { defaultSessionRegistry } from "../storage/session-store.js";
 import { defaultAuditService } from "./audit.js";
 

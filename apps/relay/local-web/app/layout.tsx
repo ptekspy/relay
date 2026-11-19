@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "Relay Local — your dev server, wherever you need it",
   description:
     "Relay shares your local dev server with another device using one command and a short access code. No public ports, no config. Free for local use.",
-  authors: [{ name: "Paddy Systems" }],
+  authors: [{ name: "Acme Systems" }],
   robots: {
     index: false,
     follow: false,
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@PaddySystems",
+    site: "@AcmeSystems",
   },
   icons: {
     icon: "/favicon.ico",

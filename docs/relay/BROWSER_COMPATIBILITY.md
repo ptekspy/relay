@@ -1,4 +1,4 @@
-# Paddy Systems Relay — Receiver Browser Compatibility Matrix
+# Acme Systems Relay — Receiver Browser Compatibility Matrix
 
 This document defines supported receiver browser environments, tested OS versions, and specific API capabilities across mobile and desktop platforms.
 

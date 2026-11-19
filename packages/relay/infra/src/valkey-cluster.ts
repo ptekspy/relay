@@ -4,7 +4,7 @@
  * Implements CRC16 slot hashing (0..16383) with Redis Cluster hash tag parsing {tag},
  * partition routing across multi-AZ masters, and replica synchronization.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-infra/valkey.
+ * Note for Octavia: Exported from @acme-systems/relay-infra/valkey.
  */
 
 export const TOTAL_CLUSTER_SLOTS = 16384;

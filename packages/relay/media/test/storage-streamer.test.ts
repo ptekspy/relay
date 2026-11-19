@@ -8,7 +8,7 @@ describe("TASK-159: Cloud Object Storage Streaming for Video Recordings", () => 
       endpoint: "r2.cloudflarestorage.com",
       accessKeyId: "mock-key",
       secretAccessKey: "mock-secret",
-      publicDomain: "media.relay.paddy.dev",
+      publicDomain: "media.relay.acme.example",
     });
 
     const sessionId = "sess-stream-123";
@@ -35,7 +35,7 @@ describe("TASK-159: Cloud Object Storage Streaming for Video Recordings", () => 
     expect(summary.totalSizeBytes).toBe(5 * 500 * 1024);
     expect(summary.readyInSeconds).toBeLessThan(10); // Ready within 10 seconds
     expect(summary.playbackUrl).toContain(
-      "https://media.relay.paddy.dev/recordings/sess-stream-123/session_stream.webm",
+      "https://media.relay.acme.example/recordings/sess-stream-123/session_stream.webm",
     );
     expect(summary.playbackUrl).toContain("signature=");
   });

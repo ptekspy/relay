@@ -4,7 +4,7 @@
  * Formats and posts scan-ready QR code preview comments to GitHub Pull Requests
  * with live mobile tunnel URLs and ephemeral session metadata.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-testing/github-action.
+ * Note for Octavia: Exported from @acme-systems/relay-testing/github-action.
  */
 
 export interface RelayActionCommentOptions {
@@ -54,7 +54,7 @@ export class RelayActionCommentBuilder {
       "</details>",
       "",
       "---",
-      "*Automated by [Relay](https://relay.paddy.systems) CI Action*",
+      "*Automated by [Relay](https://relay.acme.example) CI Action*",
     ].join("\n");
   }
 

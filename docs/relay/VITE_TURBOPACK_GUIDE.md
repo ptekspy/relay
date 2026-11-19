@@ -1,6 +1,6 @@
 # Integrating Relay with Vite & Turbopack
 
-This guide covers configuring Vite and Turbopack dev servers for seamless mobile pairing, HMR stability, and telemetry collection via Paddy Systems Relay.
+This guide covers configuring Vite and Turbopack dev servers for seamless mobile pairing, HMR stability, and telemetry collection via Acme Systems Relay.
 
 ---
 
@@ -19,7 +19,7 @@ vite --host
 // vite.config.ts
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import { relayPlugin } from "@paddy-systems/relay-agent/vite";
+import { relayPlugin } from "@acme-systems/relay-agent/vite";
 
 export default defineConfig({
   plugins: [

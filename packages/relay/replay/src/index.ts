@@ -1,5 +1,5 @@
 /**
- * @paddy-systems/relay-replay
+ * @acme-systems/relay-replay
  * Deterministic Replay and Time-Travel Debugging Engine.
  */
 
@@ -20,8 +20,8 @@ import type {
   ConsoleEvent,
   DomMutationEvent,
   NetworkTelemetryEvent,
-} from "@paddy-systems/relay-protocol";
-import type { SessionComment } from "@paddy-systems/relay-recording";
+} from "@acme-systems/relay-protocol";
+import type { SessionComment } from "@acme-systems/relay-recording";
 import { CheckpointManager } from "./checkpoint.js";
 import { VirtualClock } from "./clock.js";
 import { SessionCommentsManager } from "./comments.js";

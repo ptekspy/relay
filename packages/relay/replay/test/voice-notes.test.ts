@@ -9,7 +9,7 @@ describe("TASK-178: Audio Commentary & Voice Note Attachment in Replays", () => 
       author: "Sally",
       startTimelineMs: 25000,
       durationMs: 5000,
-      audioUrl: "https://r2.relay.paddy.systems/audio/note2.webm",
+      audioUrl: "https://r2.relay.acme.example/audio/note2.webm",
       mimeType: "audio/webm",
       transcription:
         "Notice how the modal backdrop doesn't capture clicks here.",
@@ -19,7 +19,7 @@ describe("TASK-178: Audio Commentary & Voice Note Attachment in Replays", () => 
       author: "Octavia",
       startTimelineMs: 5000,
       durationMs: 8000,
-      audioUrl: "https://r2.relay.paddy.systems/audio/note1.webm",
+      audioUrl: "https://r2.relay.acme.example/audio/note1.webm",
       mimeType: "audio/webm",
       transcription: "Initial render looks crisp on mobile viewport.",
     });
@@ -57,7 +57,7 @@ describe("TASK-178: Audio Commentary & Voice Note Attachment in Replays", () => 
       author: "Dev",
       startTimelineMs: 3000,
       durationMs: 2000,
-      audioUrl: "https://relay.paddy.systems/audio/test.webm",
+      audioUrl: "https://relay.acme.example/audio/test.webm",
       mimeType: "audio/webm",
     });
 

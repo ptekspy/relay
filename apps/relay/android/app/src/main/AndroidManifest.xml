@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.paddysystems.relay">
+    package="com.acmesystems.relay">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -12,14 +12,14 @@
     <application
         android:allowBackup="true"
         android:icon="@android:drawable/sym_def_app_icon"
-        android:label="Paddy Relay"
+        android:label="Acme Relay"
         android:roundIcon="@android:drawable/sym_def_app_icon"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:theme="@android:style/Theme.Material.NoActionBar">
         
         <activity
-            android:name="com.paddysystems.relay.MainActivity"
+            android:name="com.acmesystems.relay.MainActivity"
             android:exported="true"
             android:configChanges="orientation|screenSize|keyboardHidden">
             <intent-filter>
@@ -29,12 +29,12 @@
         </activity>
 
         <service
-            android:name="com.paddysystems.relay.RelayForegroundService"
+            android:name="com.acmesystems.relay.RelayForegroundService"
             android:foregroundServiceType="connectedDevice"
             android:exported="false" />
 
         <service
-            android:name="com.paddysystems.relay.ScreenCaptureService"
+            android:name="com.acmesystems.relay.ScreenCaptureService"
             android:foregroundServiceType="mediaProjection"
             android:exported="false" />
     </application>

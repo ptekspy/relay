@@ -1,4 +1,4 @@
-package com.paddysystems.relay
+package com.acmesystems.relay
 
 data class LogcatEntry(
     val priority: String,

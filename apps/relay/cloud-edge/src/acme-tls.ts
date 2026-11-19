@@ -61,7 +61,7 @@ export class AcmeTlsManager {
     const exact = this.certStore.get(cleanDomain);
     if (exact) return exact;
 
-    // 2. Wildcard match (e.g. *.relay.paddy.systems matching session1.relay.paddy.systems)
+    // 2. Wildcard match (e.g. *.relay.acme.example matching session1.relay.acme.example)
     const dotIndex = cleanDomain.indexOf(".");
     if (dotIndex !== -1) {
       const parentWildcard = `*${cleanDomain.slice(dotIndex)}`;

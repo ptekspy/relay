@@ -1,5 +1,5 @@
 {
-  "name": "@paddy-systems/shared-primitives",
+  "name": "@acme-systems/shared-primitives",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -23,7 +23,7 @@
     "./Typography": "./src/Typography/Typography.tsx"
   },
   "dependencies": {
-    "@paddy-systems/lib": "*",
+    "@acme-systems/lib": "*",
     "class-variance-authority": "^0.7.1"
   },
   "peerDependencies": {
@@ -31,7 +31,7 @@
     "react": "^19.0.0"
   },
   "devDependencies": {
-    "@paddy-systems/typescript-config": "*",
+    "@acme-systems/typescript-config": "*",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/react": "^16.3.3",
     "@types/react": "19.3.0",
@@ -42,5 +42,6 @@
     "react-dom": "19.3.0",
     "typescript": "7.0.2",
     "vitest": "^4"
-  }
+  },
+  "license": "Apache-2.0"
 }

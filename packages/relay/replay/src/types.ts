@@ -1,5 +1,5 @@
 /**
- * @paddy-systems/relay-replay
+ * @acme-systems/relay-replay
  * Types and interfaces for deterministic time-travel and replay engine.
  * Note to Sally: Standalone replay engine package, safe to import or link.
  */
@@ -7,7 +7,7 @@
 import type {
   ConsoleLogLevel,
   RelayTelemetryEvent,
-} from "@paddy-systems/relay-protocol";
+} from "@acme-systems/relay-protocol";
 
 export interface ReplayEventWrapper {
   id: string;
@@ -65,7 +65,7 @@ export interface ReplayStateSnapshot {
   dom: ReplayDomNode | null;
   activeRequests: NetworkRequestReplayItem[];
   recentConsoleLogs: ConsoleReplayItem[];
-  activeComments?: import("@paddy-systems/relay-recording").SessionComment[];
+  activeComments?: import("@acme-systems/relay-recording").SessionComment[];
   commentMarkers?: import("./comments.js").CommentTimelineMarker[];
   progressPercent: number;
 }

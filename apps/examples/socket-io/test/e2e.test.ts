@@ -1,6 +1,6 @@
 import { afterAll, beforeAll, describe, expect, it } from "bun:test";
 import { createServer } from "node:http";
-import { RelayE2EContractRunner } from "@paddy-systems/relay-testing";
+import { RelayE2EContractRunner } from "@acme-systems/relay-testing";
 import { io as ClientIO } from "socket.io-client";
 import { buildSocketIoServer } from "../src/server";
 

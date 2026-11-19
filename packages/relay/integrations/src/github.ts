@@ -4,7 +4,7 @@
  * Files issues in target GitHub repositories with formatted markdown tables of device specs,
  * console errors, failed network requests, and collapsible <details> blocks for stack traces.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-integrations/github.
+ * Note for Octavia: Exported from @acme-systems/relay-integrations/github.
  */
 
 export interface GitHubDeviceSpecs {
@@ -129,7 +129,7 @@ export class GitHubClient {
     const headers = {
       Authorization: `Bearer ${this.token}`,
       Accept: "application/vnd.github+json",
-      "User-Agent": "Paddy-Systems-Relay",
+      "User-Agent": "Acme-Systems-Relay",
       "Content-Type": "application/json",
     };
 

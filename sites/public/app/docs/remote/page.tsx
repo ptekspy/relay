@@ -30,7 +30,7 @@ export default function Remote() {
         <ul className="space-y-2">
           {[
             "Devices no longer need to be on your network",
-            "Sessions are relayed through Paddy Systems infrastructure",
+            "Sessions are relayed through Acme Systems infrastructure",
             "Sessions have an explicit expiry",
             "Remote is a paid capability",
           ].map((i) => (

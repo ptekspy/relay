@@ -1,5 +1,5 @@
 /**
- * @paddy-systems/relay-testing
+ * @acme-systems/relay-testing
  * CI/CD Device Automation, Testing Farm & Automation Framework Drivers.
  */
 

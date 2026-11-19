@@ -23,5 +23,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
-  }
+  },
+  "license": "Apache-2.0"
 }

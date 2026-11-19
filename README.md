@@ -47,4 +47,6 @@ Run `bun run dev:site` to work on the public website. See the [source revisions]
 
 Relay is licensed under the [Apache License, Version 2.0](LICENSE).
 
-Copyright 2026 Paddy Systems LTD. See [NOTICE](NOTICE) for attribution.
+Copyright 2026 Acme Systems LTD. See [NOTICE](NOTICE) for attribution. Bundled third-party components retain their upstream licences.
+
+Workspace packages use the `@acme-systems` scope. The `acme.example` hostnames are placeholders for self-hosted deployments. Configure your own domains for cloud services.

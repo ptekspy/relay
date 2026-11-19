@@ -14,7 +14,7 @@ export interface WebRtcTransportOptions {
 export const DEFAULT_ICE_SERVERS: IceServerConfig[] = [
   { urls: ["stun:stun.l.google.com:19302", "stun:stun1.l.google.com:19302"] },
   {
-    urls: ["turn:relay.paddy-systems.com:3478"],
+    urls: ["turn:relay.acme.example:3478"],
     username: "guest",
     credential: "relay_guest_password",
   },

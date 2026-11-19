@@ -25,13 +25,13 @@ flowchart TD
         HEADLESS["Headless CI Runner (Playwright / Cypress)"]
     end
 
-    subgraph EdgeMesh ["Paddy Systems Global Edge Mesh"]
+    subgraph EdgeMesh ["Acme Systems Global Edge Mesh"]
         EDGE_ROUTER["cloud-edge Anycast Router (:443)"]
         COTURN["Global TURN / ICE Mesh"]
         SNI_PROXY["Wildcard Subdomain & TLS Router"]
     end
 
-    subgraph CloudPlatform ["Paddy Systems Cloud Platform"]
+    subgraph CloudPlatform ["Acme Systems Cloud Platform"]
         CLOUD_API["relay-cloud-api (Nitro :4000)"]
         CLOUD_WEB["relay-cloud-web (Next.js Dashboard & DevTools)"]
         LOGTO["Logto Identity & Enterprise SSO"]
@@ -79,7 +79,7 @@ Target: `apps/relay/cloud-edge` & `packages/relay/transport`
   - *Scope*: Initialize `apps/relay/cloud-edge` as a high-performance HTTP/WebSocket reverse proxy and tunnel terminator built with TypeScript and Nitro/Node cluster.
   - *Criteria*: Service boots on edge ports 80/443; passes baseline health check; maintains separate worker pools for signaling vs data proxying.
 - [x] **TASK-102: Wildcard Subdomain & SNI Dynamic Routing**
-  - *Scope*: Implement Server Name Indication (SNI) router dynamically resolving incoming requests for `https://<session-id>.relay.paddy.systems` and directing traffic to the matching persistent host tunnel.
+  - *Scope*: Implement Server Name Indication (SNI) router dynamically resolving incoming requests for `https://<session-id>.relay.acme.example` and directing traffic to the matching persistent host tunnel.
   - *Criteria*: Requests with unknown session subdomains return typed `ERR_SESSION_NOT_FOUND` HTML landing pages without socket hang-ups.
 - [x] **TASK-103: Automated Let's Encrypt / ACME Dynamic TLS Provisioning**
   - *Scope*: Integrate automated ACME client on the edge for wildcard SSL/TLS certificate renewal and automated on-demand TLS for custom team subdomains (`*.team.relay.zone`).
@@ -110,7 +110,7 @@ Target: `apps/relay/cloud-edge` & `packages/relay/transport`
 
 ## Epic 12: iOS Native Receiver Application (`TASK-111` - `TASK-120`) [BLOCKED / SKIPPED]
 
-> **Status Note**: Marked as BLOCKED / SKIPPED per Patrick's instructions (environment constraint: Linux development host; iOS & macOS work deferred).
+> **Status Note**: Marked as BLOCKED / SKIPPED due to an environment constraint (Linux development host; iOS & macOS work deferred).
 
 Target: `apps/relay/ios`
 
@@ -131,17 +131,17 @@ Target: `apps/relay/ios`
 
 Target: `packages/relay/integrations/*` & `apps/relay/cli`
 
-- [x] **TASK-121: Nuxt 3 Relay Module (`@paddy-systems/relay-nuxt`)**
+- [x] **TASK-121: Nuxt 3 Relay Module (`@acme-systems/relay-nuxt`)**
   - *Scope*: Build official Nuxt 3 module hooking into Nitro dev server lifecycle, automatically injecting the Relay agent and displaying pairing QR in terminal.
-  - *Criteria*: Adding `@paddy-systems/relay-nuxt` to `nuxt.config.ts` boots Relay alongside Nuxt with zero additional configuration.
-- [x] **TASK-122: SvelteKit Dev Middleware Plugin (`@paddy-systems/relay-sveltekit`)**
+  - *Criteria*: Adding `@acme-systems/relay-nuxt` to `nuxt.config.ts` boots Relay alongside Nuxt with zero additional configuration.
+- [x] **TASK-122: SvelteKit Dev Middleware Plugin (`@acme-systems/relay-sveltekit`)**
   - *Scope*: Build Vite-based SvelteKit dev plugin handling SSR streaming, HMR WebSockets, and automatic port detection for SvelteKit projects.
   - *Criteria*: Tested against standard SvelteKit skeleton app; HMR updates propagate to mobile receiver in < 250ms.
 - [x] **TASK-123: Next.js App Router Server Actions Proxy Normalizer**
   - *Scope*: Ensure local and remote reverse proxies correctly forward multipart form data, `Next-Action` headers, and server action redirects without header stripping.
   - *Criteria*: Complex form submissions using Next.js Server Actions execute successfully from mobile receiver.
-- [x] **TASK-124: Astro Integration Plugin (`@paddy-systems/relay-astro`)**
-  - *Scope*: Create `@paddy-systems/relay-astro` integration supporting Astro Islands, View Transitions, and static asset streaming.
+- [x] **TASK-124: Astro Integration Plugin (`@acme-systems/relay-astro`)**
+  - *Scope*: Create `@acme-systems/relay-astro` integration supporting Astro Islands, View Transitions, and static asset streaming.
   - *Criteria*: Astro dev server launches Relay gateway with synchronized multi-page view transitions.
 - [x] **TASK-125: Remix / React Router v7 Dev Adapter**
   - *Scope*: Build integration adapter for React Router v7 / Remix dev server supporting loader data prefetching and client-side transitions over Relay tunnel.
@@ -283,13 +283,13 @@ Target: `apps/relay/api` & `apps/relay/cloud-web`
   - *Scope*: Build email dispatch service sending branded session invitation emails with session name, inviter details, expiry countdown, and magic join link.
   - *Criteria*: Emails deliver in < 5 seconds with valid DKIM/SPF; render responsively across major email clients.
 - [x] **TASK-162: Branded Invitation Landing Page with Fast QR & Short Code Handshake**
-  - *Scope*: Create public web landing page (`https://relay.paddy.systems/join/:invite-token`) presenting QR code for mobile scanning or one-click browser launch.
+  - *Scope*: Create public web landing page (`https://relay.acme.example/join/:invite-token`) presenting QR code for mobile scanning or one-click browser launch.
   - *Criteria*: Scanning QR directly from invite page authenticates receiver and establishes tunnel connection.
 - [x] **TASK-163: Expired & Revoked Invitation Lifecycle Manager**
   - *Scope*: Enforce invite token lifecycles: configurable duration (1h, 8h, 24h, 7d), max uses (single-use vs multi-use), and instant revocation button.
   - *Criteria*: Accessing an expired or revoked invitation renders clear explanation and option to request new invite.
 - [x] **TASK-164: Enterprise SAML 2.0 / OIDC SSO Integration via Logto**
-  - *Scope*: Configure enterprise single sign-on (Okta, Azure AD, Google Workspace) mapping corporate directories to Paddy Systems team seats.
+  - *Scope*: Configure enterprise single sign-on (Okta, Azure AD, Google Workspace) mapping corporate directories to Acme Systems team seats.
   - *Criteria*: Enterprise employees authenticate via corporate IdP with automated team provisioning.
 - [x] **TASK-165: Fine-Grained Team Roles (`Owner`, `Admin`, `Engineer`, `Guest`)**
   - *Scope*: Implement role-based access control (RBAC): `Owner` (billing + settings), `Admin` (members + sessions), `Engineer` (create/view sessions), `Guest` (view only).
@@ -357,7 +357,7 @@ Target: `apps/relay/cli`, `packages/relay/testing` & GitHub Actions
   - *Scope*: Add dedicated `relay ci` sub-command designed for non-interactive automated test environments with zero TUI rendering, exit-code propagation, and structured logging.
   - *Criteria*: Boots tunnel, outputs connection endpoints to stdout/file, waits for test completion, and exits with code 0 on success.
 - [x] **TASK-182: Playwright Transport Provider for Relay Connected Devices**
-  - *Scope*: Build Playwright custom browser connector (`@paddy-systems/relay-playwright`) allowing Playwright test scripts to drive real physical devices connected via Relay.
+  - *Scope*: Build Playwright custom browser connector (`@acme-systems/relay-playwright`) allowing Playwright test scripts to drive real physical devices connected via Relay.
   - *Criteria*: `page.goto()`, `page.click()`, and `expect()` assertions execute on physical mobile device over Relay data channel.
 - [x] **TASK-183: Cypress Relay Plugin for Cross-Device Testing**
   - *Scope*: Build Cypress plugin allowing Cypress test runner to proxy requests through Relay tunnels to validate mobile viewport behavior.
@@ -372,7 +372,7 @@ Target: `apps/relay/cli`, `packages/relay/testing` & GitHub Actions
   - *Scope*: CLI orchestrator broadcasting a test command to all active connected devices simultaneously and aggregating test pass/fail results into a unified summary table.
   - *Criteria*: Reports test execution time, errors, and device-specific failures across matrix.
 - [x] **TASK-187: GitHub Action for Relay Ephemeral Preview Tunnels (`relay-action`)**
-  - *Scope*: Author official GitHub Action (`paddy-systems/relay-action`) that starts a Relay tunnel during CI workflow and comments the preview QR code directly on PRs.
+  - *Scope*: Author official GitHub Action (`acme-systems/relay-action`) that starts a Relay tunnel during CI workflow and comments the preview QR code directly on PRs.
   - *Criteria*: Pull request receives automated comment with scan-ready QR code pointing to ephemeral CI dev server.
 - [x] **TASK-188: CI Tunnel Ephemeral Token Provisioning & Cleanup**
   - *Scope*: Implement automated token minting for CI workflows with maximum 2-hour TTL and automated tunnel termination when GitHub Actions job completes or cancels.

@@ -1,4 +1,4 @@
-import { toSessionId } from "@paddy-systems/relay-protocol";
+import { toSessionId } from "@acme-systems/relay-protocol";
 import { defaultSignalingHub } from "@src/signaling/webrtc.js";
 import { eventHandler, getQuery, setResponseStatus } from "h3";
 

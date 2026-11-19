@@ -1,5 +1,5 @@
 /**
- * @paddy-systems/relay-cli-ui
+ * @acme-systems/relay-cli-ui
  * Terminal UI Component Library.
  */
 

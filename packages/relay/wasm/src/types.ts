@@ -1,5 +1,5 @@
 /**
- * @paddy-systems/relay-wasm
+ * @acme-systems/relay-wasm
  * Types for WebAssembly accelerated modules.
  */
 

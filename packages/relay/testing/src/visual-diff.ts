@@ -4,7 +4,7 @@
  * Compares baseline and candidate screenshots across connected mobile devices,
  * computing per-pixel RGBA color distance and producing a highlighted diff overlay.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-testing/visual-diff.
+ * Note for Octavia: Exported from @acme-systems/relay-testing/visual-diff.
  */
 
 export interface VisualDiffOptions {

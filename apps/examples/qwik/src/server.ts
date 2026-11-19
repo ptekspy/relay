@@ -1,5 +1,5 @@
 import { createServer } from "node:http";
-import { QwikCityRelayAdapter } from "@paddy-systems/relay-integrations";
+import { QwikCityRelayAdapter } from "@acme-systems/relay-integrations";
 
 export function buildQwikServer() {
   const adapter = new QwikCityRelayAdapter();

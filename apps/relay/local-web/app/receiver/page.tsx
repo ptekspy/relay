@@ -1,6 +1,6 @@
 "use client";
 
-import type { ConsoleEvent } from "@paddy-systems/relay-protocol";
+import type { ConsoleEvent } from "@acme-systems/relay-protocol";
 import { useSearchParams } from "next/navigation";
 import { Suspense, useState } from "react";
 import { ConsoleMirror } from "../../components/receiver/ConsoleMirror";

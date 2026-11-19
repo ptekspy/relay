@@ -7,7 +7,7 @@ describe("TASK-200: Final Commercial Launch Readiness Signoff & V1.0 GA Verifica
   it("verifies 100% active task completion and issues V1.0 GA signoff certification", () => {
     const report = engine.generateReadinessReport();
 
-    expect(report.product).toBe("Paddy Systems Relay");
+    expect(report.product).toBe("Acme Systems Relay");
     expect(report.version).toBe("1.0.0-GA");
     expect(report.engineer).toContain("Sally Smith");
     expect(report.totalTasks).toBe(100);

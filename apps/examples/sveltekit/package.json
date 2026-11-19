@@ -1,5 +1,5 @@
 {
-  "name": "@paddy-systems/example-sveltekit",
+  "name": "@acme-systems/example-sveltekit",
   "private": true,
   "version": "0.0.1",
   "type": "module",
@@ -13,8 +13,8 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
   },
   "devDependencies": {
-    "@paddy-systems/relay-integrations": "workspace:*",
-    "@paddy-systems/relay-testing": "workspace:*",
+    "@acme-systems/relay-integrations": "workspace:*",
+    "@acme-systems/relay-testing": "workspace:*",
     "@sveltejs/adapter-auto": "^7.0.1",
     "@sveltejs/kit": "^2.63.0",
     "@sveltejs/vite-plugin-svelte": "^7.1.2",
@@ -22,5 +22,6 @@
     "svelte-check": "^4.6.0",
     "typescript": "^6.0.3",
     "vite": "^8.0.16"
-  }
+  },
+  "license": "Apache-2.0"
 }

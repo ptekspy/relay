@@ -1,5 +1,5 @@
 import { createServer } from "node:http";
-import { AngularRelayAdapter } from "@paddy-systems/relay-integrations";
+import { AngularRelayAdapter } from "@acme-systems/relay-integrations";
 
 export function buildAngularServer() {
   const adapter = new AngularRelayAdapter();

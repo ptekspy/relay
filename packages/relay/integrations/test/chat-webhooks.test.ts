@@ -14,7 +14,7 @@ describe("TASK-176: Slack & Discord Webhook Notification Broadcasts", () => {
     project: "relay-cloud",
     details: {
       branch: "feat/screen-stream",
-      viewerUrl: "https://relay.paddy.systems/view/sess_xyz_456",
+      viewerUrl: "https://relay.acme.example/view/sess_xyz_456",
     },
     timestamp: 1720000000000,
   };
@@ -31,7 +31,7 @@ describe("TASK-176: Slack & Discord Webhook Notification Broadcasts", () => {
       elements: Array<{ url: string; text: { text: string } }>;
     };
     expect(actions.elements[0]?.url).toBe(
-      "https://relay.paddy.systems/view/sess_xyz_456",
+      "https://relay.acme.example/view/sess_xyz_456",
     );
     expect(actions.elements[0]?.text.text).toBe("Join / Inspect in Relay");
   });
@@ -73,7 +73,7 @@ describe("TASK-176: Slack & Discord Webhook Notification Broadcasts", () => {
         event: "bug:flagged",
         details: {
           bugTitle: "Broken flexbox on foldables",
-          viewerUrl: "https://relay.paddy.systems/view/sess_xyz_456",
+          viewerUrl: "https://relay.acme.example/view/sess_xyz_456",
         },
       },
       async (_url, body) => {

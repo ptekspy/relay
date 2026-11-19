@@ -3,7 +3,7 @@
 import type {
   CommentReply,
   SessionComment,
-} from "@paddy-systems/relay-recording";
+} from "@acme-systems/relay-recording";
 import { useState } from "react";
 
 export interface CommentPinOverlayProps {

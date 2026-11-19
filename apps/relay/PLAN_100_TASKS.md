@@ -23,7 +23,7 @@ flowchart TD
         M_ANDROID["relay-android Native App"]
     end
 
-    subgraph CloudInfra ["Paddy Systems Cloud"]
+    subgraph CloudInfra ["Acme Systems Cloud"]
         CLOUD_API["relay-cloud-api (Nitro :4000)"]
         EDGE_ROUTER["Edge Signaling & TURN (:443)"]
         CLOUD_WEB["relay-cloud-web (Next.js Dashboard)"]
@@ -62,10 +62,10 @@ flowchart TD
 
 ## Epic 1: Core Protocol & Data Structures (`TASK-001` - `TASK-010`) [COMPLETE]
 
-Target: `packages/relay/protocol` (`@paddy-systems/relay-protocol`)
+Target: `packages/relay/protocol` (`@acme-systems/relay-protocol`)
 
 - [x] **TASK-001: Package Initialization & Turbo Integration**
-  - *Scope*: Create `@paddy-systems/relay-protocol` with tsconfig, Biome configuration, and workspace exports.
+  - *Scope*: Create `@acme-systems/relay-protocol` with tsconfig, Biome configuration, and workspace exports.
   - *Criteria*: Packages build cleanly under `bun run check-types` and resolve from all apps.
 - [x] **TASK-002: Binary Frame & Envelope Schema Specification**
   - *Scope*: Define `RelayFrame` header format: Magic Byte (0x52 'R'), Version (1), FrameType (Control, Event, BinaryStream, Heartbeat), PayloadLength.
@@ -102,7 +102,7 @@ Target: `packages/relay/protocol` (`@paddy-systems/relay-protocol`)
 Target: `apps/relay/cli`
 
 - [x] **TASK-011: Protocol Module Integration**
-  - *Scope*: Refactor `apps/relay/cli` to consume `@paddy-systems/relay-protocol` for frame encoding and session validation.
+  - *Scope*: Refactor `apps/relay/cli` to consume `@acme-systems/relay-protocol` for frame encoding and session validation.
   - *Criteria*: Remove redundant type declarations in CLI; clean compilation with shared packages.
 - [x] **TASK-012: Inbound Rate Limiting & DoS Protection**
   - *Scope*: Add sliding-window token bucket limiter to local gateway (`0.0.0.0:7331`) restricting concurrent unauthenticated handshakes per remote IP.
@@ -140,7 +140,7 @@ Target: `apps/relay/local-web`
 
 - [x] **TASK-021: Local Web Receiver Workspace Setup**
   - *Scope*: Initialize `apps/relay/local-web` as lightweight client embedded in CLI distribution or served at `http://<lan-ip>:7331/_relay/`.
-  - *Criteria*: Navigating to receiver URL on mobile browser renders clean Paddy Systems branded UI.
+  - *Criteria*: Navigating to receiver URL on mobile browser renders clean Acme Systems branded UI.
 - [x] **TASK-022: Short-Code Manual Entry Screen**
   - *Scope*: Build pairing view where users can type a 6-character short code if camera scanner is unavailable or camera permissions are denied.
   - *Criteria*: Submitting short code validates with local gateway and establishes session.
@@ -163,7 +163,7 @@ Target: `apps/relay/local-web`
   - *Scope*: Handle network dropouts (Wi-Fi disconnect, screen lock) with automatic exponential backoff reconnection.
   - *Criteria*: Reconnecting Wi-Fi automatically restores session within 2 seconds without requiring manual page reload.
 - [x] **TASK-029: Light/Dark Theme Synchronization**
-  - *Scope*: Match mobile receiver interface to device system color scheme (`prefers-color-scheme`) using Paddy Systems design tokens.
+  - *Scope*: Match mobile receiver interface to device system color scheme (`prefers-color-scheme`) using Acme Systems design tokens.
   - *Criteria*: Switching mobile OS theme changes receiver HUD color palette instantly.
 - [x] **TASK-030: Local Web Bundle Optimization**
   - *Scope*: Minimize bundle size of `local-web` to < 80kB gzipped so mobile receivers on low-bandwidth LAN load instantly.
@@ -200,7 +200,7 @@ Target: `apps/relay/api`
   - *Scope*: Implement latency-based edge routing assigning remote sessions to the closest server region (EU West, US East, AP South).
   - *Criteria*: API returns regional signaling endpoint closest to client IP.
 - [x] **TASK-039: API Authentication Middleware**
-  - *Scope*: Validate JWT tokens issued by Logto / Paddy Systems Identity on protected API routes.
+  - *Scope*: Validate JWT tokens issued by Logto / Acme Systems Identity on protected API routes.
   - *Criteria*: Protected endpoints reject unauthenticated or expired JWTs with HTTP 401.
 - [x] **TASK-040: API Unit & Contract Tests**
   - *Scope*: Create automated test suite testing all REST and WebSocket routes against in-memory Postgres/Redis test instances.
@@ -213,7 +213,7 @@ Target: `apps/relay/api`
 Target: `apps/relay/api` & `packages/shared`
 
 - [x] **TASK-041: Logto Identity Provider Integration**
-  - *Scope*: Configure Logto OIDC provider with Paddy Systems branding, custom redirect URIs, and scopes (`relay:read`, `relay:write`, `relay:admin`).
+  - *Scope*: Configure Logto OIDC provider with Acme Systems branding, custom redirect URIs, and scopes (`relay:read`, `relay:write`, `relay:admin`).
   - *Criteria*: User can complete OAuth2 authorization code flow with PKCE.
 - [x] **TASK-042: CLI Device Authorization Flow (`relay login`)**
   - *Scope*: Implement RFC 8628 OAuth 2.0 Device Authorization Grant in CLI, displaying 8-digit verification code and browser login URL.
@@ -254,7 +254,7 @@ Target: `packages/relay-transport`
   - *Criteria*: Application layer interacts with uniform stream without coupling to underlying transport.
 - [x] **TASK-052: Cloud WebSocket Reverse Proxy Tunnel**
   - *Scope*: Implement multiplexed WebSocket tunnel connecting host CLI to Cloud Edge proxy, forwarding remote HTTP requests to local gateway.
-  - *Criteria*: Remote receiver accesses `https://<session>.relay.paddy.systems` and loads local Next.js dev server.
+  - *Criteria*: Remote receiver accesses `https://<session>.relay.acme.example` and loads local Next.js dev server.
 - [x] **TASK-053: WebRTC PeerConnection Orchestrator**
   - *Scope*: Implement WebRTC connection manager negotiating data channels (`control`, `stream`, `media`) directly between host and receiver.
   - *Criteria*: Direct P2P connection establishes when both devices support WebRTC and NAT permits.
@@ -287,7 +287,7 @@ Target: `packages/relay-transport`
 Target: `apps/relay/cloud-web`
 
 - [x] **TASK-061: Next.js Cloud Dashboard Workspace Setup**
-  - *Scope*: Initialize `apps/relay/cloud-web` with Next.js App Router, Tailwind CSS, and Paddy Systems UI design system.
+  - *Scope*: Initialize `apps/relay/cloud-web` with Next.js App Router, Tailwind CSS, and Acme Systems UI design system.
   - *Criteria*: Dashboard runs on port 3001; responsive layout with dark mode support.
 - [x] **TASK-062: Session Overview & Live Grid Screen**
   - *Scope*: Build active sessions list showing running relay instances, target ports, connected receiver counts, uptime, and latency.

@@ -2,7 +2,7 @@ import { fileURLToPath } from "node:url";
 import {
   defineNitroConfig,
   type NitroConfig,
-} from "@paddy-systems/nitro-config";
+} from "@acme-systems/nitro-config";
 
 const config: NitroConfig = defineNitroConfig({
   alias: {

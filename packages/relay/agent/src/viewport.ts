@@ -1,4 +1,4 @@
-import type { ViewportResizeEvent } from "@paddy-systems/relay-protocol";
+import type { ViewportResizeEvent } from "@acme-systems/relay-protocol";
 
 export type ViewportCallback = (event: ViewportResizeEvent) => void;
 

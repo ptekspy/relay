@@ -28,11 +28,11 @@ These tasks have zero code coupling with the active in-flight work in `apps/rela
 ## Epic A: Browser Agent Bootstrap & Injection Engine (`TASK-P01` - `TASK-P10`) [COMPLETE]
 
 **Checklist Reference**: Section 18 (*Browser agent bootstrap*) & Section 7 (*Session event system*)
-**Target Workspace**: `packages/relay-agent` (`@paddy-systems/relay-agent`)
+**Target Workspace**: `packages/relay-agent` (`@acme-systems/relay-agent`)
 **Decoupling Rationale**: Standalone client-side script running inside target browser to capture DOM/console/network events; tested against static HTML pages without requiring active CLI gateway.
 
 - [x] **TASK-P01: Browser Agent Package Scaffold & Standalone Bundle Setup**
-  - *Scope*: Initialize `@paddy-systems/relay-agent` with Vite/tsup build configuration producing both an IIFE standalone script and ESM module `< 15kB` gzipped.
+  - *Scope*: Initialize `@acme-systems/relay-agent` with Vite/tsup build configuration producing both an IIFE standalone script and ESM module `< 15kB` gzipped.
   - *Criteria*: Package builds cleanly under `bun run check-types`; bundle executes in browser global context without polluting global namespace or colliding with host application variables.
 - [x] **TASK-P02: Console Log Interceptor & Redaction Engine**
   - *Scope*: Wrap `console.log`, `console.info`, `console.warn`, `console.error`, and `console.debug`. Safely serialize circular objects, DOM nodes, Error instances, and stack traces with PII masking (passwords, tokens, bearer secrets).
@@ -67,7 +67,7 @@ These tasks have zero code coupling with the active in-flight work in `apps/rela
 ## Epic B: Capability Taxonomy, Device Detection & Diagnostics (`TASK-P11` - `TASK-P20`) [COMPLETE]
 
 **Checklist Reference**: Section 6 (*Capability system*), Section 20 (*Error handling*), Section 19 (*Screen capture*)
-**Target Workspace**: `packages/relay-capabilities` (`@paddy-systems/relay-capabilities`)
+**Target Workspace**: `packages/relay-capabilities` (`@acme-systems/relay-capabilities`)
 **Decoupling Rationale**: Pure domain data structures, client feature-detection heuristics, and user-facing error message catalogs that run side-effect-free in isolation.
 
 - [x] **TASK-P11: Capability Schema Specification**
@@ -128,7 +128,7 @@ These tasks have zero code coupling with the active in-flight work in `apps/rela
   - *Scope*: Implement background non-blocking check against npm registry / GitHub Releases alerting developer if a newer CLI version exists.
   - *Criteria*: Check runs asynchronously with a 1.5s timeout; never blocks CLI startup or adds latency to initial QR generation.
 - [x] **TASK-P27: Node.js Compatibility Wrapper**
-  - *Scope*: Provide `dist/bin.js` entry point allowing the CLI to run under Node 20+ via `npx @paddy-systems/relay` without requiring Bun globally.
+  - *Scope*: Provide `dist/bin.js` entry point allowing the CLI to run under Node 20+ via `npx @acme-systems/relay` without requiring Bun globally.
   - *Criteria*: `npx` execution boots CLI with full functionality and correct exit code handling.
 - [x] **TASK-P28: System Keychain Credential Helper**
   - *Scope*: Build credential storage adapter with backends for macOS Keychain, Windows Credential Store, and Secret Service (Linux), falling back to encrypted file permissions `0600`.

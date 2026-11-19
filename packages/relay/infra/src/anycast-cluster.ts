@@ -5,7 +5,7 @@
  * US-East (Virginia), US-West (Oregon), EU-Central (Frankfurt), and AP-Southeast (Singapore).
  * Performs health checks and seamless zero-downtime failover to the nearest geographic cluster.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-infra/anycast.
+ * Note for Octavia: Exported from @acme-systems/relay-infra/anycast.
  */
 
 export type GlobalRegion =

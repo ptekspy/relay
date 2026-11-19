@@ -1,4 +1,4 @@
-package com.paddysystems.relay
+package com.acmesystems.relay
 
 data class AdbTunnelConfig(
     val localPort: Int = 7331,

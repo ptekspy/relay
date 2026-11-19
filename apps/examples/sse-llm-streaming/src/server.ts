@@ -1,5 +1,5 @@
 import { createServer } from "node:http";
-import { SseStreamAdapter } from "@paddy-systems/relay-integrations";
+import { SseStreamAdapter } from "@acme-systems/relay-integrations";
 
 export function buildSseServer() {
   const adapter = new SseStreamAdapter();

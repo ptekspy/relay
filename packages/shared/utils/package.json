@@ -1,5 +1,5 @@
 {
-  "name": "@paddy-systems/utils",
+  "name": "@acme-systems/utils",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -12,8 +12,9 @@
     "test": "vitest run"
   },
   "devDependencies": {
-    "@paddy-systems/typescript-config": "*",
+    "@acme-systems/typescript-config": "*",
     "typescript": "7.0.2",
     "vitest": "^4"
-  }
+  },
+  "license": "Apache-2.0"
 }

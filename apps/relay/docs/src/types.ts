@@ -1,5 +1,5 @@
 /**
- * @paddy-systems/relay-docs
+ * @acme-systems/relay-docs
  * Types for Documentation Portal, Spec Explorer & RFC System.
  */
 

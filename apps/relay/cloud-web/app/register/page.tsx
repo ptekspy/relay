@@ -1,4 +1,4 @@
-import { SignUpPage } from "@paddy-systems/auth/pages";
+import { SignUpPage } from "@acme-systems/auth/pages";
 
 export default function RegisterPage() {
   return (

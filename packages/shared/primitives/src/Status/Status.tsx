@@ -1,4 +1,4 @@
-import { cn } from "@paddy-systems/lib/cn";
+import { cn } from "@acme-systems/lib/cn";
 
 const STATUS_TONE: Record<string, string> = {
   "AVAILABLE NOW": "text-blue before:bg-blue",

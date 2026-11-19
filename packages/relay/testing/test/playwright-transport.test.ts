@@ -9,7 +9,7 @@ describe("TASK-182: Playwright Transport Provider for Relay Connected Devices", 
     const executedActions: RelayPlaywrightAction[] = [];
 
     const page = await RelayPlaywrightConnector.connect({
-      tunnelUrl: "https://sess_test.relay.paddy.systems",
+      tunnelUrl: "https://sess_test.relay.acme.example",
       mockDevice: {
         id: "dev_iphone_15",
         name: "iPhone 15 Pro",
@@ -34,10 +34,10 @@ describe("TASK-182: Playwright Transport Provider for Relay Connected Devices", 
 
     // 1. Navigation
     const nav = await page.goto(
-      "https://sess_test.relay.paddy.systems/checkout",
+      "https://sess_test.relay.acme.example/checkout",
     );
     expect(nav.status).toBe(200);
-    expect(page.url()).toBe("https://sess_test.relay.paddy.systems/checkout");
+    expect(page.url()).toBe("https://sess_test.relay.acme.example/checkout");
 
     // 2. Click & Type
     const clickSuccess = await page.click("button#pay-now");
@@ -63,7 +63,7 @@ describe("TASK-182: Playwright Transport Provider for Relay Connected Devices", 
 
   it("handles remote device interaction errors gracefully", async () => {
     const page = await RelayPlaywrightConnector.connect({
-      tunnelUrl: "https://sess_test.relay.paddy.systems",
+      tunnelUrl: "https://sess_test.relay.acme.example",
       customSender: async () => ({
         success: false,
         error: "Element not interactable or obscured by backdrop",

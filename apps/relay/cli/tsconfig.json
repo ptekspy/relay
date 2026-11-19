@@ -1,5 +1,5 @@
 {
-  "extends": "@paddy-systems/typescript-config/react-library.json",
+  "extends": "@acme-systems/typescript-config/react-library.json",
   "compilerOptions": {
     "types": ["node"],
     "paths": {

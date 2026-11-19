@@ -1,4 +1,4 @@
-# Paddy Systems Relay — System Assessment & Checkable User Journeys
+# Acme Systems Relay — System Assessment & Checkable User Journeys
 
 **Document Status:** Grounded Assessment & Verification Specification  
 **Applies to:** `apps/relay/*`, `packages/relay/*`, `docs/relay/*`  
@@ -8,7 +8,7 @@
 
 # Part 1: System Assessment — Everything You Are Able to Do as a User
 
-Paddy Systems Relay is a local and remote development session pipeline designed to eliminate the friction, latency, and security trade-offs of testing local development servers on physical mobile devices, secondary screens, and within remote teams.
+Acme Systems Relay is a local and remote development session pipeline designed to eliminate the friction, latency, and security trade-offs of testing local development servers on physical mobile devices, secondary screens, and within remote teams.
 
 Based on the current architecture in `p-s-core`, here is everything you as a user are capable of doing with Relay:
 
@@ -141,18 +141,18 @@ Each user journey below is self-contained and checkable. Instructions are fully 
 
 - [ ] **Step 1: Start target test dev server**
   ```bash
-  cd /home/paddy/code/p-s-core/test/fixtures/relay-stress-app
+  cd ./test/fixtures/relay-stress-app
   PORT=4321 bun run server.ts
   ```
   *Verify*: Terminal displays `[Relay Stress App] Running on http://localhost:4321`.
 
 - [ ] **Step 2: In a second terminal, start Relay CLI pointing to port 4321**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cli
+  cd ./apps/relay/cli
   bun run src/main.tsx 4321 --no-browser
   ```
   *Verify*:
-  1. Terminal Ink TUI loads with `PADDY SYSTEMS RELAY`.
+  1. Terminal Ink TUI loads with `ACME SYSTEMS RELAY`.
   2. Preflight passes target port 4321.
   3. Gateway starts on port `7331` (or next available).
   4. ASCII QR code is rendered alongside an 8-character short code.
@@ -166,7 +166,7 @@ Each user journey below is self-contained and checkable. Instructions are fully 
   ```
   *Or directly test via unit verification*:
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cli
+  cd ./apps/relay/cli
   bun test test/gateway.test.ts
   ```
   *Verify*: Gateway responds with `302 Found`, sets `__relay_session` cookie, and proxies target HTML content containing `Relay Stress & Telemetry Target Application`.
@@ -179,27 +179,27 @@ Each user journey below is self-contained and checkable. Instructions are fully 
 
 - [ ] **Step 1: Verify short-code generator excludes ambiguous characters**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/local-web
+  cd ./apps/relay/local-web
   bun test test/receiver.test.ts -t "filters ambiguous characters"
   ```
   *Verify*: Test passes confirming that characters `0`, `O`, `1`, `I` are strictly stripped from generated and parsed short codes.
 
 - [ ] **Step 2: Start target dev server**
   ```bash
-  cd /home/paddy/code/p-s-core/test/fixtures/relay-stress-app
+  cd ./test/fixtures/relay-stress-app
   PORT=4321 bun run server.ts
   ```
 
 - [ ] **Step 3: Launch Relay CLI**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cli
+  cd ./apps/relay/cli
   bun run src/main.tsx 4321 --no-browser
   ```
   *Verify*: CLI displays the 8-character code formatted as `R-XXXX-XXXX`.
 
 - [ ] **Step 4: Launch local web app and open `/pair`**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/local-web
+  cd ./apps/relay/local-web
   bun run dev -- -p 3001
   ```
   Open `http://localhost:3001/pair` in browser, enter the short code shown in the CLI, and submit.  
@@ -213,7 +213,7 @@ Each user journey below is self-contained and checkable. Instructions are fully 
 
 - [ ] **Step 1: Start Relay CLI pointing to an inactive port (e.g. 4329)**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cli
+  cd ./apps/relay/cli
   bun run src/main.tsx 4329 --no-browser
   ```
   *Verify*: CLI does not exit. It enters the `PortWaiting` state with message:  
@@ -221,7 +221,7 @@ Each user journey below is self-contained and checkable. Instructions are fully 
 
 - [ ] **Step 2: Start the target dev server on port 4329 in another terminal**
   ```bash
-  cd /home/paddy/code/p-s-core/test/fixtures/relay-stress-app
+  cd ./test/fixtures/relay-stress-app
   PORT=4329 bun run server.ts
   ```
   *Verify*: Within 1 second of the server starting, the Relay CLI detects the active port, transitions from `PortWaiting` to `PairingView`, and displays the active QR code and session URL.
@@ -234,7 +234,7 @@ Each user journey below is self-contained and checkable. Instructions are fully 
 
 - [ ] **Step 1: Run Relay Gateway hardening and proxy unit tests**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cli
+  cd ./apps/relay/cli
   bun test test/gateway-hardening.test.ts
   ```
   *Verify*: All tests pass, including:
@@ -244,13 +244,13 @@ Each user journey below is self-contained and checkable. Instructions are fully 
 
 - [ ] **Step 2: Start Next.js or Vite dev server**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/local-web
+  cd ./apps/relay/local-web
   bun run dev -- -p 3000
   ```
 
 - [ ] **Step 3: Start Relay CLI pointing to port 3000**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cli
+  cd ./apps/relay/cli
   bun run src/main.tsx 3000 --no-browser
   ```
 
@@ -267,7 +267,7 @@ Each user journey below is self-contained and checkable. Instructions are fully 
 
 - [ ] **Step 1: Run receiver component unit tests**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/local-web
+  cd ./apps/relay/local-web
   bun test test/receiver.test.ts
   ```
   *Verify*: Tests pass for:
@@ -276,13 +276,13 @@ Each user journey below is self-contained and checkable. Instructions are fully 
 
 - [ ] **Step 2: Start target test app**
   ```bash
-  cd /home/paddy/code/p-s-core/test/fixtures/relay-stress-app
+  cd ./test/fixtures/relay-stress-app
   PORT=4321 bun run server.ts
   ```
 
 - [ ] **Step 3: Start local receiver app**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/local-web
+  cd ./apps/relay/local-web
   bun run dev -- -p 3001
   ```
 
@@ -305,13 +305,13 @@ Each user journey below is self-contained and checkable. Instructions are fully 
 
 - [ ] **Step 1: Start target test app**
   ```bash
-  cd /home/paddy/code/p-s-core/test/fixtures/relay-stress-app
+  cd ./test/fixtures/relay-stress-app
   PORT=4321 bun run server.ts
   ```
 
 - [ ] **Step 2: Start local receiver web app**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/local-web
+  cd ./apps/relay/local-web
   bun run dev -- -p 3001
   ```
 
@@ -330,20 +330,20 @@ Each user journey below is self-contained and checkable. Instructions are fully 
 
 - [ ] **Step 1: Run gateway cryptographic security tests**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cli
+  cd ./apps/relay/cli
   bun test test/gateway.test.ts
   ```
   *Verify*: Test passes confirming invalid tokens receive 401 status.
 
 - [ ] **Step 2: Start target dev server**
   ```bash
-  cd /home/paddy/code/p-s-core/test/fixtures/relay-stress-app
+  cd ./test/fixtures/relay-stress-app
   PORT=4321 bun run server.ts
   ```
 
 - [ ] **Step 3: Start Relay CLI**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cli
+  cd ./apps/relay/cli
   bun run src/main.tsx 4321 --no-browser
   ```
 
@@ -368,7 +368,7 @@ Each user journey below is self-contained and checkable. Instructions are fully 
 
 - [ ] **Step 1: Run rate-limiter unit test**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cli
+  cd ./apps/relay/cli
   bun test test/gateway-hardening.test.ts -t "rate limiting"
   ```
   *Verify*: Test passes verifying requests exceeding the threshold receive `429 Too Many Requests`.
@@ -376,9 +376,9 @@ Each user journey below is self-contained and checkable. Instructions are fully 
 - [ ] **Step 2: Verify rate limiting in live gateway**
   Start target app and Relay CLI:
   ```bash
-  cd /home/paddy/code/p-s-core/test/fixtures/relay-stress-app
+  cd ./test/fixtures/relay-stress-app
   PORT=4321 bun run server.ts &
-  cd /home/paddy/code/p-s-core/apps/relay/cli
+  cd ./apps/relay/cli
   bun run src/main.tsx 4321 --no-browser &
   ```
   Execute rapid unauthenticated requests:
@@ -395,13 +395,13 @@ Each user journey below is self-contained and checkable. Instructions are fully 
 
 - [ ] **Step 1: Start target test app**
   ```bash
-  cd /home/paddy/code/p-s-core/test/fixtures/relay-stress-app
+  cd ./test/fixtures/relay-stress-app
   PORT=4321 bun run server.ts
   ```
 
 - [ ] **Step 2: Start Relay CLI**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cli
+  cd ./apps/relay/cli
   bun run src/main.tsx 4321 --no-browser
   ```
 
@@ -432,7 +432,7 @@ Each user journey below is self-contained and checkable. Instructions are fully 
 
 - [ ] **Step 1: Run Relay CI runner unit tests**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cli
+  cd ./apps/relay/cli
   bun test test/ci-runner.test.ts
   ```
   *Verify*: All tests pass:
@@ -443,19 +443,19 @@ Each user journey below is self-contained and checkable. Instructions are fully 
 
 - [ ] **Step 2: Execute an automated CI run with child command execution**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cli
+  cd ./apps/relay/cli
   bun run src/main.tsx ci 4321 --command "echo 'Running CI tests against tunnel' && exit 0" --output-file "/tmp/relay-ci-meta.env"
   ```
   *Verify*:
   1. Terminal outputs GitHub Actions annotation:  
-     `::notice title=Relay CI::Tunnel active at https://ci_....relay.paddy.systems`
+     `::notice title=Relay CI::Tunnel active at https://ci_....relay.acme.example`
   2. Terminal displays environment variables: `RELAY_SESSION_ID`, `RELAY_TUNNEL_URL`, `RELAY_GATEWAY_URL`.
   3. File `/tmp/relay-ci-meta.env` exists and contains endpoint values.
   4. Command exits with code 0.
 
 - [ ] **Step 3: Execute failing child command to verify error code propagation**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cli
+  cd ./apps/relay/cli
   bun run src/main.tsx ci 4321 --command "exit 42"
   ```
   *Verify*: Process terminates with exit code 42.
@@ -468,21 +468,21 @@ Each user journey below is self-contained and checkable. Instructions are fully 
 
 - [ ] **Step 1: Test Bash completion script output**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cli
+  cd ./apps/relay/cli
   bun run src/main.tsx completion bash
   ```
   *Verify*: Output contains `complete -F _relay_completion relay` and option flags (`--host`, `--gateway-port`, `--no-browser`, `--large-qr`).
 
 - [ ] **Step 2: Test Zsh completion script output**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cli
+  cd ./apps/relay/cli
   bun run src/main.tsx completion zsh
   ```
   *Verify*: Output contains `#compdef relay` and `_arguments` declarations.
 
 - [ ] **Step 3: Test Fish completion script output**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cli
+  cd ./apps/relay/cli
   bun run src/main.tsx completion fish
   ```
   *Verify*: Output contains `complete -c relay` definitions.
@@ -495,28 +495,28 @@ Each user journey below is self-contained and checkable. Instructions are fully 
 
 - [ ] **Step 1: Run Linux UFW firewall adapter tests**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cli
+  cd ./apps/relay/cli
   bun test test/firewall/ufw.test.ts
   ```
   *Verify*: Tests pass for active/inactive state, blocked port detection, and remediation command generation (`sudo ufw allow 7331/tcp`).
 
 - [ ] **Step 2: Run Linux Firewalld adapter tests**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cli
+  cd ./apps/relay/cli
   bun test test/firewall/firewalld.test.ts
   ```
   *Verify*: Tests pass for `firewall-cmd --query-port` checks and remediation generation.
 
 - [ ] **Step 3: Run macOS firewall adapter tests**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cli
+  cd ./apps/relay/cli
   bun test test/firewall/macos.test.ts
   ```
   *Verify*: Tests pass for `socketfilterfw` checking.
 
 - [ ] **Step 4: Run Windows netsh/PowerShell firewall adapter tests**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cli
+  cd ./apps/relay/cli
   bun test test/firewall/windows.test.ts
   ```
   *Verify*: Tests pass for netsh rule detection and elevated PowerShell remediation command generation.
@@ -529,13 +529,13 @@ Each user journey below is self-contained and checkable. Instructions are fully 
 
 - [ ] **Step 1: Start target test dev server**
   ```bash
-  cd /home/paddy/code/p-s-core/test/fixtures/relay-stress-app
+  cd ./test/fixtures/relay-stress-app
   PORT=4321 bun run server.ts
   ```
 
 - [ ] **Step 2: Launch Relay CLI**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cli
+  cd ./apps/relay/cli
   bun run src/main.tsx 4321 --no-browser
   ```
 
@@ -555,14 +555,14 @@ Each user journey below is self-contained and checkable. Instructions are fully 
 
 - [ ] **Step 1: Run team session feed unit tests**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cloud-web
+  cd ./apps/relay/cloud-web
   bun test test/team-feed.test.ts
   ```
   *Verify*: Tests pass for filtering sessions by keyword (developer name, branch, project) and status (live vs idle).
 
 - [ ] **Step 2: Run cloud dashboard telemetry unit tests**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cloud-web
+  cd ./apps/relay/cloud-web
   bun test test/dashboard.test.ts
   ```
   *Verify*: Tests pass for:
@@ -579,7 +579,7 @@ Each user journey below is self-contained and checkable. Instructions are fully 
 
 - [ ] **Step 1: Run annotation canvas unit tests**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cloud-web
+  cd ./apps/relay/cloud-web
   bun test test/annotation-canvas.test.ts
   ```
   *Verify*: Tests pass for:
@@ -595,7 +595,7 @@ Each user journey below is self-contained and checkable. Instructions are fully 
 
 - [ ] **Step 1: Run device farm unit tests**
   ```bash
-  cd /home/paddy/code/p-s-core/apps/relay/cloud-web
+  cd ./apps/relay/cloud-web
   bun test test/device-farm.test.ts
   ```
   *Verify*: Tests pass for:

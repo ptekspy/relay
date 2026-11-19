@@ -1,5 +1,5 @@
 {
-  "name": "@paddy-systems/relay-cloud-edge",
+  "name": "@acme-systems/relay-cloud-edge",
   "version": "0.0.1",
   "private": true,
   "type": "module",
@@ -13,17 +13,18 @@
     "test": "bun test"
   },
   "dependencies": {
-    "@paddy-systems/api-core": "*",
-    "@paddy-systems/relay-protocol": "*",
-    "@paddy-systems/relay-transport": "*",
+    "@acme-systems/api-core": "*",
+    "@acme-systems/relay-protocol": "*",
+    "@acme-systems/relay-transport": "*",
     "h3": "^1.15.1",
     "nitropack": "latest"
   },
   "devDependencies": {
-    "@paddy-systems/nitro-config": "*",
-    "@paddy-systems/typescript-config": "*",
+    "@acme-systems/nitro-config": "*",
+    "@acme-systems/typescript-config": "*",
     "@types/bun": "latest",
     "@types/node": "^20",
     "typescript": "7.0.2"
-  }
+  },
+  "license": "Apache-2.0"
 }

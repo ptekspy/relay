@@ -25,7 +25,7 @@ describe("Cloud Web Dashboard & Management (Epic 7)", () => {
       {
         id: "1",
         action: "SESSION_CREATED",
-        actor: "paddy@ps.com",
+        actor: "acme@example.com",
         ip: "192.168.1.1",
       },
       {
@@ -37,7 +37,7 @@ describe("Cloud Web Dashboard & Management (Epic 7)", () => {
       {
         id: "3",
         action: "PAT_REVOKED",
-        actor: "paddy@ps.com",
+        actor: "acme@example.com",
         ip: "192.168.1.1",
       },
     ];

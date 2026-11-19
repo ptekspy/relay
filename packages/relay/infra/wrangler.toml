@@ -3,4 +3,4 @@ main = "src/lan-dns-worker.ts"
 compatibility_date = "2026-09-01"
 
 [vars]
-DEFAULT_LAN_APEX_DOMAIN = "lan.relay.paddy.systems"
+DEFAULT_LAN_APEX_DOMAIN = "lan.relay.acme.example"

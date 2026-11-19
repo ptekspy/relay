@@ -7,7 +7,7 @@ describe("TASK-194: Stripe Customer Portal & Self-Service Invoicing", () => {
   it("generates signed Stripe portal session URL and successfully verifies HMAC signature", async () => {
     const session = await manager.createPortalSession({
       customerId: "cus_alpha123",
-      returnUrl: "https://relay.paddy.systems/dashboard/billing",
+      returnUrl: "https://relay.acme.example/dashboard/billing",
       allowSeatAdjustments: true,
       allowPaymentMethodUpdates: true,
     });
@@ -28,7 +28,7 @@ describe("TASK-194: Stripe Customer Portal & Self-Service Invoicing", () => {
   it("rejects tampered or forged portal URLs", () => {
     const validUrl = manager.generateSignedPortalUrl(
       "cus_legit_user",
-      "https://relay.paddy.systems/settings",
+      "https://relay.acme.example/settings",
     );
 
     // Tamper with customer ID in URL

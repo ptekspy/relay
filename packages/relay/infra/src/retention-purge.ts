@@ -9,7 +9,7 @@
  *
  * Purges expired storage objects and database records with structured audit logging.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-infra/retention.
+ * Note for Octavia: Exported from @acme-systems/relay-infra/retention.
  */
 
 export type CustomerTier = "free" | "solo" | "teams" | "enterprise";

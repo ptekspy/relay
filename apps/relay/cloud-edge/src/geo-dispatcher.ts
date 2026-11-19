@@ -33,7 +33,7 @@ export class GeoEdgeDispatcher {
       {
         regionId: "eu-west",
         name: "Europe West (London / Frankfurt)",
-        domain: "eu-west.relay.paddy.systems",
+        domain: "eu-west.relay.acme.example",
         latitude: 51.5074,
         longitude: -0.1278,
         isHealthy: true,
@@ -45,7 +45,7 @@ export class GeoEdgeDispatcher {
       {
         regionId: "us-east",
         name: "US East (N. Virginia)",
-        domain: "us-east.relay.paddy.systems",
+        domain: "us-east.relay.acme.example",
         latitude: 38.8048,
         longitude: -77.0469,
         isHealthy: true,
@@ -57,7 +57,7 @@ export class GeoEdgeDispatcher {
       {
         regionId: "us-west",
         name: "US West (Oregon)",
-        domain: "us-west.relay.paddy.systems",
+        domain: "us-west.relay.acme.example",
         latitude: 45.5152,
         longitude: -122.6784,
         isHealthy: true,
@@ -69,7 +69,7 @@ export class GeoEdgeDispatcher {
       {
         regionId: "ap-east",
         name: "Asia Pacific East (Tokyo / Singapore)",
-        domain: "ap-east.relay.paddy.systems",
+        domain: "ap-east.relay.acme.example",
         latitude: 35.6762,
         longitude: 139.6503,
         isHealthy: true,
@@ -143,7 +143,7 @@ export class GeoEdgeDispatcher {
     // If all unhealthy, return target anyway as degraded fallback
     return {
       targetRegion: target,
-      popDomain: primaryPop?.domain ?? "relay.paddy.systems",
+      popDomain: primaryPop?.domain ?? "relay.acme.example",
       estimatedLatencyMs: 150,
       failoverUsed: true,
     };
@@ -177,7 +177,7 @@ export class GeoEdgeDispatcher {
 
     return {
       targetRegion: closestRegion,
-      popDomain: pop?.domain ?? "relay.paddy.systems",
+      popDomain: pop?.domain ?? "relay.acme.example",
       estimatedLatencyMs: estimatedLatency,
       failoverUsed: false,
     };

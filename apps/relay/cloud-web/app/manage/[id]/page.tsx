@@ -60,7 +60,7 @@ function ManageSessionContent({ params }: { params: Promise<{ id: string }> }) {
 
   const connectionUrl =
     mode === "remote"
-      ? `https://${sessionId}.relay.paddy.systems/?relay_token=${token}`
+      ? `https://${sessionId}.relay.acme.example/?relay_token=${token}`
       : `http://127.0.0.1:${gatewayPort}/?relay_token=${token}`;
 
   const disconnectDevice = (deviceId: string) => {

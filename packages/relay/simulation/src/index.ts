@@ -1,5 +1,5 @@
 /**
- * @paddy-systems/relay-simulation
+ * @acme-systems/relay-simulation
  * Synthetic Device Farm Simulator & Chaos Harness.
  */
 

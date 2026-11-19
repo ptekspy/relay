@@ -13,7 +13,7 @@ export interface SignInPageProps {
 
 export function SignInPage({
   defaultRedirect = "/",
-  productName = "Paddy Systems",
+  productName = "Acme Systems",
   signUpUrl = "/register",
 }: SignInPageProps) {
   const [email, setEmail] = useState("");

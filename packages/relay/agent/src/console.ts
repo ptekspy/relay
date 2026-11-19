@@ -1,7 +1,7 @@
 import type {
   ConsoleEvent,
   ConsoleLogLevel,
-} from "@paddy-systems/relay-protocol";
+} from "@acme-systems/relay-protocol";
 import { safeSerialize } from "./redaction.js";
 
 export type ConsoleCallback = (event: ConsoleEvent) => void;

@@ -5,7 +5,7 @@
  * actions (page.goto, page.click, page.type, evaluate) directly on real physical
  * devices connected via Relay WebRTC/WebSocket data channels.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-testing/playwright.
+ * Note for Octavia: Exported from @acme-systems/relay-testing/playwright.
  */
 
 export interface RelayDeviceMetadata {

@@ -1,6 +1,6 @@
 "use client";
 
-import type { SessionComment } from "@paddy-systems/relay-recording";
+import type { SessionComment } from "@acme-systems/relay-recording";
 
 export interface CommentsDrawerProps {
   isOpen: boolean;

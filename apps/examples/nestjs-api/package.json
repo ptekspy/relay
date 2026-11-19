@@ -1,5 +1,5 @@
 {
-  "name": "@paddy-systems/example-nestjs-api",
+  "name": "@acme-systems/example-nestjs-api",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -14,10 +14,11 @@
     "rxjs": "^7.8.2"
   },
   "devDependencies": {
-    "@paddy-systems/relay-integrations": "workspace:*",
-    "@paddy-systems/relay-testing": "workspace:*",
+    "@acme-systems/relay-integrations": "workspace:*",
+    "@acme-systems/relay-testing": "workspace:*",
     "@types/express": "^5.0.0",
     "@types/node": "^22.0.0",
     "typescript": "7.0.2"
-  }
+  },
+  "license": "Apache-2.0"
 }

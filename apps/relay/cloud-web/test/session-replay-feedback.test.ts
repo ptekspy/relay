@@ -1,5 +1,5 @@
 import { describe, expect, it } from "bun:test";
-import type { SessionComment } from "@paddy-systems/relay-recording";
+import type { SessionComment } from "@acme-systems/relay-recording";
 
 describe("Session Recording, Replay & In-Context Feedback", () => {
   const sampleComments: SessionComment[] = [

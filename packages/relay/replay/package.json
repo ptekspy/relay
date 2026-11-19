@@ -1,5 +1,5 @@
 {
-  "name": "@paddy-systems/relay-replay",
+  "name": "@acme-systems/relay-replay",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -13,13 +13,14 @@
     "test": "bun test"
   },
   "dependencies": {
-    "@paddy-systems/relay-protocol": "*",
-    "@paddy-systems/relay-recording": "*"
+    "@acme-systems/relay-protocol": "*",
+    "@acme-systems/relay-recording": "*"
   },
   "devDependencies": {
-    "@paddy-systems/typescript-config": "*",
+    "@acme-systems/typescript-config": "*",
     "@types/bun": "latest",
     "@types/node": "^20",
     "typescript": "7.0.2"
-  }
+  },
+  "license": "Apache-2.0"
 }

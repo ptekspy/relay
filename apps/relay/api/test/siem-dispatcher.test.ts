@@ -30,7 +30,7 @@ describe("TASK-167: SIEM Audit Log Streaming & Webhook Dispatcher", () => {
         id: "evt-1",
         type: "session:kill",
         teamId: "team-alpha",
-        actor: "admin@alpha.com",
+        actor: "admin@example.com",
         ipAddress: "10.0.0.1",
         timestamp: Date.now(),
         details: { sessionId: "sess-kill-1" },

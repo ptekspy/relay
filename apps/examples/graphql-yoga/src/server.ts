@@ -1,5 +1,5 @@
 import { createServer } from "node:http";
-import { GraphQLRelayAdapter } from "@paddy-systems/relay-integrations";
+import { GraphQLRelayAdapter } from "@acme-systems/relay-integrations";
 import { createSchema, createYoga } from "graphql-yoga";
 
 export function buildYogaServer() {

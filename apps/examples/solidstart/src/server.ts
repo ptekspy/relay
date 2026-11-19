@@ -1,5 +1,5 @@
 import { createServer } from "node:http";
-import { SolidStartRelayAdapter } from "@paddy-systems/relay-integrations";
+import { SolidStartRelayAdapter } from "@acme-systems/relay-integrations";
 
 export function buildSolidServer() {
   const adapter = new SolidStartRelayAdapter();

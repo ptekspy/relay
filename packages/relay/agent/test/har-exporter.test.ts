@@ -1,5 +1,5 @@
 import { describe, expect, it } from "bun:test";
-import type { NetworkTelemetryEvent } from "@paddy-systems/relay-protocol";
+import type { NetworkTelemetryEvent } from "@acme-systems/relay-protocol";
 import { HarExporter } from "../src/har-exporter.js";
 
 describe("TASK-145: Network Payload HAR 1.2 Exporter", () => {
@@ -35,7 +35,7 @@ describe("TASK-145: Network Payload HAR 1.2 Exporter", () => {
     const har = HarExporter.exportHar(events);
 
     expect(har.log.version).toBe("1.2");
-    expect(har.log.creator.name).toBe("Paddy Systems Relay");
+    expect(har.log.creator.name).toBe("Acme Systems Relay");
     expect(har.log.entries.length).toBe(3);
 
     const first = har.log.entries[0];

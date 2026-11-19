@@ -4,7 +4,7 @@
  * Broadcasts test executions across all connected mobile and browser receivers
  * in parallel and aggregates test results into a unified summary table.
  *
- * Note for Octavia: Exported from @paddy-systems/relay-testing/matrix-runner.
+ * Note for Octavia: Exported from @acme-systems/relay-testing/matrix-runner.
  */
 
 export interface MatrixDeviceTarget {

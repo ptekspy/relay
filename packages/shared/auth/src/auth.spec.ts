@@ -7,7 +7,7 @@ import {
   getUserSubscriptions,
 } from "./server";
 
-describe("@paddy-systems/auth", () => {
+describe("@acme-systems/auth", () => {
   it("resolves authUrl properly", () => {
     expect(authUrl).toBeDefined();
     expect(typeof authUrl).toBe("string");

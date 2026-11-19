@@ -1,5 +1,5 @@
 /**
- * @paddy-systems/relay-python
+ * @acme-systems/relay-python
  * Type definitions for Python & Django SDK integration.
  */
 

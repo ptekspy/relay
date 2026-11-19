@@ -4,7 +4,7 @@ import {
   ipToLanDomain,
   type LanTlsBundle,
   LanTlsBundleManager,
-} from "@paddy-systems/relay-security";
+} from "@acme-systems/relay-security";
 
 export interface TlsCertificateBundle {
   key: string;

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   title: "Relay — your dev server, wherever you need it",
   description:
     "Relay shares your local dev server with another device using one command and a short access code. No public ports, no config. Free for local use.",
-  authors: [{ name: "Paddy Systems" }],
+  authors: [{ name: "Acme Systems" }],
   openGraph: {
     title: "Relay — your dev server, wherever you need it",
     description:
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@PaddySystems",
+    site: "@AcmeSystems",
     images: ["/og-image.png"],
   },
   icons: {

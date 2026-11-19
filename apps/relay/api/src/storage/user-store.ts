@@ -6,16 +6,16 @@ export class UserRegistry {
   constructor() {
     // Seed initial team users including Sally Smith
     this.createUser({
-      id: "usr_paddy",
-      email: "paddy@paddy-systems.com",
-      name: "Paddy",
+      id: "usr_acme",
+      email: "acme@example.com",
+      name: "Acme",
       role: "OWNER",
       createdAt: Date.now() - 90 * 86400 * 1000,
     });
 
     this.createUser({
       id: "usr_sally",
-      email: "sally@paddy-systems.com",
+      email: "sally@example.com",
       name: "Sally Smith",
       role: "ADMIN",
       createdAt: Date.now(),

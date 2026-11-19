@@ -1,4 +1,4 @@
-import type { NetworkTelemetryEvent } from "@paddy-systems/relay-protocol";
+import type { NetworkTelemetryEvent } from "@acme-systems/relay-protocol";
 import type { NetworkRequestReplayItem } from "./types.js";
 
 /**

@@ -20,9 +20,9 @@ describe("TASK-123: Next.js App Router Server Actions Proxy Normalizer", () => {
 
   it("normalizes request headers to bypass Next.js CSRF host/origin rejection while preserving action IDs", () => {
     const rawIncomingHeaders = {
-      Host: "session-xyz.relay.paddy.systems",
-      Origin: "https://session-xyz.relay.paddy.systems",
-      Referer: "https://session-xyz.relay.paddy.systems/settings/profile",
+      Host: "session-xyz.relay.acme.example",
+      Origin: "https://session-xyz.relay.acme.example",
+      Referer: "https://session-xyz.relay.acme.example/settings/profile",
       "Next-Action": "7a941f6e2b",
       "Next-Router-State-Tree": "%5B%22%22%2C%7B%22children%22%3A%5B%5D%7D%5D",
       "Content-Type": "multipart/form-data; boundary=----WebKitFormBoundaryXYZ",
@@ -40,7 +40,7 @@ describe("TASK-123: Next.js App Router Server Actions Proxy Normalizer", () => {
     expect(normalized.origin).toBe("http://localhost:3000");
     expect(normalized.referer).toBe("http://localhost:3000/settings/profile");
     expect(normalized["x-forwarded-host"]).toBe(
-      "session-xyz.relay.paddy.systems",
+      "session-xyz.relay.acme.example",
     );
     expect(normalized["next-action"]).toBe("7a941f6e2b");
     expect(normalized["content-type"]).toContain(
@@ -58,16 +58,16 @@ describe("TASK-123: Next.js App Router Server Actions Proxy Normalizer", () => {
     const normalized = NextJsServerActionsNormalizer.normalizeResponseHeaders(
       responseHeaders,
       {
-        relayHost: "session-xyz.relay.paddy.systems",
-        relayOrigin: "https://session-xyz.relay.paddy.systems",
+        relayHost: "session-xyz.relay.acme.example",
+        relayOrigin: "https://session-xyz.relay.acme.example",
       },
     );
 
     expect(normalized.location).toBe(
-      "https://session-xyz.relay.paddy.systems/dashboard?success=true",
+      "https://session-xyz.relay.acme.example/dashboard?success=true",
     );
     expect(normalized["x-action-redirect"]).toBe(
-      "https://session-xyz.relay.paddy.systems/dashboard?success=true",
+      "https://session-xyz.relay.acme.example/dashboard?success=true",
     );
     expect(normalized["content-type"]).toBe("text/x-component");
   });

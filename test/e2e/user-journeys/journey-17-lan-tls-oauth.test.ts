@@ -191,18 +191,18 @@ describe("User Journey 17: Local Wildcard TLS & OAuth Loopback Rewriting", () =>
     expect(html).toContain("Welcome to Dashboard");
   });
 
-  test("Step 5: Boots with HTTPS and binds to *.lan.relay.paddy.systems", async () => {
+  test("Step 5: Boots with HTTPS and binds to *.lan.relay.acme.example", async () => {
     const httpsGateway = await startRelayGateway({
       preferredPort: 7990,
       targetPort: devPort,
       sessionToken: "tok_https_test_456",
       enableHttps: true,
       lanIp: "192.168.1.75",
-      lanApexDomain: "lan.relay.paddy.systems",
+      lanApexDomain: "lan.relay.acme.example",
     });
 
     expect(httpsGateway.isHttps).toBe(true);
-    expect(httpsGateway.lanDomain).toBe("192-168-1-75.lan.relay.paddy.systems");
+    expect(httpsGateway.lanDomain).toBe("192-168-1-75.lan.relay.acme.example");
 
     await httpsGateway.close();
   });

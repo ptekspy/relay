@@ -115,13 +115,13 @@ describe("Relay Gateway Recording & In-Context Feedback", () => {
             timestampMs: 500,
             position: { xPercent: 45.2, yPercent: 62.1 },
             targetSelector: "button.checkout-btn",
-            author: { name: "Patrick Tester" },
+            author: { name: "Alex Tester" },
             content: "Checkout modal button is non-responsive",
           }),
         },
       );
       expect(commentRes.status).toBe(200);
-      expect(receivedCommentAuthor).toBe("Patrick Tester");
+      expect(receivedCommentAuthor).toBe("Alex Tester");
       expect(gateway.getComments().length).toBe(1);
 
       // 4. Fetch comments list

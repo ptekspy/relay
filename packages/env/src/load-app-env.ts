@@ -2,7 +2,7 @@ import { existsSync, readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 
 export type ApplicationName =
-  | "PADDY_SYSTEMS"
+  | "ACME_SYSTEMS"
   | "RELAY"
   | "MIRROR"
   | "WEARFOLIO"

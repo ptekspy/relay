@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@paddy-systems/lib/cn";
+import { cn } from "@acme-systems/lib/cn";
 import {
   type CSSProperties,
   type ReactNode,

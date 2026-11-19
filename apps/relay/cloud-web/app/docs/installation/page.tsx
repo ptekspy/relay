@@ -30,7 +30,7 @@ export default function Installation() {
 
       <DocSection title="Install globally">
         <CodeBlock
-          code={"npm i -g @paddy-systems/relay-cli\nrelay 3000"}
+          code={"npm i -g @acme-systems/relay-cli\nrelay 3000"}
           prompt
         />
         <p>

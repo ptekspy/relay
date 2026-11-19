@@ -3,7 +3,7 @@ import { resolve } from "node:path";
 
 export function generateManpage(): string {
   const date = "September 2026";
-  return `.\\" Manpage for Paddy Systems Relay
+  return `.\\" Manpage for Acme Systems Relay
 .TH RELAY 1 "${date}" "1.0.0" "Relay User Manual"
 .SH NAME
 relay \\- Instant zero-config local device testing and telemetry pipeline
@@ -44,7 +44,7 @@ Display command-line help text and exit.
 \\fBcompletion\\fR \\fIshell\\fR
 Generate shell tab-completion scripts. Supported shells: \\fIbash\\fR, \\fIzsh\\fR, \\fIfish\\fR.
 .SH AUTHOR
-Paddy Systems Ltd (support@paddy.systems)
+Acme Systems Ltd (support@example.com)
 `;
 }
 

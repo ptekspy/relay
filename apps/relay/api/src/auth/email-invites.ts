@@ -48,7 +48,7 @@ export class EmailInviteService {
 </head>
 <body>
   <div class="card">
-    <div class="brand">Paddy Systems // Relay</div>
+    <div class="brand">Acme Systems // Relay</div>
     <h1>You're invited to inspect a session</h1>
     <p><strong>${payload.inviterName}</strong> has invited you to collaborate on <strong>${payload.sessionName}</strong>.</p>
     <a href="${payload.joinUrl}" class="btn">Join Dev Session</a>

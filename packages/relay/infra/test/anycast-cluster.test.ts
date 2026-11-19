@@ -11,7 +11,7 @@ describe("TASK-191: Global Anycast DNS & Edge Multi-Region Cluster Architecture"
     {
       id: "node-useast-1",
       region: "us-east",
-      endpoint: "https://useast-1.relay.paddy.systems",
+      endpoint: "https://useast-1.relay.acme.example",
       ip: "198.51.100.10",
       status: "healthy",
       activeConnections: 120,
@@ -19,7 +19,7 @@ describe("TASK-191: Global Anycast DNS & Edge Multi-Region Cluster Architecture"
     {
       id: "node-useast-2",
       region: "us-east",
-      endpoint: "https://useast-2.relay.paddy.systems",
+      endpoint: "https://useast-2.relay.acme.example",
       ip: "198.51.100.11",
       status: "healthy",
       activeConnections: 45, // Less loaded
@@ -27,7 +27,7 @@ describe("TASK-191: Global Anycast DNS & Edge Multi-Region Cluster Architecture"
     {
       id: "node-uswest-1",
       region: "us-west",
-      endpoint: "https://uswest-1.relay.paddy.systems",
+      endpoint: "https://uswest-1.relay.acme.example",
       ip: "198.51.100.20",
       status: "healthy",
       activeConnections: 80,
@@ -35,7 +35,7 @@ describe("TASK-191: Global Anycast DNS & Edge Multi-Region Cluster Architecture"
     {
       id: "node-eucentral-1",
       region: "eu-central",
-      endpoint: "https://eucentral-1.relay.paddy.systems",
+      endpoint: "https://eucentral-1.relay.acme.example",
       ip: "198.51.100.30",
       status: "healthy",
       activeConnections: 150,
@@ -43,7 +43,7 @@ describe("TASK-191: Global Anycast DNS & Edge Multi-Region Cluster Architecture"
     {
       id: "node-apsoutheast-1",
       region: "ap-southeast",
-      endpoint: "https://apsoutheast-1.relay.paddy.systems",
+      endpoint: "https://apsoutheast-1.relay.acme.example",
       ip: "198.51.100.40",
       status: "healthy",
       activeConnections: 60,

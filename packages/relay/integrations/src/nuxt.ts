@@ -46,7 +46,7 @@ export function defineRelayNuxtModule(
   };
 
   return {
-    name: "@paddy-systems/relay-nuxt",
+    name: "@acme-systems/relay-nuxt",
     configKey: "relay",
     setup: (_runtimeOptions, _nuxt) => {
       const pairingUrl = `${options.relayHost}/pair?target=${options.port}`;

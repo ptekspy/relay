@@ -1,6 +1,6 @@
-# Paddy Systems Relay — Architectural Concept Diagrams
+# Acme Systems Relay — Architectural Concept Diagrams
 
-Visual system diagrams illustrating the runtime topologies, message lifecycles, and security boundaries of Paddy Systems Relay.
+Visual system diagrams illustrating the runtime topologies, message lifecycles, and security boundaries of Acme Systems Relay.
 
 ---
 
@@ -51,7 +51,7 @@ flowchart TD
         DevServer <-->|HTTP / HMR| HostCLI
     end
 
-    subgraph Edge_Cloud ["Paddy Systems Global Edge Network"]
+    subgraph Edge_Cloud ["Acme Systems Global Edge Network"]
         EdgeAnycast["Anycast Edge Ingress (Cloudflare / Fastly)"]
         SignalingCluster["Signaling & Router Gateway (WSS)"]
         SessionRegistry[("Session State & Token Store")]
@@ -65,7 +65,7 @@ flowchart TD
     end
 
     HostCLI -->|"Outbound WSS Tunnel (Port 443)"| SignalingCluster
-    RemoteBrowser -->|"HTTPS / WSS (tenant.relay.paddy.systems)"| EdgeAnycast
+    RemoteBrowser -->|"HTTPS / WSS (tenant.relay.acme.example)"| EdgeAnycast
     SignalingCluster <-->|"End-to-End Encrypted Frames"| RemoteBrowser
 ```
 
